@@ -1,0 +1,5696 @@
+[
+  {
+    "id": "R1185",
+    "name": "Ruta 1185: PUENTE PIEDRA → VILLA EL SALVADOR",
+    "shortName": "1185",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 3,
+    "axis": "Ca. LAS PALMERAS → Av. LIMA",
+    "operador": "EMPRESA DE TRANSPORTES URBANOS LOS CHINOS S.A.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Ca. LAS PALMERAS",
+        "lat": -11.934347,
+        "lng": -77.09601
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.937229,
+        "lng": -77.079967
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.960952,
+        "lng": -77.068732
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.983299,
+        "lng": -77.06561
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.989882,
+        "lng": -77.064669
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.003734,
+        "lng": -77.062166
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.024708,
+        "lng": -77.058893
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.036038,
+        "lng": -77.045965
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.043312,
+        "lng": -77.024085
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.029202,
+        "lng": -76.997778
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.050635,
+        "lng": -76.977521
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.078162,
+        "lng": -76.976137
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.100357,
+        "lng": -76.979703
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.137397,
+        "lng": -76.980573
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.150377,
+        "lng": -76.981473
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.159886,
+        "lng": -76.957763
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.17491,
+        "lng": -76.946913
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.190175,
+        "lng": -76.944056
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.207022,
+        "lng": -76.937419
+      },
+      {
+        "id": 19,
+        "name": "Av. LIMA",
+        "lat": -12.233356,
+        "lng": -76.918098
+      }
+    ],
+    "services": [
+      {
+        "code": "1185",
+        "label": "Ruta 1185 — PUENTE PIEDRA → VILLA EL SALVADOR",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1268",
+    "name": "Ruta 1268: CALLAO → ATE",
+    "shortName": "1268",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 3,
+    "axis": "Ca. LAS BEGONIAS → Av. LA ESTRELLA",
+    "operador": "EMPRESA DE TRANSPORTES Y SERV. EL ALAMO DE SANTA ROSA S.A.",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Ca. LAS BEGONIAS",
+        "lat": -11.999278,
+        "lng": -77.112718
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.00521,
+        "lng": -77.104234
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.018801,
+        "lng": -77.100365
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.027522,
+        "lng": -77.097517
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.031358,
+        "lng": -77.082833
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.032916,
+        "lng": -77.059791
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.034922,
+        "lng": -77.050139
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.038191,
+        "lng": -77.038332
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.043299,
+        "lng": -77.023796
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.035343,
+        "lng": -77.010455
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.029259,
+        "lng": -76.997214
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.038718,
+        "lng": -76.988475
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.056876,
+        "lng": -76.97455
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.058897,
+        "lng": -76.974729
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.052232,
+        "lng": -76.95873
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.042347,
+        "lng": -76.935348
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.028032,
+        "lng": -76.923157
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.025167,
+        "lng": -76.905239
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.022936,
+        "lng": -76.887529
+      },
+      {
+        "id": 19,
+        "name": "Av. LA ESTRELLA",
+        "lat": -12.016383,
+        "lng": -76.884527
+      }
+    ],
+    "services": [
+      {
+        "code": "1268",
+        "label": "Ruta 1268 — CALLAO → ATE",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1168",
+    "name": "Ruta 1168: ANCON → LINCE",
+    "shortName": "1168",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 3,
+    "axis": "Av. FLORIDA → Av. ALVAREZ ARENALES",
+    "operador": "GRUPO AUTOMOTOR UNO",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. FLORIDA",
+        "lat": -11.76011,
+        "lng": -77.169634
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.774911,
+        "lng": -77.170786
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.783938,
+        "lng": -77.158307
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.811122,
+        "lng": -77.130859
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.831266,
+        "lng": -77.1164
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.856617,
+        "lng": -77.084945
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.872989,
+        "lng": -77.069391
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.907629,
+        "lng": -77.069971
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.923213,
+        "lng": -77.07329
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -11.960114,
+        "lng": -77.068811
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -11.978962,
+        "lng": -77.066093
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -11.98476,
+        "lng": -77.065238
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -11.994437,
+        "lng": -77.063702
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.005281,
+        "lng": -77.062107
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.027053,
+        "lng": -77.058513
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.035692,
+        "lng": -77.047417
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.05542,
+        "lng": -77.042119
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.064305,
+        "lng": -77.039469
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.07382,
+        "lng": -77.042039
+      },
+      {
+        "id": 19,
+        "name": "Av. ALVAREZ ARENALES",
+        "lat": -12.080903,
+        "lng": -77.03616
+      }
+    ],
+    "services": [
+      {
+        "code": "1168",
+        "label": "Ruta 1168 — ANCON → LINCE",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1300",
+    "name": "Ruta 1300: VENTANILLA → SAN JUAN LURIGANCHO",
+    "shortName": "1300",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. SANTA ROSA → Ca. LAS LOMAS",
+    "operador": "CORPORACION ROMA INTERNATIONAL",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. SANTA ROSA",
+        "lat": -11.831451,
+        "lng": -77.169548
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.842682,
+        "lng": -77.153645
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.855075,
+        "lng": -77.158784
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.872125,
+        "lng": -77.139163
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.872487,
+        "lng": -77.138909
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.873588,
+        "lng": -77.137886
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.889856,
+        "lng": -77.126216
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.949542,
+        "lng": -77.131723
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.997811,
+        "lng": -77.124758
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.023405,
+        "lng": -77.105479
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.053406,
+        "lng": -77.098112
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.07465,
+        "lng": -77.083724
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.074332,
+        "lng": -77.054953
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.064209,
+        "lng": -77.036295
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.05692,
+        "lng": -77.014922
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.040507,
+        "lng": -76.998382
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.020633,
+        "lng": -77.000352
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.992656,
+        "lng": -77.005237
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.975266,
+        "lng": -77.000657
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -11.94989,
+        "lng": -76.986413
+      },
+      {
+        "id": 20,
+        "name": "Ca. LAS LOMAS",
+        "lat": -11.927981,
+        "lng": -76.98991
+      }
+    ],
+    "services": [
+      {
+        "code": "1300",
+        "label": "Ruta 1300 — VENTANILLA → SAN JUAN LURIGANCHO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1280",
+    "name": "Ruta 1280: SANTA ROSA → VILLA MARIA DEL TRIUNFO",
+    "shortName": "1280",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. PLAYA HONDEABLE → Av. SAN MARTIN",
+    "operador": "EMPRESA E INVERSIONES GENESIS S.A.C.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. PLAYA HONDEABLE",
+        "lat": -11.816649,
+        "lng": -77.153511
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.836141,
+        "lng": -77.153182
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.838957,
+        "lng": -77.155875
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.848219,
+        "lng": -77.152639
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.871978,
+        "lng": -77.139112
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.872391,
+        "lng": -77.139015
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.873375,
+        "lng": -77.138072
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.884971,
+        "lng": -77.126356
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.947455,
+        "lng": -77.13183
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -11.997428,
+        "lng": -77.125877
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.022543,
+        "lng": -77.105852
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.031667,
+        "lng": -77.079643
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.054102,
+        "lng": -77.061712
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.060344,
+        "lng": -77.041007
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.05793,
+        "lng": -77.009727
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.082729,
+        "lng": -76.985199
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.126466,
+        "lng": -76.977042
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.150985,
+        "lng": -76.979901
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.168683,
+        "lng": -76.950823
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -12.192615,
+        "lng": -76.935054
+      },
+      {
+        "id": 20,
+        "name": "Av. SAN MARTIN",
+        "lat": -12.196229,
+        "lng": -76.921939
+      }
+    ],
+    "services": [
+      {
+        "code": "1280",
+        "label": "Ruta 1280 — SANTA ROSA → VILLA MARIA DEL TRIUNFO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1240",
+    "name": "Ruta 1240: PACHACAMAC → ANCON",
+    "shortName": "1240",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. LAS PALMAS → Av. LOS RADARES",
+    "operador": "EMPRESA DE TRANSPORTES Y SERVICIOS VIRGEN DE LA PUERTA S.A.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. LAS PALMAS",
+        "lat": -12.227545,
+        "lng": -76.899508
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.238439,
+        "lng": -76.912632
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.214657,
+        "lng": -76.935868
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.193492,
+        "lng": -76.949802
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.19256,
+        "lng": -76.961157
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.150627,
+        "lng": -76.98326
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.102586,
+        "lng": -76.979232
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.075311,
+        "lng": -76.974739
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.039194,
+        "lng": -76.988133
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.040559,
+        "lng": -77.017314
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.036026,
+        "lng": -77.045405
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.02063,
+        "lng": -77.059238
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -11.995888,
+        "lng": -77.062994
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -11.984599,
+        "lng": -77.064716
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -11.97615,
+        "lng": -77.065921
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -11.9326,
+        "lng": -77.072154
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.890552,
+        "lng": -77.068257
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.856827,
+        "lng": -77.084348
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.824474,
+        "lng": -77.123207
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -11.778777,
+        "lng": -77.158308
+      },
+      {
+        "id": 20,
+        "name": "Av. LOS RADARES",
+        "lat": -11.758464,
+        "lng": -77.154041
+      }
+    ],
+    "services": [
+      {
+        "code": "1240",
+        "label": "Ruta 1240 — PACHACAMAC → ANCON",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1242",
+    "name": "Ruta 1242: PACHACAMAC → ANCON",
+    "shortName": "1242",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. PACHACUTEC → CARRETERA PANAMERICANA NORTE (",
+    "operador": "EMPRESA DE SERVICIOS MULTIPLES NUEVO PERU S.A.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. PACHACUTEC",
+        "lat": -12.222196,
+        "lng": -76.881589
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.229048,
+        "lng": -76.891773
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.229854,
+        "lng": -76.909872
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.235526,
+        "lng": -76.923371
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.225255,
+        "lng": -76.941154
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.198238,
+        "lng": -76.957401
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.171504,
+        "lng": -76.978824
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.123105,
+        "lng": -76.976986
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.083913,
+        "lng": -76.980816
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.051209,
+        "lng": -76.976757
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.033941,
+        "lng": -77.008885
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.036738,
+        "lng": -77.042401
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.023382,
+        "lng": -77.058715
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -11.997838,
+        "lng": -77.062671
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -11.984655,
+        "lng": -77.064675
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -11.975472,
+        "lng": -77.06602
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.929777,
+        "lng": -77.072427
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.883664,
+        "lng": -77.06866
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.847296,
+        "lng": -77.096243
+      },
+      {
+        "id": 19,
+        "name": "CARRETERA PANAMERICANA NORTE (",
+        "lat": -11.814784,
+        "lng": -77.12834
+      }
+    ],
+    "services": [
+      {
+        "code": "1242",
+        "label": "Ruta 1242 — PACHACAMAC → ANCON",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1298",
+    "name": "Ruta 1298: CALLAO → VILLA MARIA DEL TRIUNFO",
+    "shortName": "1298",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 3,
+    "axis": "Av. PACASMAYO → Jr. INDEPENDENCIA",
+    "operador": "HOLDING REAL EXPRESS",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. PACASMAYO",
+        "lat": -11.994377,
+        "lng": -77.110156
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.018611,
+        "lng": -77.100132
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.030054,
+        "lng": -77.094554
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.034117,
+        "lng": -77.0652
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.051026,
+        "lng": -77.060431
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.057277,
+        "lng": -77.051592
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.064945,
+        "lng": -77.0392
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.08003,
+        "lng": -77.042461
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.092553,
+        "lng": -77.053131
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.108259,
+        "lng": -77.053475
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.119117,
+        "lng": -77.043051
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.119196,
+        "lng": -77.029255
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.125334,
+        "lng": -77.024513
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.128635,
+        "lng": -77.003489
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.128079,
+        "lng": -76.989962
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.132843,
+        "lng": -76.976719
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.146581,
+        "lng": -76.971171
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.157473,
+        "lng": -76.958802
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.167049,
+        "lng": -76.949869
+      },
+      {
+        "id": 19,
+        "name": "Jr. INDEPENDENCIA",
+        "lat": -12.155645,
+        "lng": -76.934905
+      }
+    ],
+    "services": [
+      {
+        "code": "1298",
+        "label": "Ruta 1298 — CALLAO → VILLA MARIA DEL TRIUNFO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1097",
+    "name": "Ruta 1097: VILLA EL SALVADOR → SAN JUAN LURIGANCHO",
+    "shortName": "1097",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Ca. D → Av. SANTA ROSA DE LIMA",
+    "operador": "EMPRESA DE TRANSPORTES SANTO CRISTO DE PACHACAMILLA",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Ca. D",
+        "lat": -12.233412,
+        "lng": -76.913369
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.218616,
+        "lng": -76.928619
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.209186,
+        "lng": -76.94179
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.189498,
+        "lng": -76.957535
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.162655,
+        "lng": -76.959912
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.151148,
+        "lng": -76.978529
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.14145,
+        "lng": -76.991885
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.1282,
+        "lng": -77.005291
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.122939,
+        "lng": -77.029178
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.118814,
+        "lng": -77.039848
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.108505,
+        "lng": -77.053071
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.097092,
+        "lng": -77.071929
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.074178,
+        "lng": -77.053035
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.058229,
+        "lng": -77.041607
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.034638,
+        "lng": -77.043701
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.042718,
+        "lng": -77.022823
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.032064,
+        "lng": -77.012004
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.018487,
+        "lng": -77.002897
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.007188,
+        "lng": -76.997299
+      },
+      {
+        "id": 19,
+        "name": "Av. SANTA ROSA DE LIMA",
+        "lat": -11.986819,
+        "lng": -76.999266
+      }
+    ],
+    "services": [
+      {
+        "code": "1097",
+        "label": "Ruta 1097 — VILLA EL SALVADOR → SAN JUAN LURIGANCHO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1286",
+    "name": "Ruta 1286: SAN MARTIN PORRES → SAN JUAN LURIGANCHO",
+    "shortName": "1286",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Ca. SANTA TERESITA DE NIÃ°O JE → Ca. LAS LOMAS",
+    "operador": "TRANSPORTES HUASCAR S.A.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Ca. SANTA TERESITA DE NIÃ°O JE",
+        "lat": -11.950701,
+        "lng": -77.090847
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.95056,
+        "lng": -77.076649
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.975571,
+        "lng": -77.08597
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.987306,
+        "lng": -77.103737
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.009838,
+        "lng": -77.112175
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.033058,
+        "lng": -77.100523
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.057597,
+        "lng": -77.097659
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.073593,
+        "lng": -77.087098
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.072994,
+        "lng": -77.06211
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.059691,
+        "lng": -77.058576
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.060682,
+        "lng": -77.041868
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.063759,
+        "lng": -77.032233
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.050717,
+        "lng": -77.028138
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.037875,
+        "lng": -77.014458
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.026366,
+        "lng": -77.010431
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.006958,
+        "lng": -77.011113
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.984904,
+        "lng": -77.015252
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.973487,
+        "lng": -76.998196
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.951949,
+        "lng": -76.987468
+      },
+      {
+        "id": 19,
+        "name": "Ca. LAS LOMAS",
+        "lat": -11.931568,
+        "lng": -76.990261
+      }
+    ],
+    "services": [
+      {
+        "code": "1286",
+        "label": "Ruta 1286 — SAN MARTIN PORRES → SAN JUAN LURIGANCHO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1145",
+    "name": "Ruta 1145: CARABAYLLO → LA VICTORIA",
+    "shortName": "1145",
+    "color": "#94a3b8",
+    "type": "radial",
+    "interval": 3,
+    "axis": "Av. TUPAC AMARU (KM 23) → Av. MEXICO",
+    "operador": "EMPRESA DE TRANSPORTES Y SERVICIOS CALLAO S.A.",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. TUPAC AMARU (KM 23)",
+        "lat": -11.852472,
+        "lng": -77.002967
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.864762,
+        "lng": -77.009419
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.877945,
+        "lng": -77.018025
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.885915,
+        "lng": -77.023343
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.896951,
+        "lng": -77.029807
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.909281,
+        "lng": -77.036657
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.926736,
+        "lng": -77.042831
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.944024,
+        "lng": -77.050593
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.972683,
+        "lng": -77.057638
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -11.976736,
+        "lng": -77.060065
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -11.985414,
+        "lng": -77.057939
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -11.996566,
+        "lng": -77.055395
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.007345,
+        "lng": -77.053959
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.011321,
+        "lng": -77.06083
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.028651,
+        "lng": -77.057458
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.032458,
+        "lng": -77.041705
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.042532,
+        "lng": -77.027081
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.044772,
+        "lng": -77.019479
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.058887,
+        "lng": -77.023856
+      },
+      {
+        "id": 19,
+        "name": "Av. MEXICO",
+        "lat": -12.073094,
+        "lng": -77.016506
+      }
+    ],
+    "services": [
+      {
+        "code": "1145",
+        "label": "Ruta 1145 — CARABAYLLO → LA VICTORIA",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1249",
+    "name": "Ruta 1249: VILLA MARIA DEL TRIUNFO → SAN MARTIN PORRES",
+    "shortName": "1249",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. LIMA → Av. SAN NICOLAS",
+    "operador": "EMPRESA DE TRANSPORTES Y SERVICIOS SALVADOR S.A.C.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. LIMA",
+        "lat": -12.229854,
+        "lng": -76.909872
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.232881,
+        "lng": -76.917904
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.224047,
+        "lng": -76.937964
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.208175,
+        "lng": -76.951395
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.19246,
+        "lng": -76.961037
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.159996,
+        "lng": -76.982304
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.127035,
+        "lng": -76.976883
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.087744,
+        "lng": -76.981798
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.070441,
+        "lng": -76.994606
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.056651,
+        "lng": -77.011222
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.059267,
+        "lng": -77.035839
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.051019,
+        "lng": -77.042238
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.047115,
+        "lng": -77.050643
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.035332,
+        "lng": -77.065697
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.026822,
+        "lng": -77.086697
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.005765,
+        "lng": -77.088222
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.993535,
+        "lng": -77.083327
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.977825,
+        "lng": -77.077667
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.968466,
+        "lng": -77.08892
+      },
+      {
+        "id": 19,
+        "name": "Av. SAN NICOLAS",
+        "lat": -11.959971,
+        "lng": -77.10509
+      }
+    ],
+    "services": [
+      {
+        "code": "1249",
+        "label": "Ruta 1249 — VILLA MARIA DEL TRIUNFO → SAN MARTIN PORRES",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1018",
+    "name": "Ruta 1018: CARABAYLLO → SAN LUIS",
+    "shortName": "1018",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 3,
+    "axis": "Av. TUPAC AMARU → Av. MARISCAL AGUSTIN GAMARRA",
+    "operador": "EMPRESA DE TRANSPORTES ONCE DE NOVIEMBRE",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. TUPAC AMARU",
+        "lat": -11.834629,
+        "lng": -76.999702
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.851032,
+        "lng": -77.00242
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.865856,
+        "lng": -77.011145
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.881705,
+        "lng": -77.02321
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.893094,
+        "lng": -77.028646
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.909407,
+        "lng": -77.036917
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.932406,
+        "lng": -77.045686
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.965804,
+        "lng": -77.055819
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.976718,
+        "lng": -77.060058
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -11.987712,
+        "lng": -77.057475
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -11.989639,
+        "lng": -77.06417
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.00091,
+        "lng": -77.062426
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.009512,
+        "lng": -77.057361
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.02127,
+        "lng": -77.053863
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.024363,
+        "lng": -77.036384
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.038474,
+        "lng": -77.028778
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.052819,
+        "lng": -77.029432
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.063757,
+        "lng": -77.022999
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.075006,
+        "lng": -77.011211
+      },
+      {
+        "id": 19,
+        "name": "Av. MARISCAL AGUSTIN GAMARRA",
+        "lat": -12.064789,
+        "lng": -76.989898
+      }
+    ],
+    "services": [
+      {
+        "code": "1018",
+        "label": "Ruta 1018 — CARABAYLLO → SAN LUIS",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1137",
+    "name": "Ruta 1137: CARABAYLLO → LA VICTORIA",
+    "shortName": "1137",
+    "color": "#94a3b8",
+    "type": "radial",
+    "interval": 3,
+    "axis": "Av. TUPAC AMARU (KM 24.5) → Av. ISABEL LA CATOLICA",
+    "operador": "EMP DE TRANSP Y SERV SAN ANTONIO",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. TUPAC AMARU (KM 24.5)",
+        "lat": -11.842331,
+        "lng": -76.999343
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.858093,
+        "lng": -77.00428
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.866749,
+        "lng": -77.011375
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.881241,
+        "lng": -77.022651
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.887711,
+        "lng": -77.024063
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.902878,
+        "lng": -77.030599
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.913551,
+        "lng": -77.03961
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.933624,
+        "lng": -77.046727
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.950255,
+        "lng": -77.049597
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -11.976586,
+        "lng": -77.059971
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -11.976928,
+        "lng": -77.06005
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -11.990755,
+        "lng": -77.057252
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -11.998713,
+        "lng": -77.055364
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.011891,
+        "lng": -77.052943
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.021259,
+        "lng": -77.053881
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.030543,
+        "lng": -77.04707
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.039265,
+        "lng": -77.033791
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.042054,
+        "lng": -77.021536
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.050594,
+        "lng": -77.022528
+      },
+      {
+        "id": 19,
+        "name": "Av. ISABEL LA CATOLICA",
+        "lat": -12.063406,
+        "lng": -77.020328
+      }
+    ],
+    "services": [
+      {
+        "code": "1137",
+        "label": "Ruta 1137 — CARABAYLLO → LA VICTORIA",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1239",
+    "name": "Ruta 1239: VILLA EL SALVADOR → PUENTE PIEDRA",
+    "shortName": "1239",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. LIMA → Ca. LOS ALAMOS",
+    "operador": "EMPRESA DE SERVICIOS MULTIPLES \"EL CONDOR\"",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. LIMA",
+        "lat": -12.234953,
+        "lng": -76.911627
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.235836,
+        "lng": -76.932138
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.211864,
+        "lng": -76.949185
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.192551,
+        "lng": -76.96082
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.158924,
+        "lng": -76.98262
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.119082,
+        "lng": -76.977111
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.084705,
+        "lng": -76.981865
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.059746,
+        "lng": -76.972533
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.029512,
+        "lng": -76.99508
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.042989,
+        "lng": -77.029163
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.033932,
+        "lng": -77.052039
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.01227,
+        "lng": -77.0605
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -11.995428,
+        "lng": -77.063063
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -11.984736,
+        "lng": -77.06461
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -11.977957,
+        "lng": -77.065335
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -11.946387,
+        "lng": -77.070808
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.90783,
+        "lng": -77.069863
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.869135,
+        "lng": -77.071467
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.841553,
+        "lng": -77.103431
+      },
+      {
+        "id": 19,
+        "name": "Ca. LOS ALAMOS",
+        "lat": -11.824402,
+        "lng": -77.108895
+      }
+    ],
+    "services": [
+      {
+        "code": "1239",
+        "label": "Ruta 1239 — VILLA EL SALVADOR → PUENTE PIEDRA",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1267",
+    "name": "Ruta 1267: VENTANILLA → ATE",
+    "shortName": "1267",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 3,
+    "axis": "Av. SANTA ROSA → Av. NICOLAS DE PIEROLA",
+    "operador": "EMPRESA DE TRANSPORTES SERVICIO Y COMERCIALIZACION EXPRESO SANTA ANITA",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. SANTA ROSA",
+        "lat": -11.831451,
+        "lng": -77.169548
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.835246,
+        "lng": -77.150458
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.848201,
+        "lng": -77.137537
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.849714,
+        "lng": -77.126737
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.8666,
+        "lng": -77.128467
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.885181,
+        "lng": -77.126282
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.931895,
+        "lng": -77.130617
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.969629,
+        "lng": -77.125513
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.998412,
+        "lng": -77.12302
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.005625,
+        "lng": -77.104028
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.024284,
+        "lng": -77.099133
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.031957,
+        "lng": -77.074438
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.034563,
+        "lng": -77.051017
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.041458,
+        "lng": -77.032871
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.032972,
+        "lng": -77.00701
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.035746,
+        "lng": -76.989275
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.058366,
+        "lng": -76.974906
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.051182,
+        "lng": -76.956308
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.030159,
+        "lng": -76.924858
+      },
+      {
+        "id": 19,
+        "name": "Av. NICOLAS DE PIEROLA",
+        "lat": -12.024683,
+        "lng": -76.90151
+      }
+    ],
+    "services": [
+      {
+        "code": "1267",
+        "label": "Ruta 1267 — VENTANILLA → ATE",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1287",
+    "name": "Ruta 1287: SANTA ROSA → SAN JUAN LURIGANCHO",
+    "shortName": "1287",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. PLAYA HONDEABLE → Av. FERNANDO WIESSE",
+    "operador": "TRANSPORTE GROUP TIGRILLO S.A.C.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. PLAYA HONDEABLE",
+        "lat": -11.817703,
+        "lng": -77.159646
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.831233,
+        "lng": -77.149568
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.827821,
+        "lng": -77.137907
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.814885,
+        "lng": -77.128594
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.842836,
+        "lng": -77.102231
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.870051,
+        "lng": -77.070971
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.908005,
+        "lng": -77.070244
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.934686,
+        "lng": -77.072062
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.976261,
+        "lng": -77.066497
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -11.98458,
+        "lng": -77.065179
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -11.996955,
+        "lng": -77.063456
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.009833,
+        "lng": -77.061086
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.033503,
+        "lng": -77.053323
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.041881,
+        "lng": -77.032131
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.031952,
+        "lng": -77.00509
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.016951,
+        "lng": -77.001261
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.997333,
+        "lng": -77.009492
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.97957,
+        "lng": -77.004732
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.961802,
+        "lng": -76.988839
+      },
+      {
+        "id": 19,
+        "name": "Av. FERNANDO WIESSE",
+        "lat": -11.939452,
+        "lng": -76.978588
+      }
+    ],
+    "services": [
+      {
+        "code": "1287",
+        "label": "Ruta 1287 — SANTA ROSA → SAN JUAN LURIGANCHO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1438",
+    "name": "Ruta 1438: VENTANILLA → SAN MIGUEL",
+    "shortName": "1438",
+    "color": "#8b5cf6",
+    "type": "periferica",
+    "interval": 5,
+    "axis": "Av. G → Av. ELMER FAUCETT",
+    "operador": "COOP DE SERV ESP.TRANSP.SOL Y MAR LTDA",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. G",
+        "lat": -11.83083,
+        "lng": -77.168685
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.833694,
+        "lng": -77.15704
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.836054,
+        "lng": -77.14648
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.84529,
+        "lng": -77.139314
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.850186,
+        "lng": -77.131306
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.8498,
+        "lng": -77.126893
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.851623,
+        "lng": -77.128252
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.861214,
+        "lng": -77.124835
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.875987,
+        "lng": -77.126798
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -11.886584,
+        "lng": -77.126154
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -11.913099,
+        "lng": -77.128643
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -11.943697,
+        "lng": -77.131551
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -11.967198,
+        "lng": -77.125986
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -11.989841,
+        "lng": -77.125609
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -11.999574,
+        "lng": -77.119881
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.01291,
+        "lng": -77.110642
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.023452,
+        "lng": -77.105459
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.03779,
+        "lng": -77.09948
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.050286,
+        "lng": -77.09842
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -12.066692,
+        "lng": -77.097423
+      },
+      {
+        "id": 20,
+        "name": "Av. ELMER FAUCETT",
+        "lat": -12.074089,
+        "lng": -77.100114
+      }
+    ],
+    "services": [
+      {
+        "code": "1438",
+        "label": "Ruta 1438 — VENTANILLA → SAN MIGUEL",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1235",
+    "name": "Ruta 1235: CARABAYLLO → PACHACAMAC",
+    "shortName": "1235",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. SANTO DOMINGO → Av. VICTOR MALASQUEZ",
+    "operador": "EMPRESA TRANSP. SALAMANCA PARRAL S.A.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. SANTO DOMINGO",
+        "lat": -11.869986,
+        "lng": -77.026568
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.893279,
+        "lng": -77.0382
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.9209,
+        "lng": -77.051165
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.945062,
+        "lng": -77.060826
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.961584,
+        "lng": -77.063226
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.976671,
+        "lng": -77.066514
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.98504,
+        "lng": -77.065304
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.00091,
+        "lng": -77.062426
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.026867,
+        "lng": -77.058603
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.037217,
+        "lng": -77.04153
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.040241,
+        "lng": -77.016343
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.037041,
+        "lng": -76.988903
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.058543,
+        "lng": -76.974878
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.06349,
+        "lng": -76.960589
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.072505,
+        "lng": -76.941349
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.077855,
+        "lng": -76.93168
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.086091,
+        "lng": -76.909048
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.085207,
+        "lng": -76.879189
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.109233,
+        "lng": -76.87494
+      },
+      {
+        "id": 19,
+        "name": "Av. VICTOR MALASQUEZ",
+        "lat": -12.156281,
+        "lng": -76.868702
+      }
+    ],
+    "services": [
+      {
+        "code": "1235",
+        "label": "Ruta 1235 — CARABAYLLO → PACHACAMAC",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1302",
+    "name": "Ruta 1302: SAN JUAN LURIGANCHO → CALLAO",
+    "shortName": "1302",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 3,
+    "axis": "Ca. ALAMEDA DE LA AMISTAD → Av. REPUBLICA DE ARGENTINA",
+    "operador": "TRANSPORTES HUASCAR S.A.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Ca. ALAMEDA DE LA AMISTAD",
+        "lat": -11.939809,
+        "lng": -77.000341
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.953586,
+        "lng": -76.989973
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.958812,
+        "lng": -76.998875
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.96981,
+        "lng": -77.005643
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.986335,
+        "lng": -77.015823
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.00631,
+        "lng": -77.011543
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.025228,
+        "lng": -77.011811
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.032059,
+        "lng": -77.012297
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.040367,
+        "lng": -77.018823
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.033723,
+        "lng": -77.038747
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.038163,
+        "lng": -77.043667
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.050813,
+        "lng": -77.042518
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.055429,
+        "lng": -77.053866
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.063773,
+        "lng": -77.059962
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.072278,
+        "lng": -77.061848
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.088481,
+        "lng": -77.069286
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.089661,
+        "lng": -77.084378
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.080062,
+        "lng": -77.105378
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.066241,
+        "lng": -77.108497
+      },
+      {
+        "id": 19,
+        "name": "Av. REPUBLICA DE ARGENTINA",
+        "lat": -12.055364,
+        "lng": -77.105725
+      }
+    ],
+    "services": [
+      {
+        "code": "1302",
+        "label": "Ruta 1302 — SAN JUAN LURIGANCHO → CALLAO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1237",
+    "name": "Ruta 1237: VILLA EL SALVADOR → CARABAYLLO",
+    "shortName": "1237",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. JUAN VELASCO ALVARADO → Av. CAMINO REAL",
+    "operador": "EMPRESA DE TRANSP Y SERVIC EL RAPIDO S.A",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. JUAN VELASCO ALVARADO",
+        "lat": -12.217284,
+        "lng": -76.954978
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.207918,
+        "lng": -76.93887
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.190058,
+        "lng": -76.922437
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.183553,
+        "lng": -76.941482
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.168391,
+        "lng": -76.948118
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.155673,
+        "lng": -76.96069
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.141196,
+        "lng": -76.974796
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.112592,
+        "lng": -76.977851
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.080475,
+        "lng": -76.977481
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.04385,
+        "lng": -76.984945
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.034475,
+        "lng": -77.009606
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.036896,
+        "lng": -77.041915
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.026097,
+        "lng": -77.058274
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.000574,
+        "lng": -77.06229
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -11.984978,
+        "lng": -77.064446
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -11.978067,
+        "lng": -77.065419
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.961403,
+        "lng": -77.062002
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.938783,
+        "lng": -77.058367
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.907989,
+        "lng": -77.043723
+      },
+      {
+        "id": 19,
+        "name": "Av. CAMINO REAL",
+        "lat": -11.878034,
+        "lng": -77.030062
+      }
+    ],
+    "services": [
+      {
+        "code": "1237",
+        "label": "Ruta 1237 — VILLA EL SALVADOR → CARABAYLLO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1054",
+    "name": "Ruta 1054: SAN JUAN LURIGANCHO → CHORRILLOS",
+    "shortName": "1054",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 3,
+    "axis": "Av. FERNANDO WIESSE → Av. ALAMEDA LOS HORIZONTES",
+    "operador": "EMPRESA DE TRANSPORTES URBANO LINEA 4 S.A.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. FERNANDO WIESSE",
+        "lat": -11.933174,
+        "lng": -76.968982
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.94965,
+        "lng": -76.986451
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.967805,
+        "lng": -76.993417
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.979506,
+        "lng": -77.004858
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.991996,
+        "lng": -77.011216
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.00833,
+        "lng": -77.004606
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.019982,
+        "lng": -77.001427
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.029233,
+        "lng": -76.99702
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.040993,
+        "lng": -76.987603
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.065101,
+        "lng": -76.97143
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.084585,
+        "lng": -76.981942
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.105808,
+        "lng": -76.978946
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.13397,
+        "lng": -76.979398
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.158032,
+        "lng": -76.98304
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.172292,
+        "lng": -76.981854
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.1736,
+        "lng": -76.991094
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.182698,
+        "lng": -76.99966
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.186058,
+        "lng": -77.007722
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.199058,
+        "lng": -77.012674
+      },
+      {
+        "id": 19,
+        "name": "Av. ALAMEDA LOS HORIZONTES",
+        "lat": -12.203827,
+        "lng": -77.007622
+      }
+    ],
+    "services": [
+      {
+        "code": "1054",
+        "label": "Ruta 1054 — SAN JUAN LURIGANCHO → CHORRILLOS",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1069",
+    "name": "Ruta 1069: LURIGANCHO (CHOSICA) → CERCADO LIMA",
+    "shortName": "1069",
+    "color": "#94a3b8",
+    "type": "radial",
+    "interval": 4,
+    "axis": "Av. LIMA NORTE → Jr. ASCOPE",
+    "operador": "EMPRESA DE TRANSPORTES Y SERVICIOS NUEVA ERA SEÃ‘OR DE MURUHUAY",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. LIMA NORTE",
+        "lat": -11.921161,
+        "lng": -76.66867
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.924376,
+        "lng": -76.684267
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.932739,
+        "lng": -76.694158
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.943761,
+        "lng": -76.708602
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.94996,
+        "lng": -76.723248
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.966818,
+        "lng": -76.744983
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.973907,
+        "lng": -76.761263
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.981467,
+        "lng": -76.795258
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.00765,
+        "lng": -76.857334
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.021935,
+        "lng": -76.907806
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.031942,
+        "lng": -76.926789
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.043293,
+        "lng": -76.936756
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.057502,
+        "lng": -76.971278
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.063123,
+        "lng": -76.982532
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.063641,
+        "lng": -76.997205
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.060376,
+        "lng": -77.006525
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.057609,
+        "lng": -77.018607
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.05963,
+        "lng": -77.036516
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.058066,
+        "lng": -77.041616
+      },
+      {
+        "id": 19,
+        "name": "Jr. ASCOPE",
+        "lat": -12.046777,
+        "lng": -77.045484
+      }
+    ],
+    "services": [
+      {
+        "code": "1069",
+        "label": "Ruta 1069 — LURIGANCHO (CHOSICA) → CERCADO LIMA",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1480",
+    "name": "Ruta 1480: LURIGANCHO → SAN MIGUEL",
+    "shortName": "1480",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "CARRETERA CENTRAL → Av. REPUBLICA DE VENEZUELA",
+    "operador": "EMPRESA DE TRANSPORTES Y REPRESENTACIONES SARITA COLONIA Y VILLA SOL S.A",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "CARRETERA CENTRAL",
+        "lat": -11.921083,
+        "lng": -76.669451
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.926273,
+        "lng": -76.686339
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.940263,
+        "lng": -76.699136
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.946847,
+        "lng": -76.715129
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.962998,
+        "lng": -76.740223
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.973865,
+        "lng": -76.760874
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.983877,
+        "lng": -76.805074
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.01309,
+        "lng": -76.880799
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.026126,
+        "lng": -76.920271
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.042267,
+        "lng": -76.935568
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.056164,
+        "lng": -76.968144
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.063174,
+        "lng": -76.982732
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.063398,
+        "lng": -76.999921
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.055064,
+        "lng": -77.013331
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.059643,
+        "lng": -77.035289
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.059705,
+        "lng": -77.041677
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.055306,
+        "lng": -77.052337
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.056891,
+        "lng": -77.063959
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.061503,
+        "lng": -77.087263
+      },
+      {
+        "id": 19,
+        "name": "Av. REPUBLICA DE VENEZUELA",
+        "lat": -12.063143,
+        "lng": -77.104611
+      }
+    ],
+    "services": [
+      {
+        "code": "1480",
+        "label": "Ruta 1480 — LURIGANCHO → SAN MIGUEL",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1482",
+    "name": "Ruta 1482: SAN MARTIN PORRES → CHORRILLOS",
+    "shortName": "1482",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. PARAMONGA → Av. GUARDIA PERUANA",
+    "operador": "EMPRESA DE TRANSPORTE Y SERVICIOS MULTIPLES AQUARIUS EXPRESS S.A.C.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. PARAMONGA",
+        "lat": -11.952004,
+        "lng": -77.08984
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.972907,
+        "lng": -77.086959
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.988817,
+        "lng": -77.105447
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.008829,
+        "lng": -77.102443
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.022442,
+        "lng": -77.106175
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.041265,
+        "lng": -77.099136
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.064433,
+        "lng": -77.097304
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.074412,
+        "lng": -77.084867
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.086576,
+        "lng": -77.0686
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.099888,
+        "lng": -77.06403
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.108354,
+        "lng": -77.053383
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.119259,
+        "lng": -77.04284
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.119494,
+        "lng": -77.029135
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.126204,
+        "lng": -77.018954
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.129299,
+        "lng": -77.000827
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.129799,
+        "lng": -76.981899
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.148822,
+        "lng": -76.986738
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.158356,
+        "lng": -76.98897
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.168982,
+        "lng": -76.996721
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -12.182045,
+        "lng": -76.991543
+      },
+      {
+        "id": 20,
+        "name": "Av. GUARDIA PERUANA",
+        "lat": -12.193477,
+        "lng": -76.981814
+      }
+    ],
+    "services": [
+      {
+        "code": "1482",
+        "label": "Ruta 1482 — SAN MARTIN PORRES → CHORRILLOS",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1024",
+    "name": "Ruta 1024: SAN MARTIN PORRES",
+    "shortName": "1024",
+    "color": "#94a3b8",
+    "type": "circular",
+    "interval": 5,
+    "axis": "Av. VICTOR RAUL HAYA DE LA TOR → Av. VICTOR RAUL HAYA DE LA ",
+    "operador": "EMPRESA DE TRANSPORTE NOR LIMA",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. VICTOR RAUL HAYA DE LA TOR",
+        "lat": -12.096915,
+        "lng": -77.072418
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.074305,
+        "lng": -77.062845
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.061224,
+        "lng": -77.059002
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.044521,
+        "lng": -77.050901
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.037301,
+        "lng": -77.043433
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.030901,
+        "lng": -77.056333
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.008638,
+        "lng": -77.06083
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.989863,
+        "lng": -77.0636
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.984253,
+        "lng": -77.072036
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -11.973976,
+        "lng": -77.087365
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -11.960492,
+        "lng": -77.098528
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -11.973137,
+        "lng": -77.1069
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -11.97094,
+        "lng": -77.100218
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -11.976015,
+        "lng": -77.08549
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -11.986445,
+        "lng": -77.07247
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -11.996903,
+        "lng": -77.063471
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.012819,
+        "lng": -77.060575
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.035829,
+        "lng": -77.04714
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.05992,
+        "lng": -77.042004
+      },
+      {
+        "id": 19,
+        "name": "Av. VICTOR RAUL HAYA DE LA TOR",
+        "lat": -12.082573,
+        "lng": -77.06002
+      }
+    ],
+    "services": [
+      {
+        "code": "1024",
+        "label": "Ruta 1024 — SAN MARTIN PORRES",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1100",
+    "name": "Ruta 1100: PACHACAMAC → ATE",
+    "shortName": "1100",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. S?ENZ PEÃA → Av. ANDRES AVELINO CACERES",
+    "operador": "EMPRESA DE TRANSPORTES URBANO LINEA 4 S.A.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. S?ENZ PEÃA",
+        "lat": -12.224684,
+        "lng": -76.900161
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.206918,
+        "lng": -76.906453
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.193677,
+        "lng": -76.906962
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.167628,
+        "lng": -76.921419
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.180251,
+        "lng": -76.943473
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.167808,
+        "lng": -76.951019
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.157844,
+        "lng": -76.962093
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.150604,
+        "lng": -76.979752
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.141067,
+        "lng": -76.981089
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.111941,
+        "lng": -76.977852
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.085643,
+        "lng": -76.982193
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.072883,
+        "lng": -76.973704
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.051906,
+        "lng": -76.976238
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.032182,
+        "lng": -76.988857
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.02127,
+        "lng": -76.931128
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.015244,
+        "lng": -76.900044
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.014382,
+        "lng": -76.884412
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.004979,
+        "lng": -76.844944
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.002838,
+        "lng": -76.832224
+      },
+      {
+        "id": 19,
+        "name": "Av. ANDRES AVELINO CACERES",
+        "lat": -12.013079,
+        "lng": -76.819953
+      }
+    ],
+    "services": [
+      {
+        "code": "1100",
+        "label": "Ruta 1100 — PACHACAMAC → ATE",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1218",
+    "name": "Ruta 1218: LURIGANCHO (CHOSICA) → SAN MIGUEL",
+    "shortName": "1218",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 5,
+    "axis": "CARRETERA CENTRAL → Av. DE LOS INSURGENTES",
+    "operador": "EMPRESA DE TRANS Y SERV LIMA CHOSICA",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "CARRETERA CENTRAL",
+        "lat": -11.921083,
+        "lng": -76.669451
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.926273,
+        "lng": -76.686339
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.940263,
+        "lng": -76.699136
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.946847,
+        "lng": -76.715129
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.962998,
+        "lng": -76.740223
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.973865,
+        "lng": -76.760874
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.983877,
+        "lng": -76.805074
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.01309,
+        "lng": -76.880799
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.026126,
+        "lng": -76.920271
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.042267,
+        "lng": -76.935568
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.056164,
+        "lng": -76.968144
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.063174,
+        "lng": -76.982732
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.063398,
+        "lng": -76.999921
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.055064,
+        "lng": -77.013331
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.059643,
+        "lng": -77.035289
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.059705,
+        "lng": -77.041677
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.055306,
+        "lng": -77.052337
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.056891,
+        "lng": -77.063959
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.061503,
+        "lng": -77.087263
+      },
+      {
+        "id": 19,
+        "name": "Av. DE LOS INSURGENTES",
+        "lat": -12.064643,
+        "lng": -77.104446
+      }
+    ],
+    "services": [
+      {
+        "code": "1218",
+        "label": "Ruta 1218 — LURIGANCHO (CHOSICA) → SAN MIGUEL",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1260",
+    "name": "Ruta 1260: VENTANILLA → ATE",
+    "shortName": "1260",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 3,
+    "axis": "Av. 150 IZQUIERDA → Av. JOSE CARLOS MARIATEGUI",
+    "operador": "INVERSIONES Y REPRESENTACIONES POLO S.A.C.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. 150 IZQUIERDA",
+        "lat": -11.83083,
+        "lng": -77.168685
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.839613,
+        "lng": -77.155588
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.846715,
+        "lng": -77.147737
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.849499,
+        "lng": -77.137252
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.844301,
+        "lng": -77.125437
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.8401,
+        "lng": -77.105372
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.86712,
+        "lng": -77.073027
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.903081,
+        "lng": -77.067796
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.92512,
+        "lng": -77.072982
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -11.971233,
+        "lng": -77.067063
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -11.983867,
+        "lng": -77.065249
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -11.994437,
+        "lng": -77.063702
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.008852,
+        "lng": -77.061523
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.031119,
+        "lng": -77.056528
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.040457,
+        "lng": -77.035094
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.034921,
+        "lng": -77.009923
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.030816,
+        "lng": -76.984133
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.0146,
+        "lng": -76.903557
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.014564,
+        "lng": -76.884976
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -12.001058,
+        "lng": -76.837914
+      },
+      {
+        "id": 20,
+        "name": "Av. JOSE CARLOS MARIATEGUI",
+        "lat": -12.015321,
+        "lng": -76.82235
+      }
+    ],
+    "services": [
+      {
+        "code": "1260",
+        "label": "Ruta 1260 — VENTANILLA → ATE",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1316",
+    "name": "Ruta 1316: VENTANILLA → SAN JUAN LURIGANCHO",
+    "shortName": "1316",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 5,
+    "axis": "Av. 150 IZQUIERDA → Av. AMPLIACION OESTE",
+    "operador": "CORPORACION ROMA INTERNATIONAL",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. 150 IZQUIERDA",
+        "lat": -11.83083,
+        "lng": -77.168685
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.832266,
+        "lng": -77.145351
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.851224,
+        "lng": -77.135572
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.851813,
+        "lng": -77.128516
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.876512,
+        "lng": -77.126862
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.923122,
+        "lng": -77.129624
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.976007,
+        "lng": -77.125063
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.006683,
+        "lng": -77.113719
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.036214,
+        "lng": -77.099458
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.066692,
+        "lng": -77.097423
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.076665,
+        "lng": -77.072866
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.063671,
+        "lng": -77.059804
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.060643,
+        "lng": -77.041918
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.064521,
+        "lng": -77.029071
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.050547,
+        "lng": -77.01289
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.037876,
+        "lng": -76.997356
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.016754,
+        "lng": -76.997262
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.992,
+        "lng": -77.000258
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.973135,
+        "lng": -76.991651
+      },
+      {
+        "id": 19,
+        "name": "Av. AMPLIACION OESTE",
+        "lat": -11.950793,
+        "lng": -76.980994
+      }
+    ],
+    "services": [
+      {
+        "code": "1316",
+        "label": "Ruta 1316 — VENTANILLA → SAN JUAN LURIGANCHO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1472",
+    "name": "Ruta 1472: SAN MARTIN PORRES → VILLA EL SALVADOR",
+    "shortName": "1472",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. PARAMONGA → Av. LAS LOMAS",
+    "operador": "EMPRESA DE TRANSPORTES SOL DE ORO",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. PARAMONGA",
+        "lat": -11.966738,
+        "lng": -77.110124
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.969788,
+        "lng": -77.087455
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.976466,
+        "lng": -77.084064
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.982279,
+        "lng": -77.065732
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.989757,
+        "lng": -77.064621
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.002856,
+        "lng": -77.062197
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.024145,
+        "lng": -77.058809
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.035889,
+        "lng": -77.046684
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.04326,
+        "lng": -77.026559
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.029393,
+        "lng": -76.998427
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.045755,
+        "lng": -76.983048
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.07767,
+        "lng": -76.975914
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.09999,
+        "lng": -76.979756
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.136835,
+        "lng": -76.98043
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.150303,
+        "lng": -76.981886
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.159676,
+        "lng": -76.95816
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.173975,
+        "lng": -76.947579
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.190063,
+        "lng": -76.944049
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.206943,
+        "lng": -76.937524
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -12.22738,
+        "lng": -76.926098
+      },
+      {
+        "id": 20,
+        "name": "Av. LAS LOMAS",
+        "lat": -12.24283,
+        "lng": -76.92572
+      }
+    ],
+    "services": [
+      {
+        "code": "1472",
+        "label": "Ruta 1472 — SAN MARTIN PORRES → VILLA EL SALVADOR",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1241",
+    "name": "Ruta 1241: LURIN → CARABAYLLO",
+    "shortName": "1241",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Jr. RAMON CASTILLA → Av. LAS LOMAS DE CARABAYLLO",
+    "operador": "EMPRESA DE TRANSPORTES ROLUESA S.A.C.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Jr. RAMON CASTILLA",
+        "lat": -12.281556,
+        "lng": -76.86054
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.273834,
+        "lng": -76.872513
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.252648,
+        "lng": -76.894951
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.229675,
+        "lng": -76.909543
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.213022,
+        "lng": -76.923059
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.182474,
+        "lng": -76.94213
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.160731,
+        "lng": -76.956458
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.150267,
+        "lng": -76.98051
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.113383,
+        "lng": -76.977745
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.078871,
+        "lng": -76.97632
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.039449,
+        "lng": -76.988057
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.042655,
+        "lng": -77.021716
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.034449,
+        "lng": -77.050743
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.009475,
+        "lng": -77.060838
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -11.989574,
+        "lng": -77.063734
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -11.98332,
+        "lng": -77.064721
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.955223,
+        "lng": -77.069462
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.907006,
+        "lng": -77.069453
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.863192,
+        "lng": -77.07623
+      },
+      {
+        "id": 19,
+        "name": "Av. LAS LOMAS DE CARABAYLLO",
+        "lat": -11.833578,
+        "lng": -77.089573
+      }
+    ],
+    "services": [
+      {
+        "code": "1241",
+        "label": "Ruta 1241 — LURIN → CARABAYLLO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1462",
+    "name": "Ruta 1462: CARABAYLLO",
+    "shortName": "1462",
+    "color": "#94a3b8",
+    "type": "circular",
+    "interval": 5,
+    "axis": "Av. TUPAC AMARU (KM 23.9) → Av. TUPAC AMARU (KM 23.9)",
+    "operador": "EMPRESA HUANDOY S.A.",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. TUPAC AMARU (KM 23.9)",
+        "lat": -11.858485,
+        "lng": -77.004481
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.882087,
+        "lng": -77.023483
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.891712,
+        "lng": -77.039878
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.929987,
+        "lng": -77.069271
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.972817,
+        "lng": -77.076134
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.997412,
+        "lng": -77.084699
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.033684,
+        "lng": -77.078268
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.06004,
+        "lng": -77.079183
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.083559,
+        "lng": -77.082704
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.102758,
+        "lng": -77.058573
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.076648,
+        "lng": -77.042086
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.059504,
+        "lng": -77.029733
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.040326,
+        "lng": -77.022733
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.023734,
+        "lng": -77.037206
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.020441,
+        "lng": -77.053267
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.002537,
+        "lng": -77.06193
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.980149,
+        "lng": -77.058925
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.93549,
+        "lng": -77.047911
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.903395,
+        "lng": -77.030545
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -11.881123,
+        "lng": -77.022133
+      },
+      {
+        "id": 20,
+        "name": "Av. TUPAC AMARU (KM 23.9)",
+        "lat": -11.858485,
+        "lng": -77.004481
+      }
+    ],
+    "services": [
+      {
+        "code": "1462",
+        "label": "Ruta 1462 — CARABAYLLO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1479",
+    "name": "Ruta 1479: LURIGANCHO (CHOSICA) → SAN MIGUEL",
+    "shortName": "1479",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 7,
+    "axis": "Av. LIMA NORTE → Av. REPUBLICA DE VENEZUELA",
+    "operador": "EMPRESA DE TRANSPORTES 78 S.A.",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. LIMA NORTE",
+        "lat": -11.920741,
+        "lng": -76.673929
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.927362,
+        "lng": -76.688246
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.94224,
+        "lng": -76.702915
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.948604,
+        "lng": -76.719732
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.966818,
+        "lng": -76.744983
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.973924,
+        "lng": -76.762725
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.995102,
+        "lng": -76.832445
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.01505,
+        "lng": -76.886689
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.028431,
+        "lng": -76.923676
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.04309,
+        "lng": -76.936325
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.057805,
+        "lng": -76.972021
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.063659,
+        "lng": -76.985412
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.062783,
+        "lng": -77.002457
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.056515,
+        "lng": -77.01466
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.05926,
+        "lng": -77.035742
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.059995,
+        "lng": -77.042189
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.055506,
+        "lng": -77.054707
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.057574,
+        "lng": -77.067711
+      },
+      {
+        "id": 18,
+        "name": "Av. REPUBLICA DE VENEZUELA",
+        "lat": -12.061945,
+        "lng": -77.091775
+      }
+    ],
+    "services": [
+      {
+        "code": "1479",
+        "label": "Ruta 1479 — LURIGANCHO (CHOSICA) → SAN MIGUEL",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1184",
+    "name": "Ruta 1184: SANTA ROSA → LURIN",
+    "shortName": "1184",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. HUAYNA CAPAC → Av. QUEBRADA VERDE",
+    "operador": "EMPRESA DE TRANSP. EDILBERTO RAMOS",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. HUAYNA CAPAC",
+        "lat": -11.818034,
+        "lng": -77.161041
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -11.832831,
+        "lng": -77.143121
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -11.817163,
+        "lng": -77.138368
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -11.833526,
+        "lng": -77.113601
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -11.869825,
+        "lng": -77.071199
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -11.910824,
+        "lng": -77.072336
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -11.960114,
+        "lng": -77.068811
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -11.983725,
+        "lng": -77.06533
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -11.997118,
+        "lng": -77.063374
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.025861,
+        "lng": -77.058783
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.038319,
+        "lng": -77.038059
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.03393,
+        "lng": -77.008568
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.052316,
+        "lng": -76.976189
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.08529,
+        "lng": -76.982283
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.13129,
+        "lng": -76.978369
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.177716,
+        "lng": -76.977095
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.203231,
+        "lng": -76.954659
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.233171,
+        "lng": -76.936361
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.240022,
+        "lng": -76.912523
+      },
+      {
+        "id": 19,
+        "name": "Av. QUEBRADA VERDE",
+        "lat": -12.227545,
+        "lng": -76.899508
+      }
+    ],
+    "services": [
+      {
+        "code": "1184",
+        "label": "Ruta 1184 — SANTA ROSA → LURIN",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1281",
+    "name": "Ruta 1281: ATE → CALLAO",
+    "shortName": "1281",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "AV. SAN MARTIN DE PORRES → AV. REPUBLICA DE ARGENTINA ALT",
+    "operador": "TRANSPORTES Y SERVICE CANADA",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "AV. SAN MARTIN DE PORRES",
+        "lat": -12.018338,
+        "lng": -76.883925
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.024285,
+        "lng": -76.89831
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.02451,
+        "lng": -76.915727
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.039185,
+        "lng": -76.932961
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.052906,
+        "lng": -76.941665
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.063383,
+        "lng": -76.95196
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.057313,
+        "lng": -76.963348
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.062529,
+        "lng": -76.977496
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.074977,
+        "lng": -76.979659
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.078111,
+        "lng": -76.989783
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.083802,
+        "lng": -77.0028
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.081808,
+        "lng": -77.017249
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.083228,
+        "lng": -77.032653
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.081889,
+        "lng": -77.047452
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.077381,
+        "lng": -77.048879
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.071701,
+        "lng": -77.062512
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.069971,
+        "lng": -77.077843
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.056521,
+        "lng": -77.080266
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.050034,
+        "lng": -77.079012
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -12.054946,
+        "lng": -77.10561
+      },
+      {
+        "id": 20,
+        "name": "AV. REPUBLICA DE ARGENTINA ALT",
+        "lat": -12.049413,
+        "lng": -77.109234
+      }
+    ],
+    "services": [
+      {
+        "code": "1281",
+        "label": "Ruta 1281 — ATE → CALLAO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1476",
+    "name": "Ruta 1476: ATE → SAN MARTIN PORRES",
+    "shortName": "1476",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 5,
+    "axis": "Av. LA ESPERANZA → Av. PARAMONGA",
+    "operador": "EMPRESA DE TRANSPORTES SOL DE ORO",
+    "carroceria": "MINIBUS",
+    "categoria": "(M2 - M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. LA ESPERANZA",
+        "lat": -12.041484,
+        "lng": -76.90535
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.026119,
+        "lng": -76.912729
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.033476,
+        "lng": -76.942232
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.04299,
+        "lng": -76.970318
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.059059,
+        "lng": -76.974932
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.072066,
+        "lng": -76.988603
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.08153,
+        "lng": -76.995884
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.083364,
+        "lng": -77.013874
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.071841,
+        "lng": -77.016554
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.065121,
+        "lng": -77.033214
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.058229,
+        "lng": -77.041607
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.037301,
+        "lng": -77.043433
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.03268,
+        "lng": -77.05449
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.013342,
+        "lng": -77.060386
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -11.997938,
+        "lng": -77.062747
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -11.990299,
+        "lng": -77.066443
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.981296,
+        "lng": -77.072218
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.963969,
+        "lng": -77.07169
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.949644,
+        "lng": -77.076608
+      },
+      {
+        "id": 19,
+        "name": "Av. PARAMONGA",
+        "lat": -11.955731,
+        "lng": -77.090521
+      }
+    ],
+    "services": [
+      {
+        "code": "1476",
+        "label": "Ruta 1476 — ATE → SAN MARTIN PORRES",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1238",
+    "name": "Ruta 1238: VILLA EL SALVADOR → CARABAYLLO",
+    "shortName": "1238",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. JUAN VELASCO ALVARADO → Av. PRINCIPAL",
+    "operador": "SAN FELIPE EXPRES'S S.A.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. JUAN VELASCO ALVARADO",
+        "lat": -12.21721,
+        "lng": -76.954848
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.235644,
+        "lng": -76.940453
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.223147,
+        "lng": -76.942407
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.197934,
+        "lng": -76.957589
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.171766,
+        "lng": -76.978757
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.127035,
+        "lng": -76.976883
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.084813,
+        "lng": -76.98194
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.058093,
+        "lng": -76.973388
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.029237,
+        "lng": -76.998474
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.039818,
+        "lng": -77.035994
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.0286,
+        "lng": -77.057455
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.004955,
+        "lng": -77.061678
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -11.987277,
+        "lng": -77.064296
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -11.981663,
+        "lng": -77.064915
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -11.954833,
+        "lng": -77.069522
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -11.909236,
+        "lng": -77.070878
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -11.867497,
+        "lng": -77.072537
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.840222,
+        "lng": -77.098015
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.831276,
+        "lng": -77.065594
+      },
+      {
+        "id": 19,
+        "name": "Av. PRINCIPAL",
+        "lat": -11.829613,
+        "lng": -77.044161
+      }
+    ],
+    "services": [
+      {
+        "code": "1238",
+        "label": "Ruta 1238 — VILLA EL SALVADOR → CARABAYLLO",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1248",
+    "name": "Ruta 1248: PACHACAMAC → SAN MARTIN PORRES",
+    "shortName": "1248",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Av. QUEBRADA VERDE → Ca. HUASCAR",
+    "operador": "REAL STAR DEL PERU S.A.C.",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Av. QUEBRADA VERDE",
+        "lat": -12.232161,
+        "lng": -76.890623
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.227844,
+        "lng": -76.898233
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.232957,
+        "lng": -76.910837
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.237417,
+        "lng": -76.922229
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.215838,
+        "lng": -76.935158
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.196817,
+        "lng": -76.946605
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.197923,
+        "lng": -76.957596
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.179702,
+        "lng": -76.976295
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.143566,
+        "lng": -76.98152
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.100231,
+        "lng": -76.979538
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.080118,
+        "lng": -76.977186
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.053856,
+        "lng": -76.975238
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.029188,
+        "lng": -76.995783
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.043112,
+        "lng": -77.028071
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.035803,
+        "lng": -77.04666
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.023382,
+        "lng": -77.058715
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.004123,
+        "lng": -77.061676
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -11.989684,
+        "lng": -77.064408
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -11.983976,
+        "lng": -77.072123
+      },
+      {
+        "id": 19,
+        "name": "Parada 20",
+        "lat": -11.971285,
+        "lng": -77.077134
+      },
+      {
+        "id": 20,
+        "name": "Ca. HUASCAR",
+        "lat": -11.96184,
+        "lng": -77.085505
+      }
+    ],
+    "services": [
+      {
+        "code": "1248",
+        "label": "Ruta 1248 — PACHACAMAC → SAN MARTIN PORRES",
+        "count": 12
+      }
+    ]
+  },
+  {
+    "id": "R1065",
+    "name": "Ruta 1065: ATE",
+    "shortName": "1065",
+    "color": "#3b82f6",
+    "type": "diametral",
+    "interval": 4,
+    "axis": "Ca. LAS ISABELITAS → Av. DE LOS PARQUES",
+    "operador": "EMPRESA DE TRANSPORTES NUEVO HORIZONTE",
+    "carroceria": "OMNIBUS",
+    "categoria": "(M3)",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Ca. LAS ISABELITAS",
+        "lat": -12.026355,
+        "lng": -76.934347
+      },
+      {
+        "id": 1,
+        "name": "Parada 2",
+        "lat": -12.035954,
+        "lng": -76.949714
+      },
+      {
+        "id": 2,
+        "name": "Parada 3",
+        "lat": -12.040606,
+        "lng": -76.974835
+      },
+      {
+        "id": 3,
+        "name": "Parada 4",
+        "lat": -12.039597,
+        "lng": -76.990376
+      },
+      {
+        "id": 4,
+        "name": "Parada 5",
+        "lat": -12.040591,
+        "lng": -76.997604
+      },
+      {
+        "id": 5,
+        "name": "Parada 6",
+        "lat": -12.050134,
+        "lng": -77.006534
+      },
+      {
+        "id": 6,
+        "name": "Parada 7",
+        "lat": -12.05737,
+        "lng": -77.016632
+      },
+      {
+        "id": 7,
+        "name": "Parada 8",
+        "lat": -12.059803,
+        "lng": -77.037882
+      },
+      {
+        "id": 8,
+        "name": "Parada 9",
+        "lat": -12.069238,
+        "lng": -77.049018
+      },
+      {
+        "id": 9,
+        "name": "Parada 10",
+        "lat": -12.089692,
+        "lng": -77.065898
+      },
+      {
+        "id": 10,
+        "name": "Parada 11",
+        "lat": -12.100998,
+        "lng": -77.060973
+      },
+      {
+        "id": 11,
+        "name": "Parada 12",
+        "lat": -12.109621,
+        "lng": -77.052154
+      },
+      {
+        "id": 12,
+        "name": "Parada 13",
+        "lat": -12.116888,
+        "lng": -77.036866
+      },
+      {
+        "id": 13,
+        "name": "Parada 14",
+        "lat": -12.112764,
+        "lng": -77.014457
+      },
+      {
+        "id": 14,
+        "name": "Parada 15",
+        "lat": -12.109653,
+        "lng": -77.000355
+      },
+      {
+        "id": 15,
+        "name": "Parada 16",
+        "lat": -12.096371,
+        "lng": -77.002311
+      },
+      {
+        "id": 16,
+        "name": "Parada 17",
+        "lat": -12.082394,
+        "lng": -77.004343
+      },
+      {
+        "id": 17,
+        "name": "Parada 18",
+        "lat": -12.076356,
+        "lng": -77.004525
+      },
+      {
+        "id": 18,
+        "name": "Parada 19",
+        "lat": -12.067503,
+        "lng": -76.996883
+      },
+      {
+        "id": 19,
+        "name": "Av. DE LOS PARQUES",
+        "lat": -12.060493,
+        "lng": -76.98961
+      }
+    ],
+    "services": [
+      {
+        "code": "1065",
+        "label": "Ruta 1065 — ATE",
+        "count": 12
+      }
+    ]
+  }
+]

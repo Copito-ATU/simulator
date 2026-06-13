@@ -1,0 +1,6281 @@
+[
+  {
+    "id": "C201",
+    "code": "201",
+    "name": "Línea 201",
+    "label": "Corredor 1 — Javier Prado",
+    "color": "#a855f7",
+    "stops": [
+      {
+        "id": 0,
+        "code": "2PARISOE",
+        "name": "PARIS",
+        "sentido": "OE"
+      },
+      {
+        "id": 1,
+        "code": "2BERLIOE",
+        "name": "BERLIN",
+        "sentido": "OE"
+      },
+      {
+        "id": 2,
+        "code": "2FLORAOE",
+        "name": "FLORA TRISTAN",
+        "sentido": "OE"
+      },
+      {
+        "id": 3,
+        "code": "2VISTAOE",
+        "name": "VISTA ALEGRE",
+        "sentido": "OE"
+      },
+      {
+        "id": 4,
+        "code": "2BASADOE",
+        "name": "ARENALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 5,
+        "code": "2AVIACOE",
+        "name": "AVIACION",
+        "sentido": "OE"
+      },
+      {
+        "id": 6,
+        "code": "2JCKEYOE",
+        "name": "JOCKEY",
+        "sentido": "OE"
+      },
+      {
+        "id": 7,
+        "code": "2MASIAOE",
+        "name": "MASIAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 8,
+        "code": "2ORQUIOE",
+        "name": "ORQUIDEAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 9,
+        "code": "2PALMEOE",
+        "name": "LAS PALMERAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 10,
+        "code": "2PARODOE",
+        "name": "PARODI",
+        "sentido": "OE"
+      },
+      {
+        "id": 11,
+        "code": "2MOLINOE",
+        "name": "LA MOLINA",
+        "sentido": "OE"
+      },
+      {
+        "id": 12,
+        "code": "2SUCREEO",
+        "name": "SUCRE",
+        "sentido": "EO"
+      },
+      {
+        "id": 13,
+        "code": "2UNIVEEO",
+        "name": "UNIVERSITARIA",
+        "sentido": "EO"
+      },
+      {
+        "id": 14,
+        "code": "2CEDROOE",
+        "name": "LOS CEDROS",
+        "sentido": "OE"
+      },
+      {
+        "id": 15,
+        "code": "2CLINIOE",
+        "name": "CLINICA RICARDO PALMA",
+        "sentido": "OE"
+      },
+      {
+        "id": 16,
+        "code": "2ESCAROE",
+        "name": "RAFAEL ESCARDO",
+        "sentido": "OE"
+      },
+      {
+        "id": 17,
+        "code": "2FLORSOE",
+        "name": "LAS FLORES",
+        "sentido": "OE"
+      },
+      {
+        "id": 18,
+        "code": "2GREGOOE",
+        "name": "GREGORIO ESCOBEDO",
+        "sentido": "OE"
+      },
+      {
+        "id": 19,
+        "code": "2GUARDOE",
+        "name": "GUARDIA CIVIL",
+        "sentido": "OE"
+      },
+      {
+        "id": 20,
+        "code": "2HONDAOE",
+        "name": "HONDA",
+        "sentido": "OE"
+      },
+      {
+        "id": 21,
+        "code": "2HOSPMOE",
+        "name": "HOSPITAL MILITAR",
+        "sentido": "OE"
+      },
+      {
+        "id": 22,
+        "code": "2JPPEROE",
+        "name": "JAVIER PRADO",
+        "sentido": "OE"
+      },
+      {
+        "id": 23,
+        "code": "2PARQUOE",
+        "name": "PARQUE DE LAS LEYENDAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 24,
+        "code": "2PETITOE",
+        "name": "PETIT THOUARS",
+        "sentido": "OE"
+      },
+      {
+        "id": 25,
+        "code": "2SALAVOE",
+        "name": "SALAVERRY",
+        "sentido": "OE"
+      },
+      {
+        "id": 26,
+        "code": "2SNLUIOE",
+        "name": "SAN LUIS",
+        "sentido": "OE"
+      },
+      {
+        "id": 27,
+        "code": "2SUCREOE",
+        "name": "SUCRE",
+        "sentido": "OE"
+      },
+      {
+        "id": 28,
+        "code": "2UNIVEOE",
+        "name": "UNIVERSITARIA",
+        "sentido": "OE"
+      },
+      {
+        "id": 29,
+        "code": "2ULIMAOE",
+        "name": "UNIVERSIDAD DE LIMA",
+        "sentido": "OE"
+      },
+      {
+        "id": 30,
+        "code": "2GREGOEO",
+        "name": "GREGORIO ESCOBEDO",
+        "sentido": "EO"
+      },
+      {
+        "id": 31,
+        "code": "2HOSPMEO",
+        "name": "HOSPITAL MILITAR",
+        "sentido": "EO"
+      },
+      {
+        "id": 32,
+        "code": "2PLAZSANEO",
+        "name": "PLAZA SAN MIGUEL",
+        "sentido": "EO"
+      },
+      {
+        "id": 33,
+        "code": "2ARENAEO",
+        "name": "ARENALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 34,
+        "code": "2MASIAEO",
+        "name": "MASIAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 35,
+        "code": "2ORQUIEO",
+        "name": "ORQUIDEAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 36,
+        "code": "2PALMEEO",
+        "name": "LAS PALMERAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 37,
+        "code": "2PETITEO",
+        "name": "PETIT THOUARS",
+        "sentido": "EO"
+      },
+      {
+        "id": 38,
+        "code": "2SALAVEO",
+        "name": "SALAVERRY",
+        "sentido": "EO"
+      },
+      {
+        "id": 39,
+        "code": "2NOGALEO",
+        "name": "LOS NOGALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 40,
+        "code": "2QUINOEO",
+        "name": "QUI�ONES",
+        "sentido": "EO"
+      },
+      {
+        "id": 41,
+        "code": "2CAMACOE",
+        "name": "CAMACHO",
+        "sentido": "OE"
+      },
+      {
+        "id": 42,
+        "code": "2PARQUEO",
+        "name": "PARQUE DE LAS LEYENDAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 43,
+        "code": "2INGE1OE",
+        "name": "LOS INGENIEROS",
+        "sentido": "OE"
+      },
+      {
+        "id": 44,
+        "code": "2BERLIEO",
+        "name": "BERLIN",
+        "sentido": "EO"
+      },
+      {
+        "id": 45,
+        "code": "2CERESEO",
+        "name": "CERES",
+        "sentido": "EO"
+      },
+      {
+        "id": 46,
+        "code": "2HOLANEO",
+        "name": "HOLANDA",
+        "sentido": "EO"
+      },
+      {
+        "id": 47,
+        "code": "2VISTAEO",
+        "name": "VISTA ALEGRE",
+        "sentido": "EO"
+      },
+      {
+        "id": 48,
+        "code": "2CAL66OE",
+        "name": "CALLE 66",
+        "sentido": "OE"
+      },
+      {
+        "id": 49,
+        "code": "2VENEZOE",
+        "name": "VENEZUELA",
+        "sentido": "OE"
+      },
+      {
+        "id": 50,
+        "code": "2HUAROEO",
+        "name": "HUAROCHIRI",
+        "sentido": "EO"
+      },
+      {
+        "id": 51,
+        "code": "2MOLINEO",
+        "name": "LA MOLINA",
+        "sentido": "EO"
+      },
+      {
+        "id": 52,
+        "code": "2AVIACEO",
+        "name": "AVIACION",
+        "sentido": "EO"
+      },
+      {
+        "id": 53,
+        "code": "2FLORAEO",
+        "name": "FLORA TRISTAN",
+        "sentido": "EO"
+      },
+      {
+        "id": 54,
+        "code": "2JCKEYEO",
+        "name": "EVITAMIENTO",
+        "sentido": "EO"
+      },
+      {
+        "id": 55,
+        "code": "2MONUMEO",
+        "name": "MONUMENTAL",
+        "sentido": "EO"
+      },
+      {
+        "id": 56,
+        "code": "2SNLUIEO",
+        "name": "SAN LUIS",
+        "sentido": "EO"
+      },
+      {
+        "id": 57,
+        "code": "2BOMBEOE",
+        "name": "BOMBEROS",
+        "sentido": "OE"
+      },
+      {
+        "id": 58,
+        "code": "2CANAMOE",
+        "name": "CANAMELARES",
+        "sentido": "OE"
+      },
+      {
+        "id": 59,
+        "code": "2HTORROE",
+        "name": "HAYA DE LA TORRE",
+        "sentido": "OE"
+      },
+      {
+        "id": 60,
+        "code": "2INSUROE",
+        "name": "LOS INSURGENTES",
+        "sentido": "OE"
+      },
+      {
+        "id": 61,
+        "code": "2NAVALOE",
+        "name": "BASE NAVAL",
+        "sentido": "OE"
+      },
+      {
+        "id": 62,
+        "code": "2OVPEROE",
+        "name": "OVALO LA PERLA",
+        "sentido": "OE"
+      },
+      {
+        "id": 63,
+        "code": "2CIRCUOE",
+        "name": "CIRCUNVALACION",
+        "sentido": "OE"
+      },
+      {
+        "id": 64,
+        "code": "2BARTOOE",
+        "name": "BARTOLOME HERRERA",
+        "sentido": "OE"
+      },
+      {
+        "id": 65,
+        "code": "2CAMACHEO",
+        "name": "CAMACHO",
+        "sentido": "EO"
+      },
+      {
+        "id": 66,
+        "code": "2GUARDEO",
+        "name": "GUARDIA CIVIL",
+        "sentido": "EO"
+      },
+      {
+        "id": 67,
+        "code": "2INGENEO",
+        "name": "LOS INGENIEROS",
+        "sentido": "EO"
+      },
+      {
+        "id": 68,
+        "code": "2PARISEO",
+        "name": "PARIS",
+        "sentido": "EO"
+      },
+      {
+        "id": 69,
+        "code": "2CIRCUEO",
+        "name": "CIRCUNVALACION",
+        "sentido": "EO"
+      },
+      {
+        "id": 70,
+        "code": "2ULIMAEO",
+        "name": "LA FLORESTA",
+        "sentido": "EO"
+      },
+      {
+        "id": 71,
+        "code": "2RSATOOE",
+        "name": "ROSA TORO",
+        "sentido": "OE"
+      },
+      {
+        "id": 72,
+        "code": "2FRUTALEO",
+        "name": "LOS FRUTALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 73,
+        "code": "2RSATOEO",
+        "name": "ROSA TORO",
+        "sentido": "EO"
+      },
+      {
+        "id": 74,
+        "code": "2JPPEREO",
+        "name": "PERSHING",
+        "sentido": "EO"
+      },
+      {
+        "id": 75,
+        "code": "2ESCAREO",
+        "name": "RAFAEL ESCARDO",
+        "sentido": "EO"
+      },
+      {
+        "id": 76,
+        "code": "2MONUMOE",
+        "name": "MONUMENTAL",
+        "sentido": "OE"
+      },
+      {
+        "id": 77,
+        "code": "2CLINICEO",
+        "name": "CLINICA",
+        "sentido": "EO"
+      },
+      {
+        "id": 78,
+        "code": "2HUAROOE",
+        "name": "HUAROCHIRI",
+        "sentido": "OE"
+      },
+      {
+        "id": 79,
+        "code": "2FRUTAOE",
+        "name": "LOS FRUTALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 80,
+        "code": "2BARTOEO",
+        "name": "BARTOLOME HERRERA",
+        "sentido": "EO"
+      },
+      {
+        "id": 81,
+        "code": "2HOLANOE",
+        "name": "HOLANDA",
+        "sentido": "OE"
+      },
+      {
+        "id": 82,
+        "code": "2JBORJEO",
+        "name": "J. BORJA",
+        "sentido": "EO"
+      },
+      {
+        "id": 83,
+        "code": "2HTORREEO",
+        "name": "HAYA DE LA TORRE",
+        "sentido": "EO"
+      },
+      {
+        "id": 84,
+        "code": "2JMARTIEO",
+        "name": "JOSE MARTI",
+        "sentido": "EO"
+      },
+      {
+        "id": 85,
+        "code": "2FAUCEEO",
+        "name": "FAUCETT",
+        "sentido": "EO"
+      },
+      {
+        "id": 86,
+        "code": "2OVPERLEO",
+        "name": "OVALO LA PERLA",
+        "sentido": "EO"
+      },
+      {
+        "id": 87,
+        "code": "2INSUREO",
+        "name": "LOS INSURGENTES",
+        "sentido": "EO"
+      },
+      {
+        "id": 88,
+        "code": "2BOMBEO",
+        "name": "BOMBEROS",
+        "sentido": "EO"
+      }
+    ]
+  },
+  {
+    "id": "C204",
+    "code": "204",
+    "name": "Línea 204",
+    "label": "Corredor 1 — Javier Prado",
+    "color": "#9333ea",
+    "stops": [
+      {
+        "id": 0,
+        "code": "2ALIGAEO",
+        "name": "ALIAGA",
+        "sentido": "EO"
+      },
+      {
+        "id": 1,
+        "code": "2ARENAEO",
+        "name": "ARENALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 2,
+        "code": "2LSPALMEEO",
+        "name": "LAS PALMERAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 3,
+        "code": "2NOGALEO",
+        "name": "LOS NOGALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 4,
+        "code": "2ORQDIEO",
+        "name": "ORQUIDEAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 5,
+        "code": "2PERSHINGEO",
+        "name": "PERSHING",
+        "sentido": "EO"
+      },
+      {
+        "id": 6,
+        "code": "2PETTHUAEO",
+        "name": "PETIT THOUARS",
+        "sentido": "EO"
+      },
+      {
+        "id": 7,
+        "code": "2BELLOOE",
+        "name": "BELLO HORIZONTE",
+        "sentido": "OE"
+      },
+      {
+        "id": 8,
+        "code": "2FLORAOE",
+        "name": "FLORA TRISTAN",
+        "sentido": "OE"
+      },
+      {
+        "id": 9,
+        "code": "2PALACOE",
+        "name": "ENRIQUE PALACIOS",
+        "sentido": "OE"
+      },
+      {
+        "id": 10,
+        "code": "2PUNTOE",
+        "name": "LA PUNTA",
+        "sentido": "OE"
+      },
+      {
+        "id": 11,
+        "code": "2UNOOE",
+        "name": "UNO",
+        "sentido": "OE"
+      },
+      {
+        "id": 12,
+        "code": "2ASUNOE",
+        "name": "ASUNCION",
+        "sentido": "OE"
+      },
+      {
+        "id": 13,
+        "code": "2LGRANOE",
+        "name": "LAGUNA GRANDE",
+        "sentido": "OE"
+      },
+      {
+        "id": 14,
+        "code": "2MOLINOE",
+        "name": "LA MOLINA",
+        "sentido": "OE"
+      },
+      {
+        "id": 15,
+        "code": "2MOLICOE",
+        "name": "MOLICENTRO",
+        "sentido": "OE"
+      },
+      {
+        "id": 16,
+        "code": "2AVIAVOE",
+        "name": "AVIACION",
+        "sentido": "OE"
+      },
+      {
+        "id": 17,
+        "code": "2CAMACHOOE",
+        "name": "CAMACHO",
+        "sentido": "OE"
+      },
+      {
+        "id": 18,
+        "code": "2JOCKOE",
+        "name": "JOCKEY",
+        "sentido": "OE"
+      },
+      {
+        "id": 19,
+        "code": "2MASIADOE",
+        "name": "MASIAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 20,
+        "code": "2ORQUDEASOE",
+        "name": "ORQUIDEAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 21,
+        "code": "2PARODIOE",
+        "name": "PARODI",
+        "sentido": "OE"
+      },
+      {
+        "id": 22,
+        "code": "2PETITOE",
+        "name": "PETIT THOUARS",
+        "sentido": "OE"
+      },
+      {
+        "id": 23,
+        "code": "2ARUBAOE",
+        "name": "ARUBA",
+        "sentido": "OE"
+      },
+      {
+        "id": 24,
+        "code": "2INGOE",
+        "name": "LOS INGENIEROS",
+        "sentido": "OE"
+      },
+      {
+        "id": 25,
+        "code": "2PARQOE",
+        "name": "PARQUE",
+        "sentido": "OE"
+      },
+      {
+        "id": 26,
+        "code": "2SAUCEOE",
+        "name": "SAUCES",
+        "sentido": "OE"
+      },
+      {
+        "id": 27,
+        "code": "2VMALAOE",
+        "name": "VICTOR MALASQUEZ",
+        "sentido": "OE"
+      },
+      {
+        "id": 28,
+        "code": "2CA15EO",
+        "name": "CA. 15",
+        "sentido": "EO"
+      },
+      {
+        "id": 29,
+        "code": "2EPARQEO",
+        "name": "ECOPARQUE",
+        "sentido": "EO"
+      },
+      {
+        "id": 30,
+        "code": "2HUERTEO",
+        "name": "HUERTOS",
+        "sentido": "EO"
+      },
+      {
+        "id": 31,
+        "code": "2MONACEO",
+        "name": "MONACO",
+        "sentido": "EO"
+      },
+      {
+        "id": 32,
+        "code": "2MSELVEO",
+        "name": "MADRESELVA",
+        "sentido": "EO"
+      },
+      {
+        "id": 33,
+        "code": "2PARAD1EO",
+        "name": "PARADERO 1",
+        "sentido": "EO"
+      },
+      {
+        "id": 34,
+        "code": "2SANCRISEO",
+        "name": "SAN CRISTOBAL",
+        "sentido": "EO"
+      },
+      {
+        "id": 35,
+        "code": "2SAUCEEO",
+        "name": "SAUCES",
+        "sentido": "EO"
+      },
+      {
+        "id": 36,
+        "code": "2SJUANBAEO",
+        "name": "SAN JUAN BAUTISTA",
+        "sentido": "EO"
+      },
+      {
+        "id": 37,
+        "code": "2UNOEO",
+        "name": "UNO",
+        "sentido": "EO"
+      },
+      {
+        "id": 38,
+        "code": "2VMALAEO",
+        "name": "VICTOR MALASQUEZ",
+        "sentido": "EO"
+      },
+      {
+        "id": 39,
+        "code": "23MARIEO",
+        "name": "TRES MARIAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 40,
+        "code": "2CA10EO",
+        "name": "CA. 10",
+        "sentido": "EO"
+      },
+      {
+        "id": 41,
+        "code": "2ENSENAEO",
+        "name": "ENSENADA",
+        "sentido": "EO"
+      },
+      {
+        "id": 42,
+        "code": "2NARANEO",
+        "name": "NARANJOS",
+        "sentido": "EO"
+      },
+      {
+        "id": 43,
+        "code": "2PALACEO",
+        "name": "ENRIQUE PALACIOS",
+        "sentido": "EO"
+      },
+      {
+        "id": 44,
+        "code": "2UNIONEO",
+        "name": "UNION",
+        "sentido": "EO"
+      },
+      {
+        "id": 45,
+        "code": "2MARINOE",
+        "name": "LA MARINA",
+        "sentido": "OE"
+      },
+      {
+        "id": 46,
+        "code": "2CA39EO",
+        "name": "CA.39",
+        "sentido": "EO"
+      },
+      {
+        "id": 47,
+        "code": "2CA62EO",
+        "name": "CA. 62",
+        "sentido": "EO"
+      },
+      {
+        "id": 48,
+        "code": "2GRIFOEO",
+        "name": "GRIFO",
+        "sentido": "EO"
+      },
+      {
+        "id": 49,
+        "code": "2NAPLEO",
+        "name": "NAPLO",
+        "sentido": "EO"
+      },
+      {
+        "id": 50,
+        "code": "2AQUESEO",
+        "name": "A. QUESADA",
+        "sentido": "EO"
+      },
+      {
+        "id": 51,
+        "code": "2AVIAVEO",
+        "name": "AVIACION",
+        "sentido": "EO"
+      },
+      {
+        "id": 52,
+        "code": "2CENTEEO",
+        "name": "CENTENARIO",
+        "sentido": "EO"
+      },
+      {
+        "id": 53,
+        "code": "2CIRCUEO",
+        "name": "CIRCUNVALACION",
+        "sentido": "EO"
+      },
+      {
+        "id": 54,
+        "code": "2EVITEO",
+        "name": "EVITAMIENTO",
+        "sentido": "EO"
+      },
+      {
+        "id": 55,
+        "code": "2FLORAEO",
+        "name": "FLORA TRISTAN",
+        "sentido": "EO"
+      },
+      {
+        "id": 56,
+        "code": "2INGEO",
+        "name": "LOS INGENIEROS",
+        "sentido": "EO"
+      },
+      {
+        "id": 57,
+        "code": "2MASIAEO",
+        "name": "MASIAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 58,
+        "code": "2MOLICEO",
+        "name": "MOLICENTRO",
+        "sentido": "EO"
+      },
+      {
+        "id": 59,
+        "code": "2SUCREOE",
+        "name": "SUCRE",
+        "sentido": "OE"
+      },
+      {
+        "id": 60,
+        "code": "2DUNAEO",
+        "name": "LAS DUNAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 61,
+        "code": "2PUNTEO",
+        "name": "LA PUNTA",
+        "sentido": "EO"
+      },
+      {
+        "id": 62,
+        "code": "2SBAUTISEO",
+        "name": "OV. SAN JUAN BAUTISTA",
+        "sentido": "EO"
+      },
+      {
+        "id": 63,
+        "code": "2GUACIVLEO",
+        "name": "GUARDIA CIVIL",
+        "sentido": "EO"
+      },
+      {
+        "id": 64,
+        "code": "2BRASILOE",
+        "name": "BRASIL",
+        "sentido": "OE"
+      },
+      {
+        "id": 65,
+        "code": "2GPRADAOE",
+        "name": "GONZALES PRADA",
+        "sentido": "OE"
+      },
+      {
+        "id": 66,
+        "code": "2UNIVEOE",
+        "name": "UNIVERSITARIA",
+        "sentido": "OE"
+      },
+      {
+        "id": 67,
+        "code": "2CAMACHEO",
+        "name": "CAMACHO",
+        "sentido": "EO"
+      },
+      {
+        "id": 68,
+        "code": "2HUAROEO",
+        "name": "HUAROCHIRI",
+        "sentido": "EO"
+      },
+      {
+        "id": 69,
+        "code": "2LGRANEO",
+        "name": "LAGUNA GRANDE",
+        "sentido": "EO"
+      },
+      {
+        "id": 70,
+        "code": "2MOLINEO",
+        "name": "LA MOLINA",
+        "sentido": "EO"
+      },
+      {
+        "id": 71,
+        "code": "2SLUISEO",
+        "name": "SAN LUIS",
+        "sentido": "EO"
+      },
+      {
+        "id": 72,
+        "code": "2LAFLOREO",
+        "name": "LA FLORESTA",
+        "sentido": "EO"
+      },
+      {
+        "id": 73,
+        "code": "2QUI�OEO",
+        "name": "QUI�ONES",
+        "sentido": "EO"
+      },
+      {
+        "id": 74,
+        "code": "2ARENAOE",
+        "name": "ARENALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 75,
+        "code": "2CIRCUOE",
+        "name": "CIRCUNVALACION",
+        "sentido": "OE"
+      },
+      {
+        "id": 76,
+        "code": "2FLORESOE",
+        "name": "LAS FLORES",
+        "sentido": "OE"
+      },
+      {
+        "id": 77,
+        "code": "2GUADCIVLOE",
+        "name": "GUARDIA CIVIL",
+        "sentido": "OE"
+      },
+      {
+        "id": 78,
+        "code": "2NICOLARRLOE",
+        "name": "CLINICA RICARDO PALMA",
+        "sentido": "OE"
+      },
+      {
+        "id": 79,
+        "code": "2RAFAELOE",
+        "name": "RAFAEL ESCARDO",
+        "sentido": "OE"
+      },
+      {
+        "id": 80,
+        "code": "2SLUISOE",
+        "name": "SAN LUIS",
+        "sentido": "OE"
+      },
+      {
+        "id": 81,
+        "code": "2PARLEYEOE",
+        "name": "PARQUE DE LAS LEYENDAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 82,
+        "code": "2BELLOEO",
+        "name": "BELLO HORIZONTE",
+        "sentido": "EO"
+      },
+      {
+        "id": 83,
+        "code": "2LOCEDROOE",
+        "name": "LOS CEDROS",
+        "sentido": "OE"
+      },
+      {
+        "id": 84,
+        "code": "2ALIGAOE",
+        "name": "ALIAGA",
+        "sentido": "OE"
+      },
+      {
+        "id": 85,
+        "code": "2EMBAJOE",
+        "name": "EMBAJADA",
+        "sentido": "OE"
+      },
+      {
+        "id": 86,
+        "code": "2ROSATOROE",
+        "name": "ROSA TORO",
+        "sentido": "OE"
+      },
+      {
+        "id": 87,
+        "code": "2BARTOHEOE",
+        "name": "BARTOLOME HERRERA",
+        "sentido": "OE"
+      },
+      {
+        "id": 88,
+        "code": "2SOLEO",
+        "name": "EL SOL",
+        "sentido": "EO"
+      },
+      {
+        "id": 89,
+        "code": "2PALMEROE",
+        "name": "LAS PALMERAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 90,
+        "code": "2BRASILEO",
+        "name": "BRASIL",
+        "sentido": "EO"
+      },
+      {
+        "id": 91,
+        "code": "2ROSATOREO",
+        "name": "ROSA TORO",
+        "sentido": "EO"
+      },
+      {
+        "id": 92,
+        "code": "2GPRADAEO",
+        "name": "GONZALES PRADA",
+        "sentido": "EO"
+      },
+      {
+        "id": 93,
+        "code": "2EMBAJEO",
+        "name": "EMBAJADA",
+        "sentido": "EO"
+      },
+      {
+        "id": 94,
+        "code": "2CLINICEO",
+        "name": "CLINICA",
+        "sentido": "EO"
+      },
+      {
+        "id": 95,
+        "code": "2ULIMOE",
+        "name": "UNIVERSIDAD DE LIMA",
+        "sentido": "OE"
+      },
+      {
+        "id": 96,
+        "code": "2SUCREEO",
+        "name": "SUCRE",
+        "sentido": "EO"
+      },
+      {
+        "id": 97,
+        "code": "2UNIVEEO",
+        "name": "UNIVERSITARIA",
+        "sentido": "EO"
+      },
+      {
+        "id": 98,
+        "code": "2OVBAUTIOE",
+        "name": "OVALO SAN JUAN BAUTISTA",
+        "sentido": "OE"
+      },
+      {
+        "id": 99,
+        "code": "2FRUTALESOE",
+        "name": "LOS FRUTALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 100,
+        "code": "2MSELVOE",
+        "name": "MADRESELVA",
+        "sentido": "OE"
+      },
+      {
+        "id": 101,
+        "code": "2RLAGOOE",
+        "name": "RINCONADA DEL LAGO",
+        "sentido": "OE"
+      },
+      {
+        "id": 102,
+        "code": "2CA08OE",
+        "name": "CA. 08",
+        "sentido": "OE"
+      },
+      {
+        "id": 103,
+        "code": "2CA15OE",
+        "name": "CA. 15",
+        "sentido": "OE"
+      },
+      {
+        "id": 104,
+        "code": "2PARADE1OE",
+        "name": "PARADERO 1",
+        "sentido": "OE"
+      },
+      {
+        "id": 105,
+        "code": "2BARTLMEO",
+        "name": "BARTOLOME HERRERA",
+        "sentido": "EO"
+      },
+      {
+        "id": 106,
+        "code": "2JBORJA2EO",
+        "name": "J. BORJA",
+        "sentido": "EO"
+      },
+      {
+        "id": 107,
+        "code": "2RLAGOEO",
+        "name": "RINCONADA DEL LAGO",
+        "sentido": "EO"
+      },
+      {
+        "id": 108,
+        "code": "2SOLOE",
+        "name": "EL SOL",
+        "sentido": "OE"
+      },
+      {
+        "id": 109,
+        "code": "2FICUSOE",
+        "name": "LOS FICUS",
+        "sentido": "OE"
+      },
+      {
+        "id": 110,
+        "code": "2PLAZSANEO",
+        "name": "PLAZA SAN MIGUEL",
+        "sentido": "EO"
+      },
+      {
+        "id": 111,
+        "code": "2PARQLEYEO",
+        "name": "PARQUE DE LAS LEYENDAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 112,
+        "code": "2SANJNBAUOE",
+        "name": "SAN JUAN BAUTISTA",
+        "sentido": "OE"
+      },
+      {
+        "id": 113,
+        "code": "2SANCRISOE",
+        "name": "SAN CRISTOBAL",
+        "sentido": "OE"
+      },
+      {
+        "id": 114,
+        "code": "2DUNAOE",
+        "name": "LAS DUNAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 115,
+        "code": "2MIAMOE",
+        "name": "MIAMI",
+        "sentido": "OE"
+      },
+      {
+        "id": 116,
+        "code": "2NAPLOE",
+        "name": "NAPLO",
+        "sentido": "OE"
+      },
+      {
+        "id": 117,
+        "code": "2RAFAELEO",
+        "name": "RAFAEL ESCARDO",
+        "sentido": "EO"
+      },
+      {
+        "id": 118,
+        "code": "23MARIOE",
+        "name": "TRES MARIAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 119,
+        "code": "2SBAUTISOE",
+        "name": "SAN JUAN BAUTISTA 2",
+        "sentido": "OE"
+      }
+    ]
+  },
+  {
+    "id": "C206",
+    "code": "206",
+    "name": "Línea 206",
+    "label": "Corredor 1 — Javier Prado",
+    "color": "#7c3aed",
+    "stops": [
+      {
+        "id": 0,
+        "code": "2UNIVEREO",
+        "name": "UNIVERSITARIA",
+        "sentido": "EO"
+      },
+      {
+        "id": 1,
+        "code": "2NOGALEO",
+        "name": "LOS NOGALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 2,
+        "code": "2PALMEO",
+        "name": "LAS PALMERAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 3,
+        "code": "2MOLINOE",
+        "name": "LA MOLINA",
+        "sentido": "OE"
+      },
+      {
+        "id": 4,
+        "code": "2AVIACOE",
+        "name": "AVIACION",
+        "sentido": "OE"
+      },
+      {
+        "id": 5,
+        "code": "2BASADOE",
+        "name": "ARENALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 6,
+        "code": "2GESCOBOE",
+        "name": "GREGORIO ESCOBEDO",
+        "sentido": "OE"
+      },
+      {
+        "id": 7,
+        "code": "2JCKEYOE",
+        "name": "JOCKEY",
+        "sentido": "OE"
+      },
+      {
+        "id": 8,
+        "code": "2LFLOE",
+        "name": "LAS FLORES",
+        "sentido": "OE"
+      },
+      {
+        "id": 9,
+        "code": "2MASIAOE",
+        "name": "MASIAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 10,
+        "code": "2PALMOE",
+        "name": "LAS PALMERAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 11,
+        "code": "2SNLUISOE",
+        "name": "SAN LUIS",
+        "sentido": "OE"
+      },
+      {
+        "id": 12,
+        "code": "2LOFRUTALOE",
+        "name": "LOS FRUTALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 13,
+        "code": "2PRADOE",
+        "name": "EL PRADO",
+        "sentido": "OE"
+      },
+      {
+        "id": 14,
+        "code": "2CLINIOE",
+        "name": "CLINICA RICARDO PALMA",
+        "sentido": "OE"
+      },
+      {
+        "id": 15,
+        "code": "2ROSATOROE",
+        "name": "ROSA TORO",
+        "sentido": "OE"
+      },
+      {
+        "id": 16,
+        "code": "2ULIMAOE",
+        "name": "UNIVERSIDAD DE LIMA",
+        "sentido": "OE"
+      },
+      {
+        "id": 17,
+        "code": "2GESCOBEO",
+        "name": "GREGORIO ESCOBEDO",
+        "sentido": "EO"
+      },
+      {
+        "id": 18,
+        "code": "2SUCREEO",
+        "name": "SUCRE",
+        "sentido": "EO"
+      },
+      {
+        "id": 19,
+        "code": "2FACUDOE",
+        "name": "FACULTAD DE DERECHO",
+        "sentido": "OE"
+      },
+      {
+        "id": 20,
+        "code": "2PAGUAOE",
+        "name": "PASEO DE AGUAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 21,
+        "code": "2CORDIOE",
+        "name": "CORDILLERA BLANCA",
+        "sentido": "OE"
+      },
+      {
+        "id": 22,
+        "code": "2SECOYOE",
+        "name": "SECOYAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 23,
+        "code": "2MUNIVEROE",
+        "name": "LA MARINA /UNIV.",
+        "sentido": "OE"
+      },
+      {
+        "id": 24,
+        "code": "2PARODOE",
+        "name": "PARODI",
+        "sentido": "OE"
+      },
+      {
+        "id": 25,
+        "code": "2PETITOE",
+        "name": "PETIT THOUARS",
+        "sentido": "OE"
+      },
+      {
+        "id": 26,
+        "code": "2SALAVOE",
+        "name": "SALAVERRY",
+        "sentido": "OE"
+      },
+      {
+        "id": 27,
+        "code": "2SUCREOE",
+        "name": "SUCRE",
+        "sentido": "OE"
+      },
+      {
+        "id": 28,
+        "code": "2CAMACHOOE",
+        "name": "CAMACHO",
+        "sentido": "OE"
+      },
+      {
+        "id": 29,
+        "code": "2SMAROE",
+        "name": "SAN MARCOS",
+        "sentido": "OE"
+      },
+      {
+        "id": 30,
+        "code": "2FACUDEO",
+        "name": "FACULTAD DE DERECHO",
+        "sentido": "EO"
+      },
+      {
+        "id": 31,
+        "code": "2AVIACEO",
+        "name": "AVIACION",
+        "sentido": "EO"
+      },
+      {
+        "id": 32,
+        "code": "2BAMBUEO",
+        "name": "BAMBUES",
+        "sentido": "EO"
+      },
+      {
+        "id": 33,
+        "code": "2BOSQUEEO",
+        "name": "EL BOSQUE",
+        "sentido": "EO"
+      },
+      {
+        "id": 34,
+        "code": "2CASTIEO",
+        "name": "CASTILLA",
+        "sentido": "EO"
+      },
+      {
+        "id": 35,
+        "code": "2CHCHAEO",
+        "name": "CHAN CHAN",
+        "sentido": "EO"
+      },
+      {
+        "id": 36,
+        "code": "2CIRCUEO",
+        "name": "CIRCUNVALACION",
+        "sentido": "EO"
+      },
+      {
+        "id": 37,
+        "code": "2FACUMEO",
+        "name": "FACULTAD DE MEDICINA",
+        "sentido": "EO"
+      },
+      {
+        "id": 38,
+        "code": "2GUACIVLEO",
+        "name": "GUARDIA CIVIL",
+        "sentido": "EO"
+      },
+      {
+        "id": 39,
+        "code": "2JCKEYEO",
+        "name": "EVITAMIENTO",
+        "sentido": "EO"
+      },
+      {
+        "id": 40,
+        "code": "2MOLI6EO",
+        "name": "LA MOLINA",
+        "sentido": "EO"
+      },
+      {
+        "id": 41,
+        "code": "2PASEOEO",
+        "name": "PASEO DE AGUAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 42,
+        "code": "2SAUCEEO",
+        "name": "LOS SAUCES",
+        "sentido": "EO"
+      },
+      {
+        "id": 43,
+        "code": "2TEMPLEO",
+        "name": "TEMPLO SANTA MARIA",
+        "sentido": "EO"
+      },
+      {
+        "id": 44,
+        "code": "2VASCOEO",
+        "name": "VASCONGADAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 45,
+        "code": "2MINISEO",
+        "name": "MINIST. DE AGRICULTURA",
+        "sentido": "EO"
+      },
+      {
+        "id": 46,
+        "code": "2CATOOE",
+        "name": "CATOLICA",
+        "sentido": "OE"
+      },
+      {
+        "id": 47,
+        "code": "2GUADCIVLOE",
+        "name": "GUARDIA CIVIL",
+        "sentido": "OE"
+      },
+      {
+        "id": 48,
+        "code": "2MAROE",
+        "name": "LA MAR",
+        "sentido": "OE"
+      },
+      {
+        "id": 49,
+        "code": "2HMILIOE",
+        "name": "HOSPITAL MILITAR",
+        "sentido": "OE"
+      },
+      {
+        "id": 50,
+        "code": "2JPOE",
+        "name": "JAVIER PRADO",
+        "sentido": "OE"
+      },
+      {
+        "id": 51,
+        "code": "2CASTILOE",
+        "name": "CASTILLA",
+        "sentido": "OE"
+      },
+      {
+        "id": 52,
+        "code": "2BHERREOE",
+        "name": "BARTOLOME HERRERA",
+        "sentido": "OE"
+      },
+      {
+        "id": 53,
+        "code": "2CEDROE",
+        "name": "LOS CEDROS",
+        "sentido": "OE"
+      },
+      {
+        "id": 54,
+        "code": "2ORQDIEASOE",
+        "name": "ORQUIDEAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 55,
+        "code": "2SNLUISEO",
+        "name": "SAN LUIS",
+        "sentido": "EO"
+      },
+      {
+        "id": 56,
+        "code": "2CAMACHEO",
+        "name": "CAMACHO",
+        "sentido": "EO"
+      },
+      {
+        "id": 57,
+        "code": "2CIAM EO",
+        "name": "CIAM",
+        "sentido": "EO"
+      },
+      {
+        "id": 58,
+        "code": "2PERSHEO",
+        "name": "PERSHING",
+        "sentido": "EO"
+      },
+      {
+        "id": 59,
+        "code": "2QUINOE",
+        "name": "QUI�ONES",
+        "sentido": "EO"
+      },
+      {
+        "id": 60,
+        "code": "2ROSATOREO",
+        "name": "ROSA TORO",
+        "sentido": "EO"
+      },
+      {
+        "id": 61,
+        "code": "2ULIMAEO",
+        "name": "LA FLORESTA",
+        "sentido": "EO"
+      },
+      {
+        "id": 62,
+        "code": "2MASIAEO",
+        "name": "MASIAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 63,
+        "code": "2PETITEO",
+        "name": "PETIT THOUARS",
+        "sentido": "EO"
+      },
+      {
+        "id": 64,
+        "code": "2SALAVEO",
+        "name": "SALAVERRY",
+        "sentido": "EO"
+      },
+      {
+        "id": 65,
+        "code": "4CLINICEO",
+        "name": "CLINICA",
+        "sentido": "EO"
+      },
+      {
+        "id": 66,
+        "code": "2BHERREEO",
+        "name": "BARTOLOME HERRERA",
+        "sentido": "EO"
+      },
+      {
+        "id": 67,
+        "code": "2ARENEO",
+        "name": "ARENALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 68,
+        "code": "2FRUTAEO",
+        "name": "LOS FRUTALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 69,
+        "code": "2CIRCUOE",
+        "name": "CIRCUNVALACION",
+        "sentido": "OE"
+      },
+      {
+        "id": 70,
+        "code": "2ORQDEASEO",
+        "name": "ORQUIDEAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 71,
+        "code": "2HMILIEO",
+        "name": "HOSPITAL MILITAR",
+        "sentido": "EO"
+      },
+      {
+        "id": 72,
+        "code": "2MINISOE",
+        "name": "MINIST. DE AGRICULTURA",
+        "sentido": "OE"
+      },
+      {
+        "id": 73,
+        "code": "2JBORJAEO",
+        "name": "J. BORJA",
+        "sentido": "EO"
+      },
+      {
+        "id": 74,
+        "code": "2CHANOE",
+        "name": "CHAN CHAN",
+        "sentido": "OE"
+      },
+      {
+        "id": 75,
+        "code": "2CORREGOE",
+        "name": "CORREGIDOR",
+        "sentido": "OE"
+      },
+      {
+        "id": 76,
+        "code": "2SAUC6OE",
+        "name": "LOS SAUCES",
+        "sentido": "OE"
+      },
+      {
+        "id": 77,
+        "code": "2MONTEOE",
+        "name": "EL MONTE",
+        "sentido": "OE"
+      },
+      {
+        "id": 78,
+        "code": "2ESPNPOE",
+        "name": "ESCUELA PNP",
+        "sentido": "OE"
+      },
+      {
+        "id": 79,
+        "code": "2MAREO",
+        "name": "LA MAR",
+        "sentido": "EO"
+      },
+      {
+        "id": 80,
+        "code": "2CATOEO",
+        "name": "CATOLICA",
+        "sentido": "EO"
+      }
+    ]
+  },
+  {
+    "id": "C209",
+    "code": "209",
+    "name": "Línea 209",
+    "label": "Corredor 1 — Javier Prado",
+    "color": "#6d28d9",
+    "stops": [
+      {
+        "id": 0,
+        "code": "2MO&JPOE",
+        "name": "LA MOLINA",
+        "sentido": "OE"
+      },
+      {
+        "id": 1,
+        "code": "2CAMACOE",
+        "name": "CAMACHO",
+        "sentido": "OE"
+      },
+      {
+        "id": 2,
+        "code": "2JCKEYOE",
+        "name": "JOCKEY",
+        "sentido": "OE"
+      },
+      {
+        "id": 3,
+        "code": "2RSATOOE",
+        "name": "ROSA TORO",
+        "sentido": "OE"
+      },
+      {
+        "id": 4,
+        "code": "2SNLUIOE",
+        "name": "SAN LUIS",
+        "sentido": "OE"
+      },
+      {
+        "id": 5,
+        "code": "2FL&COOE",
+        "name": "FLORA TRISTAN & CONST.",
+        "sentido": "OE"
+      },
+      {
+        "id": 6,
+        "code": "2INDUSOE",
+        "name": "INDUSTRIALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 7,
+        "code": "2AVIACOE",
+        "name": "AVIACION",
+        "sentido": "OE"
+      },
+      {
+        "id": 8,
+        "code": "2BASADOE",
+        "name": "ARENALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 9,
+        "code": "2CIRCUOE",
+        "name": "CIRCUNVALACION",
+        "sentido": "OE"
+      },
+      {
+        "id": 10,
+        "code": "2CLINIOE",
+        "name": "CLINICA RICARDO PALMA",
+        "sentido": "OE"
+      },
+      {
+        "id": 11,
+        "code": "2FLORSOE",
+        "name": "LAS FLORES",
+        "sentido": "OE"
+      },
+      {
+        "id": 12,
+        "code": "2GREGOOE",
+        "name": "GREGORIO ESCOBEDO",
+        "sentido": "OE"
+      },
+      {
+        "id": 13,
+        "code": "2HOSPMOE",
+        "name": "HOSPITAL MILITAR",
+        "sentido": "OE"
+      },
+      {
+        "id": 14,
+        "code": "2JPRADOOE",
+        "name": "JAVIER PRADO",
+        "sentido": "OE"
+      },
+      {
+        "id": 15,
+        "code": "2MASIAOE",
+        "name": "MASIAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 16,
+        "code": "2PALMEOE",
+        "name": "LAS PALMERAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 17,
+        "code": "2PARODOE",
+        "name": "PARODI",
+        "sentido": "OE"
+      },
+      {
+        "id": 18,
+        "code": "2PETITOE",
+        "name": "PETIT THOUARS",
+        "sentido": "OE"
+      },
+      {
+        "id": 19,
+        "code": "2SALAVOE",
+        "name": "SALAVERRY",
+        "sentido": "OE"
+      },
+      {
+        "id": 20,
+        "code": "2SUCREOE",
+        "name": "SUCRE",
+        "sentido": "OE"
+      },
+      {
+        "id": 21,
+        "code": "2GREGOEO",
+        "name": "GREGORIO ESCOBEDO",
+        "sentido": "EO"
+      },
+      {
+        "id": 22,
+        "code": "2HOSPMEO",
+        "name": "HOSPITAL MILITAR",
+        "sentido": "EO"
+      },
+      {
+        "id": 23,
+        "code": "2SALAVEO",
+        "name": "SALAVERRY",
+        "sentido": "EO"
+      },
+      {
+        "id": 24,
+        "code": "2ULIMAOE",
+        "name": "UNIVERSIDAD DE LIMA",
+        "sentido": "OE"
+      },
+      {
+        "id": 25,
+        "code": "2TAGOREO",
+        "name": "TAGORES",
+        "sentido": "EO"
+      },
+      {
+        "id": 26,
+        "code": "2SNMAROE",
+        "name": "SAN MARCOS",
+        "sentido": "OE"
+      },
+      {
+        "id": 27,
+        "code": "2HUAROEO",
+        "name": "HUAROCHIRI",
+        "sentido": "EO"
+      },
+      {
+        "id": 28,
+        "code": "2JOSFELEO",
+        "name": "JOSFEL",
+        "sentido": "EO"
+      },
+      {
+        "id": 29,
+        "code": "2MAYOREO",
+        "name": "MAYORAZGO",
+        "sentido": "EO"
+      },
+      {
+        "id": 30,
+        "code": "2SOLDAEO",
+        "name": "SOLDADURA",
+        "sentido": "EO"
+      },
+      {
+        "id": 31,
+        "code": "2CAMACHEO",
+        "name": "CAMACHO",
+        "sentido": "EO"
+      },
+      {
+        "id": 32,
+        "code": "2CIRCUEO",
+        "name": "CIRCUNVALACION",
+        "sentido": "EO"
+      },
+      {
+        "id": 33,
+        "code": "2CONSEO",
+        "name": "CONSTRUCTORES",
+        "sentido": "EO"
+      },
+      {
+        "id": 34,
+        "code": "2FL&COEO",
+        "name": "FLORA TRISTAN & CONST.",
+        "sentido": "EO"
+      },
+      {
+        "id": 35,
+        "code": "2FRUTEO",
+        "name": "LOS FRUTALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 36,
+        "code": "2JCKEYEO",
+        "name": "EVITAMIENTO",
+        "sentido": "EO"
+      },
+      {
+        "id": 37,
+        "code": "2MO&COEO",
+        "name": "LA MOLINA & CONST.",
+        "sentido": "EO"
+      },
+      {
+        "id": 38,
+        "code": "2PNUEVAEO",
+        "name": "PISTA NUEVA",
+        "sentido": "EO"
+      },
+      {
+        "id": 39,
+        "code": "2ARENAEO",
+        "name": "ARENALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 40,
+        "code": "2PETITEO",
+        "name": "PETIT THOUARS",
+        "sentido": "EO"
+      },
+      {
+        "id": 41,
+        "code": "2AVIACEO",
+        "name": "AVIACION",
+        "sentido": "EO"
+      },
+      {
+        "id": 42,
+        "code": "2IN&COEO",
+        "name": "INGENIEROS & CONST.",
+        "sentido": "EO"
+      },
+      {
+        "id": 43,
+        "code": "2INDUSEO",
+        "name": "INDUSTRIALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 44,
+        "code": "2MO&JPEO",
+        "name": "LA MOLINA",
+        "sentido": "EO"
+      },
+      {
+        "id": 45,
+        "code": "2QUINEO",
+        "name": "QUI�ONES",
+        "sentido": "EO"
+      },
+      {
+        "id": 46,
+        "code": "2BARHERROE",
+        "name": "BARTOLOME HERRERA",
+        "sentido": "OE"
+      },
+      {
+        "id": 47,
+        "code": "2CATOLOE",
+        "name": "CATOLICA",
+        "sentido": "OE"
+      },
+      {
+        "id": 48,
+        "code": "2CEDROE",
+        "name": "LOS CEDROS",
+        "sentido": "OE"
+      },
+      {
+        "id": 49,
+        "code": "2MAROE",
+        "name": "LA MAR",
+        "sentido": "OE"
+      },
+      {
+        "id": 50,
+        "code": "2UN&MAOE",
+        "name": "LA MARINA & UNIVERSITARIA",
+        "sentido": "OE"
+      },
+      {
+        "id": 51,
+        "code": "2GUARDOE",
+        "name": "GUARDIA CIVIL",
+        "sentido": "OE"
+      },
+      {
+        "id": 52,
+        "code": "2MASIAEO",
+        "name": "MASIAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 53,
+        "code": "2RSATOEO",
+        "name": "ROSA TORO",
+        "sentido": "EO"
+      },
+      {
+        "id": 54,
+        "code": "2SNLUIEO",
+        "name": "SAN LUIS",
+        "sentido": "EO"
+      },
+      {
+        "id": 55,
+        "code": "2ULIMAEO",
+        "name": "LA FLORESTA",
+        "sentido": "EO"
+      },
+      {
+        "id": 56,
+        "code": "2ORQUIOE",
+        "name": "ORQUIDEAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 57,
+        "code": "2GUARDEO",
+        "name": "GUARDIA CIVIL",
+        "sentido": "EO"
+      },
+      {
+        "id": 58,
+        "code": "2JPPEREO",
+        "name": "PERSHING",
+        "sentido": "EO"
+      },
+      {
+        "id": 59,
+        "code": "2NOGALEO",
+        "name": "LOS NOGALES",
+        "sentido": "EO"
+      },
+      {
+        "id": 60,
+        "code": "2SUCREEO",
+        "name": "SUCRE",
+        "sentido": "EO"
+      },
+      {
+        "id": 61,
+        "code": "2PALMEEO",
+        "name": "LAS PALMERAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 62,
+        "code": "2MAYOROE",
+        "name": "MAYORAZGO",
+        "sentido": "OE"
+      },
+      {
+        "id": 63,
+        "code": "4CLINICEO",
+        "name": "CLINICA",
+        "sentido": "EO"
+      },
+      {
+        "id": 64,
+        "code": "2MO&COOE",
+        "name": "LA MOLINA & CONST.",
+        "sentido": "OE"
+      },
+      {
+        "id": 65,
+        "code": "2HUAROOE",
+        "name": "HUAROCHIRI",
+        "sentido": "OE"
+      },
+      {
+        "id": 66,
+        "code": "2BACKUSEO",
+        "name": "BACKUS",
+        "sentido": "EO"
+      },
+      {
+        "id": 67,
+        "code": "2UN&MAEO",
+        "name": "UNIVERSITARIA",
+        "sentido": "EO"
+      },
+      {
+        "id": 68,
+        "code": "2BARHERREO",
+        "name": "BARTOLOME HERRERA",
+        "sentido": "EO"
+      },
+      {
+        "id": 69,
+        "code": "2ORQUIEO",
+        "name": "ORQUIDEAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 70,
+        "code": "2METROOE",
+        "name": "LA MOLINA (METRO)",
+        "sentido": "OE"
+      },
+      {
+        "id": 71,
+        "code": "2FRUTAOE",
+        "name": "LOS FRUTALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 72,
+        "code": "2BORJAEO",
+        "name": "J. BORJA",
+        "sentido": "EO"
+      },
+      {
+        "id": 73,
+        "code": "2INGE9OE",
+        "name": "INGENIEROS",
+        "sentido": "OE"
+      },
+      {
+        "id": 74,
+        "code": "2ANGELEO",
+        "name": "LOS ANGELES",
+        "sentido": "EO"
+      },
+      {
+        "id": 75,
+        "code": "2CATOLEO",
+        "name": "CATOLICA",
+        "sentido": "EO"
+      },
+      {
+        "id": 76,
+        "code": "2INDUSTOE",
+        "name": "SEPARADORA INDUSTRIAL",
+        "sentido": "OE"
+      },
+      {
+        "id": 77,
+        "code": "2PNUEVAOE",
+        "name": "PISTA NUEVA",
+        "sentido": "OE"
+      }
+    ]
+  },
+  {
+    "id": "C301",
+    "code": "301",
+    "name": "Línea 301",
+    "label": "Corredor 2 — Tacna/Arequipa",
+    "color": "#ef4444",
+    "stops": [
+      {
+        "id": 0,
+        "code": "328JULSN",
+        "name": "28 DE JULIO",
+        "sentido": "SN"
+      },
+      {
+        "id": 1,
+        "code": "3RPALMSN",
+        "name": "R. PALMA",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "3SCHELSN",
+        "name": "SCHELL",
+        "sentido": "SN"
+      },
+      {
+        "id": 3,
+        "code": "3CANDASN",
+        "name": "M. CANDAMO",
+        "sentido": "SN"
+      },
+      {
+        "id": 4,
+        "code": "3CASANSN",
+        "name": "D. CASANOVA",
+        "sentido": "SN"
+      },
+      {
+        "id": 5,
+        "code": "3SEGURSN",
+        "name": "MANUEL SEGURA",
+        "sentido": "SN"
+      },
+      {
+        "id": 6,
+        "code": "3ANGAMSN",
+        "name": "ANGAMOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 7,
+        "code": "3ARAMBSN",
+        "name": "ARAMBURU",
+        "sentido": "SN"
+      },
+      {
+        "id": 8,
+        "code": "3ARONASN",
+        "name": "JUAN DE ARONA",
+        "sentido": "SN"
+      },
+      {
+        "id": 9,
+        "code": "3OLAVISN",
+        "name": "OLAVIDE",
+        "sentido": "SN"
+      },
+      {
+        "id": 10,
+        "code": "3PIURASN",
+        "name": "PIURA",
+        "sentido": "SN"
+      },
+      {
+        "id": 11,
+        "code": "3SCOOLSN",
+        "name": "SACO OLIVEROS",
+        "sentido": "SN"
+      },
+      {
+        "id": 12,
+        "code": "3BOLIVSN",
+        "name": "BOLIVIA",
+        "sentido": "SN"
+      },
+      {
+        "id": 13,
+        "code": "3EMANCSN",
+        "name": "EMANCIPACION",
+        "sentido": "SN"
+      },
+      {
+        "id": 14,
+        "code": "3ESPA�SN",
+        "name": "ESPA�A",
+        "sentido": "SN"
+      },
+      {
+        "id": 15,
+        "code": "3AMANCSN",
+        "name": "AMANCAES",
+        "sentido": "SN"
+      },
+      {
+        "id": 16,
+        "code": "3CALLASN",
+        "name": "CALLAO",
+        "sentido": "SN"
+      },
+      {
+        "id": 17,
+        "code": "3VILLASN",
+        "name": "E. VILLAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 18,
+        "code": "3AVSOLSN",
+        "name": "AV. EL SOL",
+        "sentido": "SN"
+      },
+      {
+        "id": 19,
+        "code": "3BENAVSN",
+        "name": "BENAVIDES",
+        "sentido": "SN"
+      },
+      {
+        "id": 20,
+        "code": "3FANINSN",
+        "name": "JUAN FANNING",
+        "sentido": "SN"
+      },
+      {
+        "id": 21,
+        "code": "3FERNASN",
+        "name": "E. FERNANDEZ",
+        "sentido": "SN"
+      },
+      {
+        "id": 22,
+        "code": "3GUIDOSN",
+        "name": "TOMAS GUIDO",
+        "sentido": "SN"
+      },
+      {
+        "id": 23,
+        "code": "3NU�EZSN",
+        "name": "NU�EZ DE BALBOA",
+        "sentido": "SN"
+      },
+      {
+        "id": 24,
+        "code": "3PTEROSASN",
+        "name": "PUENTE SANTA ROSA",
+        "sentido": "SN"
+      },
+      {
+        "id": 25,
+        "code": "3AYACUSN",
+        "name": "AYACUCHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 26,
+        "code": "3HABANSN",
+        "name": "LA HABANA",
+        "sentido": "SN"
+      },
+      {
+        "id": 27,
+        "code": "3TENAUSN",
+        "name": "CARLOS TENAUD",
+        "sentido": "SN"
+      },
+      {
+        "id": 28,
+        "code": "3PIZARSN",
+        "name": "PIZARRO",
+        "sentido": "SN"
+      },
+      {
+        "id": 29,
+        "code": "3BOLIVNS",
+        "name": "BOLIVIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 30,
+        "code": "3ESPA�NS",
+        "name": "ESPA�A",
+        "sentido": "NS"
+      },
+      {
+        "id": 31,
+        "code": "3ILO  NS",
+        "name": "ILO",
+        "sentido": "NS"
+      },
+      {
+        "id": 32,
+        "code": "3SOLEDNS",
+        "name": "SOLEDAD",
+        "sentido": "NS"
+      },
+      {
+        "id": 33,
+        "code": "3VILLANS",
+        "name": "E. VILLAR",
+        "sentido": "NS"
+      },
+      {
+        "id": 34,
+        "code": "3GUIDONS",
+        "name": "TOMAS GUIDO",
+        "sentido": "NS"
+      },
+      {
+        "id": 35,
+        "code": "3AC&RESN",
+        "name": "LAS ACACIAS / REDUCTO",
+        "sentido": "SN"
+      },
+      {
+        "id": 36,
+        "code": "3CHIPOSN",
+        "name": "CHIPOCO",
+        "sentido": "SN"
+      },
+      {
+        "id": 37,
+        "code": "3GREPUSN",
+        "name": "G. REPUBLICANA",
+        "sentido": "SN"
+      },
+      {
+        "id": 38,
+        "code": "3ARMENNS",
+        "name": "ARMENDARIZ / LARCOMAR",
+        "sentido": "NS"
+      },
+      {
+        "id": 39,
+        "code": "3ANGAMNS",
+        "name": "ANGAMOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 40,
+        "code": "3CHIRASN",
+        "name": "CHIRA",
+        "sentido": "SN"
+      },
+      {
+        "id": 41,
+        "code": "3ICA  NS",
+        "name": "ICA",
+        "sentido": "NS"
+      },
+      {
+        "id": 42,
+        "code": "3MORALNS",
+        "name": "R. MORALES",
+        "sentido": "NS"
+      },
+      {
+        "id": 43,
+        "code": "3VIRUNS",
+        "name": "VIRU",
+        "sentido": "NS"
+      },
+      {
+        "id": 44,
+        "code": "3PARDONS",
+        "name": "PARDO / R. PALMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 45,
+        "code": "3PIURANS",
+        "name": "PIURA",
+        "sentido": "NS"
+      },
+      {
+        "id": 46,
+        "code": "324JUNNS",
+        "name": "24 DE JUNIO",
+        "sentido": "NS"
+      },
+      {
+        "id": 47,
+        "code": "3AMANCNS",
+        "name": "AMANCAES",
+        "sentido": "NS"
+      },
+      {
+        "id": 48,
+        "code": "3CANDANS",
+        "name": "M. CANDAMO",
+        "sentido": "NS"
+      },
+      {
+        "id": 49,
+        "code": "3CVALDENS",
+        "name": "CARLOS VALDERRAMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 50,
+        "code": "3GREPUNS",
+        "name": "G. REPUBLICANA",
+        "sentido": "NS"
+      },
+      {
+        "id": 51,
+        "code": "3MADRINS",
+        "name": "MADRID",
+        "sentido": "NS"
+      },
+      {
+        "id": 52,
+        "code": "3SEGURNS",
+        "name": "MANUEL SEGURA",
+        "sentido": "NS"
+      },
+      {
+        "id": 53,
+        "code": "3TARMANS",
+        "name": "TARMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 54,
+        "code": "3CALLE2NS",
+        "name": "CALLE 1",
+        "sentido": "NS"
+      },
+      {
+        "id": 55,
+        "code": "3CDEPORNS",
+        "name": "COMPLEJO DEPORTIVO",
+        "sentido": "NS"
+      },
+      {
+        "id": 56,
+        "code": "3COLONNS",
+        "name": "LA COLONIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 57,
+        "code": "3LEONCNS",
+        "name": "LEONCIO PRADO",
+        "sentido": "NS"
+      },
+      {
+        "id": 58,
+        "code": "3MOQUENS",
+        "name": "MOQUEGUA",
+        "sentido": "NS"
+      },
+      {
+        "id": 59,
+        "code": "3EDIBOSNS",
+        "name": "EDUARDO DIBOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 60,
+        "code": "3SCOOLNS",
+        "name": "SACO OLIVEROS",
+        "sentido": "NS"
+      },
+      {
+        "id": 61,
+        "code": "3DAGNINS",
+        "name": "R. DAGNINO",
+        "sentido": "NS"
+      },
+      {
+        "id": 62,
+        "code": "3CUBANS",
+        "name": "CUBA",
+        "sentido": "NS"
+      },
+      {
+        "id": 63,
+        "code": "3BERLINS",
+        "name": "BERLIN",
+        "sentido": "NS"
+      },
+      {
+        "id": 64,
+        "code": "3BA�ONNS",
+        "name": "M. BA�ON",
+        "sentido": "NS"
+      },
+      {
+        "id": 65,
+        "code": "3DAGNISN",
+        "name": "R. DAGNINO",
+        "sentido": "SN"
+      },
+      {
+        "id": 66,
+        "code": "3CHIRANS",
+        "name": "CHIRA",
+        "sentido": "NS"
+      },
+      {
+        "id": 67,
+        "code": "3QUILCSN",
+        "name": "QUILCA",
+        "sentido": "SN"
+      },
+      {
+        "id": 68,
+        "code": "3AYACUNS",
+        "name": "AYACUCHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 69,
+        "code": "3ANDALNS",
+        "name": "ANDALUCIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 70,
+        "code": "3CHOQUNS",
+        "name": "CHOQUEHUANCA",
+        "sentido": "NS"
+      },
+      {
+        "id": 71,
+        "code": "3RJANESN",
+        "name": "RIO DE JANEIRO",
+        "sentido": "SN"
+      },
+      {
+        "id": 72,
+        "code": "3PAZSONS",
+        "name": "PAZ SOLDAN",
+        "sentido": "NS"
+      },
+      {
+        "id": 73,
+        "code": "3LANGENS",
+        "name": "LOS ANGELES",
+        "sentido": "NS"
+      },
+      {
+        "id": 74,
+        "code": "3LARCONS",
+        "name": "LARCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 75,
+        "code": "328JULNS",
+        "name": "28 DE JULIO",
+        "sentido": "NS"
+      },
+      {
+        "id": 76,
+        "code": "3ALCAZSN",
+        "name": "ALCAZAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 77,
+        "code": "3SILOYNS",
+        "name": "S. I. LOYOLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 78,
+        "code": "3LPARMNS",
+        "name": "LA PAZ / ARMENDARIZ",
+        "sentido": "NS"
+      },
+      {
+        "id": 79,
+        "code": "3CALEZSN",
+        "name": "LAS CALEZAS",
+        "sentido": "SN"
+      },
+      {
+        "id": 80,
+        "code": "3BALTANS",
+        "name": "BALTA",
+        "sentido": "NS"
+      },
+      {
+        "id": 81,
+        "code": "3CALLE3SN",
+        "name": "CALLE 3",
+        "sentido": "SN"
+      },
+      {
+        "id": 82,
+        "code": "3CHIPONS",
+        "name": "CHIPOCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 83,
+        "code": "3ARANCSN",
+        "name": "ARANCIBIA",
+        "sentido": "SN"
+      }
+    ]
+  },
+  {
+    "id": "C303",
+    "code": "303",
+    "name": "Línea 303",
+    "label": "Corredor 2 — Tacna/Arequipa",
+    "color": "#dc2626",
+    "stops": [
+      {
+        "id": 0,
+        "code": "3BOLI3SN",
+        "name": "BOLIVIA",
+        "sentido": "SN"
+      },
+      {
+        "id": 1,
+        "code": "3ESPA3SN",
+        "name": "ESPA�A",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "3OLAVISN",
+        "name": "OLAVIDE",
+        "sentido": "SN"
+      },
+      {
+        "id": 3,
+        "code": "3ALCEDSN",
+        "name": "BERNARDO ALCEDO",
+        "sentido": "SN"
+      },
+      {
+        "id": 4,
+        "code": "3CONDESN",
+        "name": "PEDRO CONDE",
+        "sentido": "SN"
+      },
+      {
+        "id": 5,
+        "code": "3FERNASN",
+        "name": "FERNANDEZ",
+        "sentido": "SN"
+      },
+      {
+        "id": 6,
+        "code": "3ICA  SN",
+        "name": "ICA",
+        "sentido": "SN"
+      },
+      {
+        "id": 7,
+        "code": "3PIZA3SN",
+        "name": "PIZARRO",
+        "sentido": "SN"
+      },
+      {
+        "id": 8,
+        "code": "3SCOOLSN",
+        "name": "SACO OLIVEROS",
+        "sentido": "SN"
+      },
+      {
+        "id": 9,
+        "code": "3SEGU3SN",
+        "name": "MANUEL SEGURA",
+        "sentido": "SN"
+      },
+      {
+        "id": 10,
+        "code": "3LEONCNS",
+        "name": "LEONCIO PRADO",
+        "sentido": "NS"
+      },
+      {
+        "id": 11,
+        "code": "3PIZARNS",
+        "name": "PIZARRO",
+        "sentido": "NS"
+      },
+      {
+        "id": 12,
+        "code": "3TUNELNS",
+        "name": "CA. RIMAC / TUNEL",
+        "sentido": "NS"
+      },
+      {
+        "id": 13,
+        "code": "3HUANCNS",
+        "name": "HUANCAVELICA",
+        "sentido": "NS"
+      },
+      {
+        "id": 14,
+        "code": "3LIMANS",
+        "name": "LIMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 15,
+        "code": "3COMISNS",
+        "name": "COMISARIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 16,
+        "code": "3BA�ONNS",
+        "name": "M. BA�ON",
+        "sentido": "NS"
+      },
+      {
+        "id": 17,
+        "code": "3SOLEDNS",
+        "name": "SOLEDAD",
+        "sentido": "NS"
+      },
+      {
+        "id": 18,
+        "code": "3CUBANS",
+        "name": "CUBA",
+        "sentido": "NS"
+      },
+      {
+        "id": 19,
+        "code": "3ESPA�NS",
+        "name": "ESPA�A",
+        "sentido": "NS"
+      },
+      {
+        "id": 20,
+        "code": "3PIERONS",
+        "name": "NICOLAS DE PIEROLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 21,
+        "code": "3RISSONS",
+        "name": "RISSO",
+        "sentido": "NS"
+      },
+      {
+        "id": 22,
+        "code": "3SEGURNS",
+        "name": "MANUEL SEGURA",
+        "sentido": "NS"
+      },
+      {
+        "id": 23,
+        "code": "32MAYSN",
+        "name": "2 DE MAYO",
+        "sentido": "SN"
+      },
+      {
+        "id": 24,
+        "code": "3ALCAZSN",
+        "name": "ALCAZAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 25,
+        "code": "3ANGA3SN",
+        "name": "ANGAMOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 26,
+        "code": "3ARAMBSN",
+        "name": "ARAMBURU",
+        "sentido": "SN"
+      },
+      {
+        "id": 27,
+        "code": "3NSANCNS",
+        "name": "NATALIO SANCHEZ",
+        "sentido": "NS"
+      },
+      {
+        "id": 28,
+        "code": "3HCAYONS",
+        "name": "HUANCAYO",
+        "sentido": "NS"
+      },
+      {
+        "id": 29,
+        "code": "3TERUESN",
+        "name": "TERUEL",
+        "sentido": "SN"
+      },
+      {
+        "id": 30,
+        "code": "3MORALNS",
+        "name": "R. MORALES",
+        "sentido": "NS"
+      },
+      {
+        "id": 31,
+        "code": "3VLRANNS",
+        "name": "VILLARAN",
+        "sentido": "NS"
+      },
+      {
+        "id": 32,
+        "code": "3MOQUESN",
+        "name": "MOQUEGUA",
+        "sentido": "SN"
+      },
+      {
+        "id": 33,
+        "code": "3URUGUSN",
+        "name": "URUGUAY",
+        "sentido": "SN"
+      },
+      {
+        "id": 34,
+        "code": "3TERUENS",
+        "name": "TERUEL",
+        "sentido": "NS"
+      },
+      {
+        "id": 35,
+        "code": "3ANGAMNS",
+        "name": "ANGAMOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 36,
+        "code": "3MOQSJSN",
+        "name": "TALARA",
+        "sentido": "SN"
+      }
+    ]
+  },
+  {
+    "id": "C305",
+    "code": "305",
+    "name": "Línea 305",
+    "label": "Corredor 2 — Tacna/Arequipa",
+    "color": "#b91c1c",
+    "stops": [
+      {
+        "id": 0,
+        "code": "3ANGAMNS",
+        "name": "ANGAMOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 1,
+        "code": "3BOLIVNS",
+        "name": "BOLIVIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 2,
+        "code": "3ESPANS",
+        "name": "ESPA�A",
+        "sentido": "NS"
+      },
+      {
+        "id": 3,
+        "code": "3MOQUENS",
+        "name": "MOQUEGUA",
+        "sentido": "NS"
+      },
+      {
+        "id": 4,
+        "code": "3PIUSN",
+        "name": "PIURA",
+        "sentido": "SN"
+      },
+      {
+        "id": 5,
+        "code": "3SOLEDNS",
+        "name": "SOLEDAD",
+        "sentido": "NS"
+      },
+      {
+        "id": 6,
+        "code": "3HUANCNS",
+        "name": "HUANCAYO",
+        "sentido": "NS"
+      },
+      {
+        "id": 7,
+        "code": "3MADRINS",
+        "name": "MADRID",
+        "sentido": "NS"
+      },
+      {
+        "id": 8,
+        "code": "32MAYOSN",
+        "name": "2 DE MAYO",
+        "sentido": "SN"
+      },
+      {
+        "id": 9,
+        "code": "3ANGAMSN",
+        "name": "ANGAMOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 10,
+        "code": "3ARAMBSN",
+        "name": "ARAMBURU",
+        "sentido": "SN"
+      },
+      {
+        "id": 11,
+        "code": "3AYACUSN",
+        "name": "AYACUCHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 12,
+        "code": "3JARONSN",
+        "name": "JUAN DE ARONA",
+        "sentido": "SN"
+      },
+      {
+        "id": 13,
+        "code": "3MCANDSN",
+        "name": "M. CANDAMO",
+        "sentido": "SN"
+      },
+      {
+        "id": 14,
+        "code": "3MSEGUSN",
+        "name": "MANUEL SEGURA",
+        "sentido": "SN"
+      },
+      {
+        "id": 15,
+        "code": "3OLAVISN",
+        "name": "OLAVIDE",
+        "sentido": "SN"
+      },
+      {
+        "id": 16,
+        "code": "3SAOLINS",
+        "name": "SACO OLIVEROS",
+        "sentido": "NS"
+      },
+      {
+        "id": 17,
+        "code": "3BOLIVSN",
+        "name": "BOLIVIA",
+        "sentido": "SN"
+      },
+      {
+        "id": 18,
+        "code": "3EMANSN",
+        "name": "EMANCIPACION",
+        "sentido": "SN"
+      },
+      {
+        "id": 19,
+        "code": "3EVILLASN",
+        "name": "E. VILLAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 20,
+        "code": "3PEDCONSN",
+        "name": "PEDRO CONDE",
+        "sentido": "SN"
+      },
+      {
+        "id": 21,
+        "code": "3SAOLISN",
+        "name": "S. OLIVEROS",
+        "sentido": "SN"
+      },
+      {
+        "id": 22,
+        "code": "3TGUIDSN",
+        "name": "TOMAS GUIDO",
+        "sentido": "SN"
+      },
+      {
+        "id": 23,
+        "code": "3CALLASN",
+        "name": "CALLAO",
+        "sentido": "SN"
+      },
+      {
+        "id": 24,
+        "code": "3EFERNASN",
+        "name": "E. FERNANDEZ",
+        "sentido": "SN"
+      },
+      {
+        "id": 25,
+        "code": "3CONDMNS",
+        "name": "CONDOMINIOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 26,
+        "code": "3AMACANS",
+        "name": "AMANCAES",
+        "sentido": "NS"
+      },
+      {
+        "id": 27,
+        "code": "3ICANS",
+        "name": "ICA",
+        "sentido": "NS"
+      },
+      {
+        "id": 28,
+        "code": "3VIRUNS",
+        "name": "VIRU",
+        "sentido": "NS"
+      },
+      {
+        "id": 29,
+        "code": "3ARICANS",
+        "name": "MORRO DE ARICA",
+        "sentido": "NS"
+      },
+      {
+        "id": 30,
+        "code": "3LPRADNS",
+        "name": "LEONCIO PRADO",
+        "sentido": "NS"
+      },
+      {
+        "id": 31,
+        "code": "3ILONS",
+        "name": "ILO",
+        "sentido": "NS"
+      },
+      {
+        "id": 32,
+        "code": "3RDAGNNS",
+        "name": "R. DAGNINO",
+        "sentido": "NS"
+      },
+      {
+        "id": 33,
+        "code": "3PIZASN",
+        "name": "PIZARRO",
+        "sentido": "SN"
+      },
+      {
+        "id": 34,
+        "code": "3COLONNS",
+        "name": "LA COLONIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 35,
+        "code": "3CUBANS",
+        "name": "CUBA",
+        "sentido": "NS"
+      },
+      {
+        "id": 36,
+        "code": "3HABANSN",
+        "name": "LA HABANA",
+        "sentido": "SN"
+      },
+      {
+        "id": 37,
+        "code": "3QUILSN",
+        "name": "QUILCA",
+        "sentido": "SN"
+      },
+      {
+        "id": 38,
+        "code": "3GREPUNS",
+        "name": "G. REPUBLICANA",
+        "sentido": "NS"
+      },
+      {
+        "id": 39,
+        "code": "3MBANNS",
+        "name": "M. BA�ON",
+        "sentido": "NS"
+      },
+      {
+        "id": 40,
+        "code": "3MSEGUNS",
+        "name": "MANUEL SEGURA",
+        "sentido": "NS"
+      },
+      {
+        "id": 41,
+        "code": "3TENASN",
+        "name": "TENAUD",
+        "sentido": "SN"
+      },
+      {
+        "id": 42,
+        "code": "3RJANESN",
+        "name": "RIO DE JANEIRO",
+        "sentido": "SN"
+      },
+      {
+        "id": 43,
+        "code": "3ALCASN",
+        "name": "ALCAZAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 44,
+        "code": "3MCANDNS",
+        "name": "M. CANDAMO",
+        "sentido": "NS"
+      },
+      {
+        "id": 45,
+        "code": "3TGUIDNS",
+        "name": "TOMAS GUIDO",
+        "sentido": "NS"
+      },
+      {
+        "id": 46,
+        "code": "3EVILLANS",
+        "name": "E. VILLAR",
+        "sentido": "NS"
+      },
+      {
+        "id": 47,
+        "code": "3RMORALNS",
+        "name": "R. MORALES",
+        "sentido": "NS"
+      },
+      {
+        "id": 48,
+        "code": "3CHIRNS",
+        "name": "CHIRA",
+        "sentido": "NS"
+      },
+      {
+        "id": 49,
+        "code": "3ESPASN",
+        "name": "ESPA�A",
+        "sentido": "SN"
+      },
+      {
+        "id": 50,
+        "code": "3PIUNS",
+        "name": "PIURA",
+        "sentido": "NS"
+      },
+      {
+        "id": 51,
+        "code": "3CALESN",
+        "name": "LAS CALEZAS",
+        "sentido": "SN"
+      },
+      {
+        "id": 52,
+        "code": "3RDAGNSN",
+        "name": "R. DAGNINO",
+        "sentido": "SN"
+      },
+      {
+        "id": 53,
+        "code": "3ANDALNS",
+        "name": "ANDALUCIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 54,
+        "code": "3ANGELNS",
+        "name": "LOS ANGELES",
+        "sentido": "NS"
+      },
+      {
+        "id": 55,
+        "code": "3CHOQHNS",
+        "name": "CHOQUEHUANCA",
+        "sentido": "NS"
+      },
+      {
+        "id": 56,
+        "code": "3PSOLDNS",
+        "name": "PAZ SOLDAN",
+        "sentido": "NS"
+      },
+      {
+        "id": 57,
+        "code": "3ARICASN",
+        "name": "MORRO DE ARICA",
+        "sentido": "SN"
+      },
+      {
+        "id": 58,
+        "code": "3CHIRSN",
+        "name": "CHIRA",
+        "sentido": "SN"
+      },
+      {
+        "id": 59,
+        "code": "3GREPUSN",
+        "name": "G. REPUBLICANA",
+        "sentido": "SN"
+      },
+      {
+        "id": 60,
+        "code": "3AYACUNS",
+        "name": "AYACUCHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 61,
+        "code": "3AMACASN",
+        "name": "AMANCAES",
+        "sentido": "SN"
+      },
+      {
+        "id": 62,
+        "code": "3ARANCSN",
+        "name": "ARANCIBIA",
+        "sentido": "SN"
+      }
+    ]
+  },
+  {
+    "id": "C336",
+    "code": "336",
+    "name": "Línea 336",
+    "label": "Corredor 3",
+    "color": "#f97316",
+    "stops": [
+      {
+        "id": 0,
+        "code": "3DCAAANSN",
+        "name": "D. CASANOVA",
+        "sentido": "SN"
+      },
+      {
+        "id": 1,
+        "code": "3BOLIVSN",
+        "name": "BOLIVIA",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "3MCANDAMSN",
+        "name": "MANUEL CANDAMO",
+        "sentido": "SN"
+      },
+      {
+        "id": 3,
+        "code": "3MOQUESN",
+        "name": "MOQUEGUA",
+        "sentido": "SN"
+      },
+      {
+        "id": 4,
+        "code": "3MSEGURASN",
+        "name": "MANUEL SEGURA",
+        "sentido": "SN"
+      },
+      {
+        "id": 5,
+        "code": "3OLAVISN",
+        "name": "OLAVIDE",
+        "sentido": "SN"
+      },
+      {
+        "id": 6,
+        "code": "3SOLIVERSN",
+        "name": "SACO OLIVEROS",
+        "sentido": "SN"
+      },
+      {
+        "id": 7,
+        "code": "3ICASN",
+        "name": "ICA",
+        "sentido": "SN"
+      },
+      {
+        "id": 8,
+        "code": "3PIZARSN",
+        "name": "PIZARRO",
+        "sentido": "SN"
+      },
+      {
+        "id": 9,
+        "code": "3CDEPORNS",
+        "name": "COMPLEJO DEPORTIVO",
+        "sentido": "NS"
+      },
+      {
+        "id": 10,
+        "code": "3CVALDNS",
+        "name": "CARLOS VALDERRAMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 11,
+        "code": "324JUNNS",
+        "name": "24 DE JUNIO",
+        "sentido": "NS"
+      },
+      {
+        "id": 12,
+        "code": "3AGUILARNS",
+        "name": "AGUILAR",
+        "sentido": "NS"
+      },
+      {
+        "id": 13,
+        "code": "3HUANCNS",
+        "name": "HUANCAVELICA",
+        "sentido": "NS"
+      },
+      {
+        "id": 14,
+        "code": "3LPRADONS",
+        "name": "LEONCIO PRADO",
+        "sentido": "NS"
+      },
+      {
+        "id": 15,
+        "code": "3NPIERONS",
+        "name": "NICOLAS DE PIEROLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 16,
+        "code": "3VIRUNS",
+        "name": "VIRU",
+        "sentido": "NS"
+      },
+      {
+        "id": 17,
+        "code": "3MBANONNS",
+        "name": "MANUEL BA�ON",
+        "sentido": "NS"
+      },
+      {
+        "id": 18,
+        "code": "3ESPANNS",
+        "name": "ESPA�A",
+        "sentido": "NS"
+      },
+      {
+        "id": 19,
+        "code": "3PARDOSN",
+        "name": "PARDO",
+        "sentido": "SN"
+      },
+      {
+        "id": 20,
+        "code": "3VILLANS",
+        "name": "VILLARAN",
+        "sentido": "NS"
+      },
+      {
+        "id": 21,
+        "code": "3EDIBONS",
+        "name": "EDUARDO DIBOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 22,
+        "code": "3JBERNALNS",
+        "name": "JOAQUIN BERNAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 23,
+        "code": "3LVELARNS",
+        "name": "LEON VELARDE",
+        "sentido": "NS"
+      },
+      {
+        "id": 24,
+        "code": "3MPINONS",
+        "name": "MANUEL DEL PINO",
+        "sentido": "NS"
+      },
+      {
+        "id": 25,
+        "code": "3CUBANS",
+        "name": "CUBA",
+        "sentido": "NS"
+      },
+      {
+        "id": 26,
+        "code": "3CHOQUENS",
+        "name": "CHOQUEHUANCA",
+        "sentido": "NS"
+      },
+      {
+        "id": 27,
+        "code": "3PYALIASN",
+        "name": "PARDO Y ALIAGA",
+        "sentido": "SN"
+      },
+      {
+        "id": 28,
+        "code": "3LSVIRREYNS",
+        "name": "LOS VIRREYES",
+        "sentido": "NS"
+      },
+      {
+        "id": 29,
+        "code": "3SOLIVERNS",
+        "name": "SACO OLIVEROS",
+        "sentido": "NS"
+      },
+      {
+        "id": 30,
+        "code": "3ANGAMSN",
+        "name": "ANGAMOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 31,
+        "code": "3CHOQUESN",
+        "name": "CHOQUEHUANCA",
+        "sentido": "SN"
+      },
+      {
+        "id": 32,
+        "code": "3CONDESN",
+        "name": "CONDE DE LA MONCLAVA",
+        "sentido": "SN"
+      },
+      {
+        "id": 33,
+        "code": "3PAZSOLSN",
+        "name": "PAZ SOLDAN",
+        "sentido": "SN"
+      },
+      {
+        "id": 34,
+        "code": "3ALETIRSN",
+        "name": "ALEJANDRO TIRADO",
+        "sentido": "SN"
+      },
+      {
+        "id": 35,
+        "code": "3JPRADONS",
+        "name": "JAVIER PRADO",
+        "sentido": "NS"
+      },
+      {
+        "id": 36,
+        "code": "3OGUTIESN",
+        "name": "OVALO GUTIERREZ",
+        "sentido": "SN"
+      },
+      {
+        "id": 37,
+        "code": "3PEZETNS",
+        "name": "PEZET",
+        "sentido": "NS"
+      },
+      {
+        "id": 38,
+        "code": "3OGUTIENS",
+        "name": "OVALO GUTIERREZ",
+        "sentido": "NS"
+      },
+      {
+        "id": 39,
+        "code": "3ESPANSN",
+        "name": "ESPA�A",
+        "sentido": "SN"
+      },
+      {
+        "id": 40,
+        "code": "3DASSONS",
+        "name": "DASSO",
+        "sentido": "NS"
+      },
+      {
+        "id": 41,
+        "code": "3PAZSOLNS",
+        "name": "PAZ SOLDAN",
+        "sentido": "NS"
+      },
+      {
+        "id": 42,
+        "code": "3ALCAZSN",
+        "name": "ALCAZAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 43,
+        "code": "3URUGUSN",
+        "name": "URUGUAY",
+        "sentido": "SN"
+      },
+      {
+        "id": 44,
+        "code": "3ANGAMNS",
+        "name": "ANGAMOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 45,
+        "code": "3RISSOSN",
+        "name": "RISSO",
+        "sentido": "SN"
+      },
+      {
+        "id": 46,
+        "code": "3AGUILARSN",
+        "name": "AGUILAR",
+        "sentido": "SN"
+      }
+    ]
+  },
+  {
+    "id": "C357",
+    "code": "357",
+    "name": "Línea 357",
+    "label": "Corredor 3",
+    "color": "#ea580c",
+    "stops": [
+      {
+        "id": 0,
+        "code": "3CHICLAYOE",
+        "name": "CHICLAYO",
+        "sentido": "OE"
+      },
+      {
+        "id": 1,
+        "code": "3HUANCAYOE",
+        "name": "HUANCAYO",
+        "sentido": "OE"
+      },
+      {
+        "id": 2,
+        "code": "3PARMASOE",
+        "name": "PLAZA DE ARMAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 3,
+        "code": "3ZORRITEO",
+        "name": "ZORRITOS",
+        "sentido": "EO"
+      },
+      {
+        "id": 4,
+        "code": "3GAREZONEO",
+        "name": "PEDRO GAREZON",
+        "sentido": "EO"
+      },
+      {
+        "id": 5,
+        "code": "3ICAEO",
+        "name": "ICA",
+        "sentido": "EO"
+      },
+      {
+        "id": 6,
+        "code": "3LORETOOE",
+        "name": "LORETO",
+        "sentido": "OE"
+      },
+      {
+        "id": 7,
+        "code": "3ABANCAYOE",
+        "name": "ABANCAY",
+        "sentido": "OE"
+      },
+      {
+        "id": 8,
+        "code": "3ANDAHUAOE",
+        "name": "ANDAHUAYLAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 9,
+        "code": "3CHOTAEO",
+        "name": "CHOTA",
+        "sentido": "EO"
+      },
+      {
+        "id": 10,
+        "code": "3NACIONESOE",
+        "name": "NACIONES UNIDAS",
+        "sentido": "OE"
+      },
+      {
+        "id": 11,
+        "code": "3PRIOOE",
+        "name": "PINAR DEL RIO",
+        "sentido": "OE"
+      },
+      {
+        "id": 12,
+        "code": "3RICAOE",
+        "name": "VILLA RICA",
+        "sentido": "OE"
+      },
+      {
+        "id": 13,
+        "code": "3SFEOE",
+        "name": "SANTA FE",
+        "sentido": "OE"
+      },
+      {
+        "id": 14,
+        "code": "3TUDELAOE",
+        "name": "PEREZ DE TUDELA",
+        "sentido": "OE"
+      },
+      {
+        "id": 15,
+        "code": "3ARGENTINAOE",
+        "name": "ARGENTINA",
+        "sentido": "OE"
+      },
+      {
+        "id": 16,
+        "code": "3SALVAOE",
+        "name": "SAN SALVADOR",
+        "sentido": "OE"
+      },
+      {
+        "id": 17,
+        "code": "3ZORRIOE",
+        "name": "ZORRITOS",
+        "sentido": "OE"
+      },
+      {
+        "id": 18,
+        "code": "3MATERIAOE",
+        "name": "MATERIALES",
+        "sentido": "OE"
+      },
+      {
+        "id": 19,
+        "code": "3VILLAEO",
+        "name": "VILLARAN",
+        "sentido": "EO"
+      },
+      {
+        "id": 20,
+        "code": "3PIEROLAEO",
+        "name": "NICOLAS DE PIEROLA",
+        "sentido": "EO"
+      },
+      {
+        "id": 21,
+        "code": "3ALFONSOOE",
+        "name": "ALFONSO UGARTE",
+        "sentido": "OE"
+      },
+      {
+        "id": 22,
+        "code": "3AGUAREO",
+        "name": "AGUARICO",
+        "sentido": "EO"
+      },
+      {
+        "id": 23,
+        "code": "3HUARAZOE",
+        "name": "HUARAZ",
+        "sentido": "OE"
+      },
+      {
+        "id": 24,
+        "code": "3IQUIQUEEO",
+        "name": "IQUIQUE",
+        "sentido": "EO"
+      },
+      {
+        "id": 25,
+        "code": "3TINGOEO",
+        "name": "TINGO MARIA",
+        "sentido": "EO"
+      },
+      {
+        "id": 26,
+        "code": "3GVEGAOE",
+        "name": "GARCILASO DE LA VEGA",
+        "sentido": "OE"
+      },
+      {
+        "id": 27,
+        "code": "3ARICAOE",
+        "name": "ARICA",
+        "sentido": "OE"
+      },
+      {
+        "id": 28,
+        "code": "3PERUEO",
+        "name": "PERU",
+        "sentido": "EO"
+      },
+      {
+        "id": 29,
+        "code": "3URUGUAYOE",
+        "name": "URUGUAY",
+        "sentido": "OE"
+      },
+      {
+        "id": 30,
+        "code": "3NACIONEO",
+        "name": "NACIONES UNIDAS",
+        "sentido": "EO"
+      },
+      {
+        "id": 31,
+        "code": "3AGUARICOE",
+        "name": "AGUARICO",
+        "sentido": "OE"
+      },
+      {
+        "id": 32,
+        "code": "3PIEROLAOE",
+        "name": "NICOLAS DE PIEROLA",
+        "sentido": "OE"
+      },
+      {
+        "id": 33,
+        "code": "3HUANCYEO",
+        "name": "HUANCAYO",
+        "sentido": "EO"
+      },
+      {
+        "id": 34,
+        "code": "3IQUITOSEO",
+        "name": "IQUITOS",
+        "sentido": "EO"
+      },
+      {
+        "id": 35,
+        "code": "3DOMINGEO",
+        "name": "SANTO DOMINGO",
+        "sentido": "EO"
+      },
+      {
+        "id": 36,
+        "code": "3DANSEYEO",
+        "name": "DANSEY",
+        "sentido": "EO"
+      },
+      {
+        "id": 37,
+        "code": "3JCHAVEZEO",
+        "name": "JORGE CHAVEZ",
+        "sentido": "EO"
+      },
+      {
+        "id": 38,
+        "code": "3QUILCAOE",
+        "name": "QUILCA",
+        "sentido": "OE"
+      },
+      {
+        "id": 39,
+        "code": "3DUAREZEO",
+        "name": "DUAREZ",
+        "sentido": "EO"
+      },
+      {
+        "id": 40,
+        "code": "3INOOE",
+        "name": "INO",
+        "sentido": "OE"
+      },
+      {
+        "id": 41,
+        "code": "3RICAEO",
+        "name": "VILLA RICA",
+        "sentido": "EO"
+      },
+      {
+        "id": 42,
+        "code": "3ARGENTEO",
+        "name": "ARGENTINA",
+        "sentido": "EO"
+      },
+      {
+        "id": 43,
+        "code": "3CAMANAEO",
+        "name": "CAMANA",
+        "sentido": "EO"
+      }
+    ]
+  },
+  {
+    "id": "C370",
+    "code": "370",
+    "name": "Línea 370",
+    "label": "Corredor 370",
+    "color": "#64748b",
+    "stops": [
+      {
+        "id": 0,
+        "code": "324JUNSN",
+        "name": "24 DE JUNIO",
+        "sentido": "SN"
+      },
+      {
+        "id": 1,
+        "code": "3ACHOSN",
+        "name": "ACHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "3AMANCNS",
+        "name": "AMANCAES",
+        "sentido": "NS"
+      },
+      {
+        "id": 3,
+        "code": "3CALL10SN",
+        "name": "CALLE 10",
+        "sentido": "SN"
+      },
+      {
+        "id": 4,
+        "code": "3CARLOSVNS",
+        "name": "CARLOS VALDERRAMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 5,
+        "code": "3CL1NS",
+        "name": "CALLE 1",
+        "sentido": "NS"
+      },
+      {
+        "id": 6,
+        "code": "3MONACONS",
+        "name": "MONACO",
+        "sentido": "NS"
+      },
+      {
+        "id": 7,
+        "code": "3AMANCASN",
+        "name": "AMANCAES",
+        "sentido": "SN"
+      },
+      {
+        "id": 8,
+        "code": "3ELSOLSN",
+        "name": "EL SOL",
+        "sentido": "SN"
+      },
+      {
+        "id": 9,
+        "code": "3PTACNANS",
+        "name": "PROLONGACION TACNA",
+        "sentido": "NS"
+      },
+      {
+        "id": 10,
+        "code": "3CDEPORNS",
+        "name": "COMPLEJO DEPORTIVO",
+        "sentido": "NS"
+      },
+      {
+        "id": 11,
+        "code": "3EDIBOSNS",
+        "name": "EDUARDO DIBOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 12,
+        "code": "3ASANCHZNS",
+        "name": "ANTON SANCHEZ",
+        "sentido": "NS"
+      },
+      {
+        "id": 13,
+        "code": "3ANTONSSN",
+        "name": "ANTON SANCHEZ",
+        "sentido": "SN"
+      },
+      {
+        "id": 14,
+        "code": "3CHICLASN",
+        "name": "CHICLAYO",
+        "sentido": "SN"
+      },
+      {
+        "id": 15,
+        "code": "322AGOSNS",
+        "name": "22 DE AGOSTO",
+        "sentido": "NS"
+      },
+      {
+        "id": 16,
+        "code": "3TRJLLONS",
+        "name": "TRUJILLO",
+        "sentido": "NS"
+      },
+      {
+        "id": 17,
+        "code": "3ALDESCSN",
+        "name": "ALAMEDA DE LOS DESCALZOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 18,
+        "code": "3PALCAZSN",
+        "name": "PROLONGACION TACNA",
+        "sentido": "SN"
+      },
+      {
+        "id": 19,
+        "code": "3MDRDNS",
+        "name": "MADRID",
+        "sentido": "NS"
+      },
+      {
+        "id": 20,
+        "code": "3CALEZASN",
+        "name": "LAS CALEZAS",
+        "sentido": "SN"
+      },
+      {
+        "id": 21,
+        "code": "3CJMCANS",
+        "name": "CAJAMARCA",
+        "sentido": "NS"
+      }
+    ]
+  },
+  {
+    "id": "C371",
+    "code": "371",
+    "name": "Línea 371",
+    "label": "Corredor 371",
+    "color": "#64748b",
+    "stops": [
+      {
+        "id": 0,
+        "code": "3LOMASNS",
+        "name": "LAS LOMAS",
+        "sentido": "NS"
+      },
+      {
+        "id": 1,
+        "code": "3AMANCSN",
+        "name": "AMANCAES",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "3MARICASN",
+        "name": "MORRO DE ARICA",
+        "sentido": "SN"
+      },
+      {
+        "id": 3,
+        "code": "3MARICANS",
+        "name": "MORRO DE ARICA",
+        "sentido": "NS"
+      },
+      {
+        "id": 4,
+        "code": "3CONDOSN",
+        "name": "CONDOMINIOS",
+        "sentido": "SN"
+      }
+    ]
+  },
+  {
+    "id": "C401",
+    "code": "401",
+    "name": "Línea 401",
+    "label": "Corredor 4 — SJL",
+    "color": "#3b82f6",
+    "stops": [
+      {
+        "id": 0,
+        "code": "4BAYOSN",
+        "name": "BAYOVAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 1,
+        "code": "4CUSCOSN",
+        "name": "CUSCO",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "4OCHOSN",
+        "name": "LA OCHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 3,
+        "code": "4HUALLSN",
+        "name": "HUALLAGA",
+        "sentido": "SN"
+      },
+      {
+        "id": 4,
+        "code": "4JPRADOSN",
+        "name": "JAVIER PRADO",
+        "sentido": "SN"
+      },
+      {
+        "id": 5,
+        "code": "4RISSOSN",
+        "name": "RISSO",
+        "sentido": "SN"
+      },
+      {
+        "id": 6,
+        "code": "4SEGUSN",
+        "name": "SEGURA",
+        "sentido": "SN"
+      },
+      {
+        "id": 7,
+        "code": "4TURGASN",
+        "name": "TORRE UGARTE",
+        "sentido": "SN"
+      },
+      {
+        "id": 8,
+        "code": "4CAPINS",
+        "name": "LA CAPILLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 9,
+        "code": "4MARINS",
+        "name": "MARIATEGUI",
+        "sentido": "NS"
+      },
+      {
+        "id": 10,
+        "code": "4MOTUNS",
+        "name": "MOTUPE",
+        "sentido": "NS"
+      },
+      {
+        "id": 11,
+        "code": "4BAYONS",
+        "name": "BAYOVAR DC",
+        "sentido": "NS"
+      },
+      {
+        "id": 12,
+        "code": "4ROSANS",
+        "name": "SANTA ROSA",
+        "sentido": "NS"
+      },
+      {
+        "id": 13,
+        "code": "4CARLONS",
+        "name": "SAN CARLOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 14,
+        "code": "4OCHONS",
+        "name": "LA OCHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 15,
+        "code": "4POSTENS",
+        "name": "LOS POSTES",
+        "sentido": "NS"
+      },
+      {
+        "id": 16,
+        "code": "4CELINS",
+        "name": "CELIMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 17,
+        "code": "4HACINS",
+        "name": "LA HACIENDA",
+        "sentido": "NS"
+      },
+      {
+        "id": 18,
+        "code": "4CINCNS",
+        "name": "LA CINCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 19,
+        "code": "4PSOLNS",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "NS"
+      },
+      {
+        "id": 20,
+        "code": "4CONCESN",
+        "name": "CONCEJO",
+        "sentido": "SN"
+      },
+      {
+        "id": 21,
+        "code": "4HACISN",
+        "name": "LA HACIENDA",
+        "sentido": "SN"
+      },
+      {
+        "id": 22,
+        "code": "4ACHOSN",
+        "name": "ACHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 23,
+        "code": "4MERCASN",
+        "name": "MERCADO DE FLORES",
+        "sentido": "SN"
+      },
+      {
+        "id": 24,
+        "code": "4CMORESN",
+        "name": "CANAVAL Y MOREYRA",
+        "sentido": "SN"
+      },
+      {
+        "id": 25,
+        "code": "4BASASN",
+        "name": "BASADRE",
+        "sentido": "SN"
+      },
+      {
+        "id": 26,
+        "code": "4POSTESN",
+        "name": "LOS POSTES",
+        "sentido": "SN"
+      },
+      {
+        "id": 27,
+        "code": "4BASANS",
+        "name": "BASADRE",
+        "sentido": "NS"
+      },
+      {
+        "id": 28,
+        "code": "4GRAUNS",
+        "name": "GRAU",
+        "sentido": "NS"
+      },
+      {
+        "id": 29,
+        "code": "4MEXISN",
+        "name": "ESTACION MEXICO",
+        "sentido": "SN"
+      },
+      {
+        "id": 30,
+        "code": "4PZELANS",
+        "name": "PARDO DE ZELA",
+        "sentido": "NS"
+      },
+      {
+        "id": 31,
+        "code": "4CONCENS",
+        "name": "CONCEJO",
+        "sentido": "NS"
+      },
+      {
+        "id": 32,
+        "code": "4FARMNS",
+        "name": "FARMACIA LEO",
+        "sentido": "NS"
+      },
+      {
+        "id": 33,
+        "code": "4CATONS",
+        "name": "CATOLICA",
+        "sentido": "NS"
+      },
+      {
+        "id": 34,
+        "code": "4MEXINS",
+        "name": "MEXICO",
+        "sentido": "NS"
+      },
+      {
+        "id": 35,
+        "code": "4ANCASNS",
+        "name": "ANCASH",
+        "sentido": "NS"
+      },
+      {
+        "id": 36,
+        "code": "4CELISN",
+        "name": "CELIMA",
+        "sentido": "SN"
+      },
+      {
+        "id": 37,
+        "code": "4PSOLSN",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "SN"
+      },
+      {
+        "id": 38,
+        "code": "4ROSASN",
+        "name": "SANTA ROSA",
+        "sentido": "SN"
+      },
+      {
+        "id": 39,
+        "code": "4CANDASN",
+        "name": "CANDAMO",
+        "sentido": "SN"
+      },
+      {
+        "id": 40,
+        "code": "4NPIERSN",
+        "name": "NICOLAS DE PIEROLA",
+        "sentido": "SN"
+      },
+      {
+        "id": 41,
+        "code": "4CUSCONS",
+        "name": "CUSCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 42,
+        "code": "4NPIERNS",
+        "name": "NICOLAS DE PIEROLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 43,
+        "code": "4UCAYANS",
+        "name": "UCAYALI",
+        "sentido": "NS"
+      },
+      {
+        "id": 44,
+        "code": "4UNANUNS",
+        "name": "UNANUE",
+        "sentido": "NS"
+      },
+      {
+        "id": 45,
+        "code": "4FLORESNS",
+        "name": "LIMA (LAS FLORES)",
+        "sentido": "NS"
+      },
+      {
+        "id": 46,
+        "code": "4GRAUSN",
+        "name": "GRAU",
+        "sentido": "SN"
+      },
+      {
+        "id": 47,
+        "code": "4BMEZASN",
+        "name": "BAUZATE Y MEZA",
+        "sentido": "SN"
+      },
+      {
+        "id": 48,
+        "code": "428JULNS",
+        "name": "28 DE JULIO",
+        "sentido": "NS"
+      },
+      {
+        "id": 49,
+        "code": "4ACHONS",
+        "name": "ACHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 50,
+        "code": "4UNANUSN",
+        "name": "UNANUE",
+        "sentido": "SN"
+      },
+      {
+        "id": 51,
+        "code": "4CARLOSN",
+        "name": "SAN CARLOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 52,
+        "code": "4CATOSN",
+        "name": "CATOLICA",
+        "sentido": "SN"
+      },
+      {
+        "id": 53,
+        "code": "4JPRADONS",
+        "name": "JAVIER PRADO",
+        "sentido": "NS"
+      }
+    ]
+  },
+  {
+    "id": "C404",
+    "code": "404",
+    "name": "Línea 404",
+    "label": "Corredor 4 — SJL",
+    "color": "#2563eb",
+    "stops": [
+      {
+        "id": 0,
+        "code": "4SNMARSN",
+        "name": "SAN MARTIN",
+        "sentido": "SN"
+      },
+      {
+        "id": 1,
+        "code": "4CUZCOSN",
+        "name": "CUZCO",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "4OCHO SN",
+        "name": "LA OCHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 3,
+        "code": "4CELIMSN",
+        "name": "CELIMA",
+        "sentido": "SN"
+      },
+      {
+        "id": 4,
+        "code": "4HACIESN",
+        "name": "LA HACIENDA",
+        "sentido": "SN"
+      },
+      {
+        "id": 5,
+        "code": "4PIRAMSN",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "SN"
+      },
+      {
+        "id": 6,
+        "code": "4POSTESN",
+        "name": "LOS POSTES",
+        "sentido": "SN"
+      },
+      {
+        "id": 7,
+        "code": "4TUPACSN",
+        "name": "TUPAC AMARU",
+        "sentido": "SN"
+      },
+      {
+        "id": 8,
+        "code": "4BAYOVSN",
+        "name": "BAYOVAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 9,
+        "code": "4MOTUPSN",
+        "name": "MOTUPE",
+        "sentido": "SN"
+      },
+      {
+        "id": 10,
+        "code": "4LACAPNS",
+        "name": "LA CAPILLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 11,
+        "code": "4CINCOSN",
+        "name": "LA CINCO",
+        "sentido": "SN"
+      },
+      {
+        "id": 12,
+        "code": "4PIEROSN",
+        "name": "N. DE PIEROLA",
+        "sentido": "SN"
+      },
+      {
+        "id": 13,
+        "code": "4BOLOGSN",
+        "name": "BOLOGNESI",
+        "sentido": "SN"
+      },
+      {
+        "id": 14,
+        "code": "4GARCISN",
+        "name": "GARCILASO",
+        "sentido": "SN"
+      },
+      {
+        "id": 15,
+        "code": "4HOPNPSN",
+        "name": "HOSPITAL PNP",
+        "sentido": "SN"
+      },
+      {
+        "id": 16,
+        "code": "4MTEVDSN",
+        "name": "MONTEVIDEO",
+        "sentido": "SN"
+      },
+      {
+        "id": 17,
+        "code": "4UCAYASN",
+        "name": "UCAYALI",
+        "sentido": "SN"
+      },
+      {
+        "id": 18,
+        "code": "4CONCESN",
+        "name": "CONCEJO",
+        "sentido": "SN"
+      },
+      {
+        "id": 19,
+        "code": "4SNCARSN",
+        "name": "SAN CARLOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 20,
+        "code": "4BOLIVSN",
+        "name": "BOLIVAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 21,
+        "code": "4BRA09SN",
+        "name": "LA NUEVE (BRASIL)",
+        "sentido": "SN"
+      },
+      {
+        "id": 22,
+        "code": "4BRA12SN",
+        "name": "LA DOCE (BRASIL)",
+        "sentido": "SN"
+      },
+      {
+        "id": 23,
+        "code": "4HNI�OSN",
+        "name": "HOSPITAL DEL NI�O",
+        "sentido": "SN"
+      },
+      {
+        "id": 24,
+        "code": "4STAROSN",
+        "name": "SANTA ROSA",
+        "sentido": "SN"
+      },
+      {
+        "id": 25,
+        "code": "4ENCINASN",
+        "name": "ENCINAS",
+        "sentido": "SN"
+      },
+      {
+        "id": 26,
+        "code": "4VENUSSN",
+        "name": "VENUS",
+        "sentido": "SN"
+      },
+      {
+        "id": 27,
+        "code": "4ACHO SN",
+        "name": "ACHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 28,
+        "code": "4BRA18SN",
+        "name": "LA DIECIOCHO (BRASIL)",
+        "sentido": "SN"
+      },
+      {
+        "id": 29,
+        "code": "4JOSEGALSN",
+        "name": "JOSE GALVEZ",
+        "sentido": "SN"
+      },
+      {
+        "id": 30,
+        "code": "4JUN�NSN",
+        "name": "JUNIN",
+        "sentido": "SN"
+      },
+      {
+        "id": 31,
+        "code": "4JPBRASN",
+        "name": "JAVIER PRADO (BRASIL)",
+        "sentido": "SN"
+      },
+      {
+        "id": 32,
+        "code": "4ASCARSN",
+        "name": "ASCARRUZ",
+        "sentido": "SN"
+      },
+      {
+        "id": 33,
+        "code": "4MDOFLSN",
+        "name": "MDO DE FLORES",
+        "sentido": "SN"
+      },
+      {
+        "id": 34,
+        "code": "4COLEGSN",
+        "name": "COLEGIO",
+        "sentido": "SN"
+      },
+      {
+        "id": 35,
+        "code": "4OVBRASN",
+        "name": "OVALO (BRASIL)",
+        "sentido": "SN"
+      },
+      {
+        "id": 36,
+        "code": "4CINCONS",
+        "name": "LA CINCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 37,
+        "code": "4MARIANS",
+        "name": "MARIATEGUI",
+        "sentido": "NS"
+      },
+      {
+        "id": 38,
+        "code": "4MNTENNS",
+        "name": "MONTENEGRO",
+        "sentido": "NS"
+      },
+      {
+        "id": 39,
+        "code": "4MOTUPNS",
+        "name": "MOTUPE",
+        "sentido": "NS"
+      },
+      {
+        "id": 40,
+        "code": "4BAYOVNS",
+        "name": "BAYOVAR DC",
+        "sentido": "NS"
+      },
+      {
+        "id": 41,
+        "code": "4CELIMNS",
+        "name": "CELIMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 42,
+        "code": "4CUATRNS",
+        "name": "LA CUATRO",
+        "sentido": "NS"
+      },
+      {
+        "id": 43,
+        "code": "4HACIENS",
+        "name": "LA HACIENDA",
+        "sentido": "NS"
+      },
+      {
+        "id": 44,
+        "code": "4OCHO NS",
+        "name": "LA OCHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 45,
+        "code": "4POSTENS",
+        "name": "LOS POSTES",
+        "sentido": "NS"
+      },
+      {
+        "id": 46,
+        "code": "4SNCARNS",
+        "name": "SAN CARLOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 47,
+        "code": "4SNMARNS",
+        "name": "SAN MARTIN",
+        "sentido": "NS"
+      },
+      {
+        "id": 48,
+        "code": "4STARONS",
+        "name": "SANTA ROSA",
+        "sentido": "NS"
+      },
+      {
+        "id": 49,
+        "code": "48MARINS",
+        "name": "8 DE MARISCAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 50,
+        "code": "4BASADNS",
+        "name": "BASADRE",
+        "sentido": "NS"
+      },
+      {
+        "id": 51,
+        "code": "4DLPARNS",
+        "name": "SEDAPAL / DEL PARQUE",
+        "sentido": "NS"
+      },
+      {
+        "id": 52,
+        "code": "4QUINCNS",
+        "name": "LA QUINCE",
+        "sentido": "NS"
+      },
+      {
+        "id": 53,
+        "code": "4TUPACNS",
+        "name": "TUPAC AMARU",
+        "sentido": "NS"
+      },
+      {
+        "id": 54,
+        "code": "4LIMA NS",
+        "name": "LIMA (LAS FLORES)",
+        "sentido": "NS"
+      },
+      {
+        "id": 55,
+        "code": "4GRAU NS",
+        "name": "GRAU",
+        "sentido": "NS"
+      },
+      {
+        "id": 56,
+        "code": "4UCAYANS",
+        "name": "UCAYALI",
+        "sentido": "NS"
+      },
+      {
+        "id": 57,
+        "code": "4MDOFLNS",
+        "name": "MDO DE FLORES",
+        "sentido": "NS"
+      },
+      {
+        "id": 58,
+        "code": "4CHOTASN",
+        "name": "CHOTA",
+        "sentido": "SN"
+      },
+      {
+        "id": 59,
+        "code": "4MARIASN",
+        "name": "MARIATEGUI",
+        "sentido": "SN"
+      },
+      {
+        "id": 60,
+        "code": "4ANCASNS",
+        "name": "ANCASH",
+        "sentido": "NS"
+      },
+      {
+        "id": 61,
+        "code": "4PLZGRAUNS",
+        "name": "PLAZA GRAU",
+        "sentido": "NS"
+      },
+      {
+        "id": 62,
+        "code": "4BASADSN",
+        "name": "BASADRE",
+        "sentido": "SN"
+      },
+      {
+        "id": 63,
+        "code": "4CUZCONS",
+        "name": "CUZCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 64,
+        "code": "4ACHO NS",
+        "name": "ACHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 65,
+        "code": "4PIRAMNS",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "NS"
+      },
+      {
+        "id": 66,
+        "code": "4HNI�ONS",
+        "name": "HOSPITAL DEL NI�O",
+        "sentido": "NS"
+      },
+      {
+        "id": 67,
+        "code": "4OVBRANS",
+        "name": "OVALO (BRASIL)",
+        "sentido": "NS"
+      },
+      {
+        "id": 68,
+        "code": "4BOLOGNS",
+        "name": "BOLOGNESI",
+        "sentido": "NS"
+      },
+      {
+        "id": 69,
+        "code": "4PIERONS",
+        "name": "N. DE PIEROLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 70,
+        "code": "4BOSCONS",
+        "name": "DON BOSCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 71,
+        "code": "4ENCINANS",
+        "name": "ENCINAS",
+        "sentido": "NS"
+      },
+      {
+        "id": 72,
+        "code": "4CONCENS",
+        "name": "CONCEJO",
+        "sentido": "NS"
+      },
+      {
+        "id": 73,
+        "code": "4COTABNS",
+        "name": "COTABAMBAS",
+        "sentido": "NS"
+      },
+      {
+        "id": 74,
+        "code": "4BRA09NS",
+        "name": "LA NUEVE (BRASIL)",
+        "sentido": "NS"
+      },
+      {
+        "id": 75,
+        "code": "4SEDAPSN",
+        "name": "SEDAPAL",
+        "sentido": "SN"
+      },
+      {
+        "id": 76,
+        "code": "4BRA12NS",
+        "name": "LA DOCE (BRASIL)",
+        "sentido": "NS"
+      },
+      {
+        "id": 77,
+        "code": "4BOLIVNS",
+        "name": "BOLIVAR",
+        "sentido": "NS"
+      },
+      {
+        "id": 78,
+        "code": "4VENUSNS",
+        "name": "VENUS",
+        "sentido": "NS"
+      },
+      {
+        "id": 79,
+        "code": "4BRA18NS",
+        "name": "LA DIECIOCHO (BRASIL)",
+        "sentido": "NS"
+      },
+      {
+        "id": 80,
+        "code": "4CUATRSN",
+        "name": "LA CUATRO",
+        "sentido": "SN"
+      },
+      {
+        "id": 81,
+        "code": "4QUINCSN",
+        "name": "LA QUINCE",
+        "sentido": "SN"
+      },
+      {
+        "id": 82,
+        "code": "48MARISN",
+        "name": "8 DE MARISCAL",
+        "sentido": "SN"
+      },
+      {
+        "id": 83,
+        "code": "4HOPNPNS",
+        "name": "HOSPITAL PNP",
+        "sentido": "NS"
+      }
+    ]
+  },
+  {
+    "id": "C405",
+    "code": "405",
+    "name": "Línea 405",
+    "label": "Corredor 4 — SJL",
+    "color": "#1d4ed8",
+    "stops": [
+      {
+        "id": 0,
+        "code": "4ACHO SN",
+        "name": "ACHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 1,
+        "code": "4HACIESN",
+        "name": "LA HACIENDA",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "4SNCARSN",
+        "name": "SAN CARLOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 3,
+        "code": "4BAYOVSN",
+        "name": "BAYOVAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 4,
+        "code": "4OCHO SN",
+        "name": "LA OCHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 5,
+        "code": "4POSTESN",
+        "name": "LOS POSTES",
+        "sentido": "SN"
+      },
+      {
+        "id": 6,
+        "code": "4SNMARSN",
+        "name": "SAN MARTIN",
+        "sentido": "SN"
+      },
+      {
+        "id": 7,
+        "code": "4CONCESN",
+        "name": "CONCEJO",
+        "sentido": "SN"
+      },
+      {
+        "id": 8,
+        "code": "4PIRAMSN",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "SN"
+      },
+      {
+        "id": 9,
+        "code": "4CANDASN",
+        "name": "CANDAMO",
+        "sentido": "SN"
+      },
+      {
+        "id": 10,
+        "code": "4MARIASN",
+        "name": "MARIATEGUI",
+        "sentido": "SN"
+      },
+      {
+        "id": 11,
+        "code": "4BASADSN",
+        "name": "BASADRE",
+        "sentido": "SN"
+      },
+      {
+        "id": 12,
+        "code": "4CELIMSN",
+        "name": "CELIMA",
+        "sentido": "SN"
+      },
+      {
+        "id": 13,
+        "code": "4CMOREYRASN",
+        "name": "CANAVAL Y MOREYRA",
+        "sentido": "SN"
+      },
+      {
+        "id": 14,
+        "code": "4CUZCOSN",
+        "name": "CUZCO",
+        "sentido": "SN"
+      },
+      {
+        "id": 15,
+        "code": "4HUALLASN",
+        "name": "HUALLAGA",
+        "sentido": "SN"
+      },
+      {
+        "id": 16,
+        "code": "4BAUZASN",
+        "name": "BAUZATE Y MEZA",
+        "sentido": "SN"
+      },
+      {
+        "id": 17,
+        "code": "4CATOLSN",
+        "name": "LA CATOLICA",
+        "sentido": "SN"
+      },
+      {
+        "id": 18,
+        "code": "4JPRADOSN",
+        "name": "JAVIER PRADO",
+        "sentido": "SN"
+      },
+      {
+        "id": 19,
+        "code": "4PIERSN",
+        "name": "N. DE PIEROLA",
+        "sentido": "SN"
+      },
+      {
+        "id": 20,
+        "code": "4TEUGASN",
+        "name": "TORRE UGARTE",
+        "sentido": "SN"
+      },
+      {
+        "id": 21,
+        "code": "4STAROSN",
+        "name": "SANTA ROSA",
+        "sentido": "SN"
+      },
+      {
+        "id": 22,
+        "code": "4ESTMEXSN",
+        "name": "ESTACION MEXICO",
+        "sentido": "SN"
+      },
+      {
+        "id": 23,
+        "code": "4MDOFLSN",
+        "name": "MDO DE FLORES",
+        "sentido": "SN"
+      },
+      {
+        "id": 24,
+        "code": "4UNANUSN",
+        "name": "UNANUE",
+        "sentido": "SN"
+      },
+      {
+        "id": 25,
+        "code": "4GRAU SN",
+        "name": "GRAU",
+        "sentido": "SN"
+      },
+      {
+        "id": 26,
+        "code": "4LACAPNS",
+        "name": "LA CAPILLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 27,
+        "code": "48MARINS",
+        "name": "8 DE MARISCAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 28,
+        "code": "4BAYOVNS",
+        "name": "BAYOVAR DC",
+        "sentido": "NS"
+      },
+      {
+        "id": 29,
+        "code": "4CINCONS",
+        "name": "LA CINCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 30,
+        "code": "4CUATRNS",
+        "name": "LA CUATRO",
+        "sentido": "NS"
+      },
+      {
+        "id": 31,
+        "code": "4MARIANS",
+        "name": "MARIATEGUI",
+        "sentido": "NS"
+      },
+      {
+        "id": 32,
+        "code": "4MNTENNS",
+        "name": "MONTENEGRO",
+        "sentido": "NS"
+      },
+      {
+        "id": 33,
+        "code": "4MOTUPNS",
+        "name": "MOTUPE",
+        "sentido": "NS"
+      },
+      {
+        "id": 34,
+        "code": "4OCHO NS",
+        "name": "LA OCHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 35,
+        "code": "4POSTENS",
+        "name": "LOS POSTES",
+        "sentido": "NS"
+      },
+      {
+        "id": 36,
+        "code": "4QUINCNS",
+        "name": "LA QUINCE",
+        "sentido": "NS"
+      },
+      {
+        "id": 37,
+        "code": "4SNCARNS",
+        "name": "SAN CARLOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 38,
+        "code": "4SNMARNS",
+        "name": "SAN MARTIN",
+        "sentido": "NS"
+      },
+      {
+        "id": 39,
+        "code": "4STARONS",
+        "name": "SANTA ROSA",
+        "sentido": "NS"
+      },
+      {
+        "id": 40,
+        "code": "4ANCASNS",
+        "name": "ANCASH",
+        "sentido": "NS"
+      },
+      {
+        "id": 41,
+        "code": "4CUZCONS",
+        "name": "CUZCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 42,
+        "code": "4BASADNS",
+        "name": "BASADRE",
+        "sentido": "NS"
+      },
+      {
+        "id": 43,
+        "code": "4CELIMNS",
+        "name": "CELIMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 44,
+        "code": "4CONCENS",
+        "name": "CONCEJO",
+        "sentido": "NS"
+      },
+      {
+        "id": 45,
+        "code": "4ENCINANS",
+        "name": "ENCINAS",
+        "sentido": "NS"
+      },
+      {
+        "id": 46,
+        "code": "4HACIENS",
+        "name": "LA HACIENDA",
+        "sentido": "NS"
+      },
+      {
+        "id": 47,
+        "code": "4PIRAMNS",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "NS"
+      },
+      {
+        "id": 48,
+        "code": "4TUPACNS",
+        "name": "TUPAC AMARU",
+        "sentido": "NS"
+      },
+      {
+        "id": 49,
+        "code": "4MEXICSN",
+        "name": "MEXICO",
+        "sentido": "SN"
+      },
+      {
+        "id": 50,
+        "code": "4RISSOSN",
+        "name": "RISSO",
+        "sentido": "SN"
+      },
+      {
+        "id": 51,
+        "code": "4SEGURSN",
+        "name": "SEGURA",
+        "sentido": "SN"
+      },
+      {
+        "id": 52,
+        "code": "4GRAU NS",
+        "name": "GRAU",
+        "sentido": "NS"
+      },
+      {
+        "id": 53,
+        "code": "4UCAYANS",
+        "name": "UCAYALI",
+        "sentido": "NS"
+      },
+      {
+        "id": 54,
+        "code": "428JULNS",
+        "name": "28 DE JULIO",
+        "sentido": "NS"
+      },
+      {
+        "id": 55,
+        "code": "4MEXICNS",
+        "name": "MEXICO",
+        "sentido": "NS"
+      },
+      {
+        "id": 56,
+        "code": "4PIERONS",
+        "name": "N. DE PIEROLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 57,
+        "code": "4ACHO NS",
+        "name": "ACHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 58,
+        "code": "4UNANUNS",
+        "name": "UNANUE",
+        "sentido": "NS"
+      },
+      {
+        "id": 59,
+        "code": "4MDOFLNS",
+        "name": "MDO DE FLORES",
+        "sentido": "NS"
+      },
+      {
+        "id": 60,
+        "code": "4CMOREYRANS",
+        "name": "CANAVAL Y MOREYRA",
+        "sentido": "NS"
+      },
+      {
+        "id": 61,
+        "code": "4PZELANS",
+        "name": "PARDO DE ZELA",
+        "sentido": "NS"
+      },
+      {
+        "id": 62,
+        "code": "4LIMA NS",
+        "name": "LIMA (LAS FLORES)",
+        "sentido": "NS"
+      },
+      {
+        "id": 63,
+        "code": "4CINCOSN",
+        "name": "LA CINCO",
+        "sentido": "SN"
+      },
+      {
+        "id": 64,
+        "code": "4SEOASN",
+        "name": "SEOANE",
+        "sentido": "SN"
+      },
+      {
+        "id": 65,
+        "code": "4ENCINASN",
+        "name": "ENCINAS",
+        "sentido": "SN"
+      },
+      {
+        "id": 66,
+        "code": "4TUPACSN",
+        "name": "TUPAC AMARU",
+        "sentido": "SN"
+      },
+      {
+        "id": 67,
+        "code": "4SEDAPNS",
+        "name": "SEDAPAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 68,
+        "code": "4QUINCSN",
+        "name": "LA QUINCE",
+        "sentido": "SN"
+      },
+      {
+        "id": 69,
+        "code": "4SEDAPSN",
+        "name": "SEDAPAL",
+        "sentido": "SN"
+      },
+      {
+        "id": 70,
+        "code": "4CATOLNS",
+        "name": "CATOLICA",
+        "sentido": "NS"
+      },
+      {
+        "id": 71,
+        "code": "4CUATRSN",
+        "name": "LA CUATRO",
+        "sentido": "SN"
+      },
+      {
+        "id": 72,
+        "code": "4MOTUPSN",
+        "name": "MOTUPE",
+        "sentido": "SN"
+      },
+      {
+        "id": 73,
+        "code": "4ASCARSN",
+        "name": "ASCARRUZ",
+        "sentido": "SN"
+      }
+    ]
+  },
+  {
+    "id": "C406",
+    "code": "406",
+    "name": "Línea 406",
+    "label": "Corredor 4 — SJL",
+    "color": "#1e40af",
+    "stops": [
+      {
+        "id": 0,
+        "code": "47MARSN",
+        "name": "7 DE MARISCAL",
+        "sentido": "SN"
+      },
+      {
+        "id": 1,
+        "code": "4BAYOVSN",
+        "name": "BAYOVAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "4PSOLSN",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "SN"
+      },
+      {
+        "id": 3,
+        "code": "4POSTESN",
+        "name": "LOS POSTES",
+        "sentido": "SN"
+      },
+      {
+        "id": 4,
+        "code": "4CUSCOSN",
+        "name": "CUZCO",
+        "sentido": "SN"
+      },
+      {
+        "id": 5,
+        "code": "4HUALLSN",
+        "name": "HUALLAGA",
+        "sentido": "SN"
+      },
+      {
+        "id": 6,
+        "code": "4BASADSN",
+        "name": "BASADRE",
+        "sentido": "SN"
+      },
+      {
+        "id": 7,
+        "code": "4HACIESN",
+        "name": "LA HACIENDA",
+        "sentido": "SN"
+      },
+      {
+        "id": 8,
+        "code": "4QUINCESN",
+        "name": "LA QUINCE",
+        "sentido": "SN"
+      },
+      {
+        "id": 9,
+        "code": "4MONTESN",
+        "name": "MONTEVIDEO",
+        "sentido": "SN"
+      },
+      {
+        "id": 10,
+        "code": "4PLZGRAUSN",
+        "name": "PLAZA GRAU",
+        "sentido": "SN"
+      },
+      {
+        "id": 11,
+        "code": "48MARNS",
+        "name": "8 DE MARISCAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 12,
+        "code": "4BAYOVNS",
+        "name": "BAYOVAR",
+        "sentido": "NS"
+      },
+      {
+        "id": 13,
+        "code": "4BLEGUIANS",
+        "name": "AUGUSTO B. LEGUIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 14,
+        "code": "4CAL3NS",
+        "name": "CALLE 3",
+        "sentido": "NS"
+      },
+      {
+        "id": 15,
+        "code": "4CENTRANS",
+        "name": "CENTRAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 16,
+        "code": "4CESTENS",
+        "name": "DEL CRUCE ESTE",
+        "sentido": "NS"
+      },
+      {
+        "id": 17,
+        "code": "4MCENENS",
+        "name": "MERCADO HEROES DEL CENEPA",
+        "sentido": "NS"
+      },
+      {
+        "id": 18,
+        "code": "4POSNS",
+        "name": "LA POSTA",
+        "sentido": "NS"
+      },
+      {
+        "id": 19,
+        "code": "4RECABANS",
+        "name": "RECABARREN",
+        "sentido": "NS"
+      },
+      {
+        "id": 20,
+        "code": "4CAPNS",
+        "name": "LA CAPILLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 21,
+        "code": "4MONTENNS",
+        "name": "MONTENEGRO",
+        "sentido": "NS"
+      },
+      {
+        "id": 22,
+        "code": "4OCHONS",
+        "name": "LA OCHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 23,
+        "code": "4SCARLONS",
+        "name": "SAN CARLOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 24,
+        "code": "4SMARTNS",
+        "name": "SAN MARTIN",
+        "sentido": "NS"
+      },
+      {
+        "id": 25,
+        "code": "4SROSANS",
+        "name": "SANTA ROSA",
+        "sentido": "NS"
+      },
+      {
+        "id": 26,
+        "code": "4ASCASN",
+        "name": "ASCARRUZ",
+        "sentido": "SN"
+      },
+      {
+        "id": 27,
+        "code": "4TUPACSN",
+        "name": "TUPAC AMARU",
+        "sentido": "SN"
+      },
+      {
+        "id": 28,
+        "code": "4ACHOSN",
+        "name": "ACHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 29,
+        "code": "4CELIMNS",
+        "name": "CELIMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 30,
+        "code": "45MARNS",
+        "name": "5 DE MARISCAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 31,
+        "code": "47MARNS",
+        "name": "7 DE MARISCAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 32,
+        "code": "4BASADRNS",
+        "name": "BASADRE",
+        "sentido": "NS"
+      },
+      {
+        "id": 33,
+        "code": "4CALEGRNS",
+        "name": "CIRO ALEGRIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 34,
+        "code": "4CARCANS",
+        "name": "CARCAMO",
+        "sentido": "NS"
+      },
+      {
+        "id": 35,
+        "code": "4POSTENS",
+        "name": "LOS POSTES",
+        "sentido": "NS"
+      },
+      {
+        "id": 36,
+        "code": "4SNTMARINS",
+        "name": "SANTA MARIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 37,
+        "code": "4HACIENS",
+        "name": "LA HACIENDA",
+        "sentido": "NS"
+      },
+      {
+        "id": 38,
+        "code": "4SNHILARNS",
+        "name": "SAN HILARION",
+        "sentido": "NS"
+      },
+      {
+        "id": 39,
+        "code": "4CONCEJSN",
+        "name": "CONCEJO",
+        "sentido": "SN"
+      },
+      {
+        "id": 40,
+        "code": "4GRAUNS",
+        "name": "GRAU",
+        "sentido": "NS"
+      },
+      {
+        "id": 41,
+        "code": "4SMARTISN",
+        "name": "SAN MARTIN",
+        "sentido": "SN"
+      },
+      {
+        "id": 42,
+        "code": "4ENCINASN",
+        "name": "ENCINAS",
+        "sentido": "SN"
+      },
+      {
+        "id": 43,
+        "code": "4CUSCONS",
+        "name": "CUZCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 44,
+        "code": "4BRITANS",
+        "name": "BRITANICO",
+        "sentido": "NS"
+      },
+      {
+        "id": 45,
+        "code": "4NPIEROSN",
+        "name": "NICOLAS DE PIEROLA",
+        "sentido": "SN"
+      },
+      {
+        "id": 46,
+        "code": "4ENCINANS",
+        "name": "ENCINAS",
+        "sentido": "NS"
+      },
+      {
+        "id": 47,
+        "code": "4CELIMSN",
+        "name": "CELIMA",
+        "sentido": "SN"
+      },
+      {
+        "id": 48,
+        "code": "4LCIRUENS",
+        "name": "LOS CIRUELOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 49,
+        "code": "4QUINCENS",
+        "name": "LA QUINCE",
+        "sentido": "NS"
+      },
+      {
+        "id": 50,
+        "code": "4SCARLOSN",
+        "name": "SAN CARLOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 51,
+        "code": "4ESTACNS",
+        "name": "ESTACION",
+        "sentido": "NS"
+      },
+      {
+        "id": 52,
+        "code": "4DPARQNS",
+        "name": "DEL PARQUE",
+        "sentido": "NS"
+      },
+      {
+        "id": 53,
+        "code": "4MFLORSN",
+        "name": "MERCADO DE FLORES",
+        "sentido": "SN"
+      },
+      {
+        "id": 54,
+        "code": "4LIMANS",
+        "name": "LIMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 55,
+        "code": "4SROSASN",
+        "name": "SANTA ROSA",
+        "sentido": "SN"
+      },
+      {
+        "id": 56,
+        "code": "4JGALVSN",
+        "name": "JOSE GALVEZ",
+        "sentido": "SN"
+      },
+      {
+        "id": 57,
+        "code": "4PSOLNS",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "NS"
+      },
+      {
+        "id": 58,
+        "code": "4OCHOSN",
+        "name": "LA OCHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 59,
+        "code": "4NICOLNS",
+        "name": "NICOLAS DE PIEROLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 60,
+        "code": "4SNHILARSN",
+        "name": "SAN HILARION",
+        "sentido": "SN"
+      },
+      {
+        "id": 61,
+        "code": "4UCAYALNS",
+        "name": "UCAYALI",
+        "sentido": "NS"
+      },
+      {
+        "id": 62,
+        "code": "4ACHONS",
+        "name": "ACHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 63,
+        "code": "4MFLORNS",
+        "name": "MERCADO DE FLORES",
+        "sentido": "NS"
+      },
+      {
+        "id": 64,
+        "code": "4SEDAPANS",
+        "name": "SEDAPAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 65,
+        "code": "4CONCEJNS",
+        "name": "CONCEJO",
+        "sentido": "NS"
+      },
+      {
+        "id": 66,
+        "code": "4DPARQSN",
+        "name": "DEL PARQUE",
+        "sentido": "SN"
+      },
+      {
+        "id": 67,
+        "code": "4SEDAPASN",
+        "name": "SEDAPAL",
+        "sentido": "SN"
+      },
+      {
+        "id": 68,
+        "code": "4SABILNS",
+        "name": "LAS SABILAS",
+        "sentido": "NS"
+      },
+      {
+        "id": 69,
+        "code": "4TUPACNS",
+        "name": "TUPAC AMARU",
+        "sentido": "NS"
+      },
+      {
+        "id": 70,
+        "code": "4ANCASHNS",
+        "name": "ANCASH",
+        "sentido": "NS"
+      },
+      {
+        "id": 71,
+        "code": "4EBANOSN",
+        "name": "LOS EBANOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 72,
+        "code": "4JRSANTASN",
+        "name": "JR. SANTA ROSA",
+        "sentido": "SN"
+      },
+      {
+        "id": 73,
+        "code": "4LCIRUESN",
+        "name": "LOS CIRUELOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 74,
+        "code": "4CENEPASN",
+        "name": "HEROES DEL CENEPA",
+        "sentido": "SN"
+      },
+      {
+        "id": 75,
+        "code": "4BRITASN",
+        "name": "BRITANICO",
+        "sentido": "SN"
+      },
+      {
+        "id": 76,
+        "code": "4BLEGUIASN",
+        "name": "AUGUSTO B. LEGUIA",
+        "sentido": "SN"
+      },
+      {
+        "id": 77,
+        "code": "4AMATISSN",
+        "name": "LAS AMATISTAS",
+        "sentido": "SN"
+      },
+      {
+        "id": 78,
+        "code": "4POSTASN",
+        "name": "LA POSTA",
+        "sentido": "SN"
+      },
+      {
+        "id": 79,
+        "code": "4PRQZONASN",
+        "name": "PARQUE ZONAL",
+        "sentido": "SN"
+      },
+      {
+        "id": 80,
+        "code": "45MARSN",
+        "name": "5 DE MARISCAL",
+        "sentido": "SN"
+      },
+      {
+        "id": 81,
+        "code": "4CESTESN",
+        "name": "DEL CRUCE ESTE",
+        "sentido": "SN"
+      },
+      {
+        "id": 82,
+        "code": "4PRQZONANS",
+        "name": "PARQUE ZONAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 83,
+        "code": "4CARCASN",
+        "name": "CARCAMO",
+        "sentido": "SN"
+      },
+      {
+        "id": 84,
+        "code": "4PSECOSN",
+        "name": "POZO SECO",
+        "sentido": "SN"
+      }
+    ]
+  },
+  {
+    "id": "C412",
+    "code": "412",
+    "name": "Línea 412",
+    "label": "Corredor 4 — SJL",
+    "color": "#1e3a8a",
+    "stops": [
+      {
+        "id": 0,
+        "code": "4ALCAZSN",
+        "name": "ALCAZAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 1,
+        "code": "4ICA  SN",
+        "name": "ICA",
+        "sentido": "SN"
+      },
+      {
+        "id": 2,
+        "code": "4MOQUEGSN",
+        "name": "MOQUEGUA",
+        "sentido": "SN"
+      },
+      {
+        "id": 3,
+        "code": "4SNCARSN",
+        "name": "SAN CARLOS",
+        "sentido": "SN"
+      },
+      {
+        "id": 4,
+        "code": "4OCHO SN",
+        "name": "LA OCHO",
+        "sentido": "SN"
+      },
+      {
+        "id": 5,
+        "code": "4BAYOVSN",
+        "name": "BAYOVAR",
+        "sentido": "SN"
+      },
+      {
+        "id": 6,
+        "code": "4PROCESN",
+        "name": "PROCERES",
+        "sentido": "SN"
+      },
+      {
+        "id": 7,
+        "code": "4HACIESN",
+        "name": "LA HACIENDA",
+        "sentido": "SN"
+      },
+      {
+        "id": 8,
+        "code": "4LACAPNS",
+        "name": "LA CAPILLA",
+        "sentido": "NS"
+      },
+      {
+        "id": 9,
+        "code": "4MNTENNS",
+        "name": "MONTENEGRO",
+        "sentido": "NS"
+      },
+      {
+        "id": 10,
+        "code": "4BAYOVNS",
+        "name": "BAYOVAR DC",
+        "sentido": "NS"
+      },
+      {
+        "id": 11,
+        "code": "4CINCONS",
+        "name": "LA CINCO",
+        "sentido": "NS"
+      },
+      {
+        "id": 12,
+        "code": "4MARIANS",
+        "name": "MARIATEGUI",
+        "sentido": "NS"
+      },
+      {
+        "id": 13,
+        "code": "4CELIMNS",
+        "name": "CELIMA",
+        "sentido": "NS"
+      },
+      {
+        "id": 14,
+        "code": "4CUATRNS",
+        "name": "LA CUATRO",
+        "sentido": "NS"
+      },
+      {
+        "id": 15,
+        "code": "4HACIENS",
+        "name": "LA HACIENDA",
+        "sentido": "NS"
+      },
+      {
+        "id": 16,
+        "code": "4MOTUPNS",
+        "name": "MOTUPE",
+        "sentido": "NS"
+      },
+      {
+        "id": 17,
+        "code": "4OCHO NS",
+        "name": "LA OCHO",
+        "sentido": "NS"
+      },
+      {
+        "id": 18,
+        "code": "4POSTENS",
+        "name": "LOS POSTES",
+        "sentido": "NS"
+      },
+      {
+        "id": 19,
+        "code": "4SNMARNS",
+        "name": "SAN MARTIN",
+        "sentido": "NS"
+      },
+      {
+        "id": 20,
+        "code": "4STARONS",
+        "name": "SANTA ROSA",
+        "sentido": "NS"
+      },
+      {
+        "id": 21,
+        "code": "48MARINS",
+        "name": "8 DE MARISCAL",
+        "sentido": "NS"
+      },
+      {
+        "id": 22,
+        "code": "4ENCINANS",
+        "name": "ENCINAS",
+        "sentido": "NS"
+      },
+      {
+        "id": 23,
+        "code": "4SNCARNS",
+        "name": "SAN CARLOS",
+        "sentido": "NS"
+      },
+      {
+        "id": 24,
+        "code": "4BS412SN",
+        "name": "BASADRE",
+        "sentido": "SN"
+      },
+      {
+        "id": 25,
+        "code": "4POSTESN",
+        "name": "LOS POSTES",
+        "sentido": "SN"
+      },
+      {
+        "id": 26,
+        "code": "4CTORENS",
+        "name": "SEDAPAL / CANTO REY",
+        "sentido": "NS"
+      },
+      {
+        "id": 27,
+        "code": "4PIZARSN",
+        "name": "PIZARRO",
+        "sentido": "SN"
+      },
+      {
+        "id": 28,
+        "code": "4QUINCNS",
+        "name": "LA QUINCE",
+        "sentido": "NS"
+      },
+      {
+        "id": 29,
+        "code": "4BASADNS",
+        "name": "BASADRE",
+        "sentido": "NS"
+      },
+      {
+        "id": 30,
+        "code": "4PIRAMNS",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "NS"
+      },
+      {
+        "id": 31,
+        "code": "4TUPACNS",
+        "name": "TUPAC AMARU",
+        "sentido": "NS"
+      },
+      {
+        "id": 32,
+        "code": "4SNMARSN",
+        "name": "SAN MARTIN",
+        "sentido": "SN"
+      },
+      {
+        "id": 33,
+        "code": "4CELIMSN",
+        "name": "CELIMA",
+        "sentido": "SN"
+      },
+      {
+        "id": 34,
+        "code": "4STAROSN",
+        "name": "SANTA ROSA",
+        "sentido": "SN"
+      },
+      {
+        "id": 35,
+        "code": "415CJASN",
+        "name": "LA 15 DE CAJA DE AGUA",
+        "sentido": "SN"
+      },
+      {
+        "id": 36,
+        "code": "4PIRAMSN",
+        "name": "PIRAMIDES DEL SOL",
+        "sentido": "SN"
+      },
+      {
+        "id": 37,
+        "code": "4COMISNS",
+        "name": "COMISARIA",
+        "sentido": "NS"
+      },
+      {
+        "id": 38,
+        "code": "4ENCINASN",
+        "name": "ENCINAS",
+        "sentido": "SN"
+      },
+      {
+        "id": 39,
+        "code": "4LI412NS",
+        "name": "LIMA AUX. (LAS FLORES)",
+        "sentido": "NS"
+      },
+      {
+        "id": 40,
+        "code": "4ALCAZNS",
+        "name": "ALCAZAR",
+        "sentido": "NS"
+      },
+      {
+        "id": 41,
+        "code": "4ICA  NS",
+        "name": "ICA",
+        "sentido": "NS"
+      },
+      {
+        "id": 42,
+        "code": "4PIZARNS",
+        "name": "PIZARRO",
+        "sentido": "NS"
+      },
+      {
+        "id": 43,
+        "code": "4MOQUESN",
+        "name": "TALARA",
+        "sentido": "SN"
+      },
+      {
+        "id": 44,
+        "code": "4CINCOSN",
+        "name": "LA CINCO",
+        "sentido": "SN"
+      },
+      {
+        "id": 45,
+        "code": "4CTORESN",
+        "name": "SEDAPAL / CANTO REY",
+        "sentido": "SN"
+      },
+      {
+        "id": 46,
+        "code": "4LDOCESN",
+        "name": "LA DOCE",
+        "sentido": "SN"
+      },
+      {
+        "id": 47,
+        "code": "4TUPACSN",
+        "name": "TUPAC AMARU",
+        "sentido": "SN"
+      },
+      {
+        "id": 48,
+        "code": "4QUINCSN",
+        "name": "LA QUINCE",
+        "sentido": "SN"
+      },
+      {
+        "id": 49,
+        "code": "4TUNELNS",
+        "name": "TUNEL",
+        "sentido": "NS"
+      },
+      {
+        "id": 50,
+        "code": "4LDOCENS",
+        "name": "LA DOCE",
+        "sentido": "NS"
+      },
+      {
+        "id": 51,
+        "code": "4MARIASN",
+        "name": "MARIATEGUI",
+        "sentido": "SN"
+      },
+      {
+        "id": 52,
+        "code": "4MOTUPSN",
+        "name": "MOTUPE",
+        "sentido": "SN"
+      }
+    ]
+  },
+  {
+    "id": "C3180",
+    "code": "3180",
+    "name": "Línea 3180",
+    "label": "Corredor Especial",
+    "color": "#10b981",
+    "stops": [
+      {
+        "id": 0,
+        "code": "3LPRADNS",
+        "name": "LEONCIO PRADO",
+        "sentido": "IDA"
+      }
+    ]
+  }
+]

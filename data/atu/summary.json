@@ -1,0 +1,297 @@
+{
+  "totalRoutes": 470,
+  "totalFleet": 24771,
+  "byTipo": {
+    "DIAMETRAL": 192,
+    "RADIAL": 127,
+    "PERIFERICA": 148,
+    "CIRCULAR": 3
+  },
+  "topRoutes": [
+    {
+      "code": "1185",
+      "name": "Ruta 1185",
+      "label": "PUENTE PIEDRA → VILLA EL SALVADOR",
+      "fleet": 136,
+      "interval": 3
+    },
+    {
+      "code": "1268",
+      "name": "Ruta 1268",
+      "label": "CALLAO → ATE",
+      "fleet": 136,
+      "interval": 3
+    },
+    {
+      "code": "1168",
+      "name": "Ruta 1168",
+      "label": "ANCON → LINCE",
+      "fleet": 130,
+      "interval": 3
+    },
+    {
+      "code": "1300",
+      "name": "Ruta 1300",
+      "label": "VENTANILLA → SAN JUAN LURIGANCHO",
+      "fleet": 129,
+      "interval": 4
+    },
+    {
+      "code": "1280",
+      "name": "Ruta 1280",
+      "label": "SANTA ROSA → VILLA MARIA DEL TRIUNFO",
+      "fleet": 127,
+      "interval": 4
+    },
+    {
+      "code": "1240",
+      "name": "Ruta 1240",
+      "label": "PACHACAMAC → ANCON",
+      "fleet": 122,
+      "interval": 4
+    },
+    {
+      "code": "1242",
+      "name": "Ruta 1242",
+      "label": "PACHACAMAC → ANCON",
+      "fleet": 118,
+      "interval": 4
+    },
+    {
+      "code": "1298",
+      "name": "Ruta 1298",
+      "label": "CALLAO → VILLA MARIA DEL TRIUNFO",
+      "fleet": 118,
+      "interval": 3
+    },
+    {
+      "code": "1097",
+      "name": "Ruta 1097",
+      "label": "VILLA EL SALVADOR → SAN JUAN LURIGANCHO",
+      "fleet": 117,
+      "interval": 4
+    },
+    {
+      "code": "1286",
+      "name": "Ruta 1286",
+      "label": "SAN MARTIN PORRES → SAN JUAN LURIGANCHO",
+      "fleet": 115,
+      "interval": 4
+    },
+    {
+      "code": "1145",
+      "name": "Ruta 1145",
+      "label": "CARABAYLLO → LA VICTORIA",
+      "fleet": 112,
+      "interval": 3
+    },
+    {
+      "code": "1249",
+      "name": "Ruta 1249",
+      "label": "VILLA MARIA DEL TRIUNFO → SAN MARTIN PORRES",
+      "fleet": 111,
+      "interval": 4
+    },
+    {
+      "code": "1018",
+      "name": "Ruta 1018",
+      "label": "CARABAYLLO → SAN LUIS",
+      "fleet": 109,
+      "interval": 3
+    },
+    {
+      "code": "1137",
+      "name": "Ruta 1137",
+      "label": "CARABAYLLO → LA VICTORIA",
+      "fleet": 109,
+      "interval": 3
+    },
+    {
+      "code": "1239",
+      "name": "Ruta 1239",
+      "label": "VILLA EL SALVADOR → PUENTE PIEDRA",
+      "fleet": 109,
+      "interval": 4
+    },
+    {
+      "code": "1267",
+      "name": "Ruta 1267",
+      "label": "VENTANILLA → ATE",
+      "fleet": 109,
+      "interval": 3
+    },
+    {
+      "code": "1287",
+      "name": "Ruta 1287",
+      "label": "SANTA ROSA → SAN JUAN LURIGANCHO",
+      "fleet": 109,
+      "interval": 4
+    },
+    {
+      "code": "1438",
+      "name": "Ruta 1438",
+      "label": "VENTANILLA → SAN MIGUEL",
+      "fleet": 109,
+      "interval": 5
+    },
+    {
+      "code": "1235",
+      "name": "Ruta 1235",
+      "label": "CARABAYLLO → PACHACAMAC",
+      "fleet": 108,
+      "interval": 4
+    },
+    {
+      "code": "1302",
+      "name": "Ruta 1302",
+      "label": "SAN JUAN LURIGANCHO → CALLAO",
+      "fleet": 108,
+      "interval": 3
+    },
+    {
+      "code": "1237",
+      "name": "Ruta 1237",
+      "label": "VILLA EL SALVADOR → CARABAYLLO",
+      "fleet": 107,
+      "interval": 4
+    },
+    {
+      "code": "1054",
+      "name": "Ruta 1054",
+      "label": "SAN JUAN LURIGANCHO → CHORRILLOS",
+      "fleet": 106,
+      "interval": 3
+    },
+    {
+      "code": "1069",
+      "name": "Ruta 1069",
+      "label": "LURIGANCHO (CHOSICA) → CERCADO LIMA",
+      "fleet": 106,
+      "interval": 4
+    },
+    {
+      "code": "1480",
+      "name": "Ruta 1480",
+      "label": "LURIGANCHO → SAN MIGUEL",
+      "fleet": 106,
+      "interval": 4
+    },
+    {
+      "code": "1482",
+      "name": "Ruta 1482",
+      "label": "SAN MARTIN PORRES → CHORRILLOS",
+      "fleet": 106,
+      "interval": 4
+    },
+    {
+      "code": "1024",
+      "name": "Ruta 1024",
+      "label": "SAN MARTIN PORRES",
+      "fleet": 100,
+      "interval": 5
+    },
+    {
+      "code": "1100",
+      "name": "Ruta 1100",
+      "label": "PACHACAMAC → ATE",
+      "fleet": 100,
+      "interval": 4
+    },
+    {
+      "code": "1218",
+      "name": "Ruta 1218",
+      "label": "LURIGANCHO (CHOSICA) → SAN MIGUEL",
+      "fleet": 100,
+      "interval": 5
+    },
+    {
+      "code": "1260",
+      "name": "Ruta 1260",
+      "label": "VENTANILLA → ATE",
+      "fleet": 100,
+      "interval": 3
+    },
+    {
+      "code": "1316",
+      "name": "Ruta 1316",
+      "label": "VENTANILLA → SAN JUAN LURIGANCHO",
+      "fleet": 100,
+      "interval": 5
+    },
+    {
+      "code": "1472",
+      "name": "Ruta 1472",
+      "label": "SAN MARTIN PORRES → VILLA EL SALVADOR",
+      "fleet": 100,
+      "interval": 4
+    },
+    {
+      "code": "1241",
+      "name": "Ruta 1241",
+      "label": "LURIN → CARABAYLLO",
+      "fleet": 99,
+      "interval": 4
+    },
+    {
+      "code": "1462",
+      "name": "Ruta 1462",
+      "label": "CARABAYLLO",
+      "fleet": 98,
+      "interval": 5
+    },
+    {
+      "code": "1479",
+      "name": "Ruta 1479",
+      "label": "LURIGANCHO (CHOSICA) → SAN MIGUEL",
+      "fleet": 96,
+      "interval": 7
+    },
+    {
+      "code": "1184",
+      "name": "Ruta 1184",
+      "label": "SANTA ROSA → LURIN",
+      "fleet": 95,
+      "interval": 4
+    },
+    {
+      "code": "1281",
+      "name": "Ruta 1281",
+      "label": "ATE → CALLAO",
+      "fleet": 95,
+      "interval": 4
+    },
+    {
+      "code": "1476",
+      "name": "Ruta 1476",
+      "label": "ATE → SAN MARTIN PORRES",
+      "fleet": 95,
+      "interval": 5
+    },
+    {
+      "code": "1238",
+      "name": "Ruta 1238",
+      "label": "VILLA EL SALVADOR → CARABAYLLO",
+      "fleet": 92,
+      "interval": 4
+    },
+    {
+      "code": "1248",
+      "name": "Ruta 1248",
+      "label": "PACHACAMAC → SAN MARTIN PORRES",
+      "fleet": 92,
+      "interval": 4
+    },
+    {
+      "code": "1065",
+      "name": "Ruta 1065",
+      "label": "ATE",
+      "fleet": 91,
+      "interval": 4
+    }
+  ],
+  "peakAM": "06:00–08:00",
+  "peakPM": "17:00–19:00",
+  "cosacStations": 46,
+  "linea1Stations": 26,
+  "corridorLines": 17
+}

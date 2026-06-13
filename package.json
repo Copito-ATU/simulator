@@ -1,0 +1,21 @@
+{
+  "name": "atu-simulator",
+  "version": "1.0.0",
+  "description": "Simulador en tiempo real del Metro Línea 1 - ATU Lima",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --use-system-ca server.js",
+    "dev": "nodemon --exec \"node --use-system-ca\" server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^12.7.0",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

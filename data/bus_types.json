@@ -1,0 +1,50 @@
+{
+  "omnibus": {
+    "id": "omnibus",
+    "label": "Ómnibus",
+    "description": "Bus grande de 2 puertas, ~45 pasajeros. Los más comunes en rutas diametrales de Lima.",
+    "categoria": "M3",
+    "carroceria": "OMNIBUS",
+    "photoUrl": "https://storage.googleapis.com/atu-hackathon-2026.firebasestorage.app/bus_types/omnibus_m3.jpg"
+  },
+  "microbus": {
+    "id": "microbus",
+    "label": "Microbús",
+    "description": "Coaster o minivan ampliada, ~20 pasajeros. Rutas periféricas y alimentadoras.",
+    "categoria": "M2",
+    "carroceria": "MICROBUS",
+    "photoUrl": "https://storage.googleapis.com/atu-hackathon-2026.firebasestorage.app/bus_types/microbus_m2.jpg"
+  },
+  "minibus": {
+    "id": "minibus",
+    "label": "Minibús",
+    "description": "Bus mediano ~30 pasajeros. Versión intermedia entre ómnibus y microbús.",
+    "categoria": "M2-M3",
+    "carroceria": "MINIBUS",
+    "photoUrl": "https://storage.googleapis.com/atu-hackathon-2026.firebasestorage.app/bus_types/minibus_m2m3.png"
+  },
+  "metropolitano": {
+    "id": "metropolitano",
+    "label": "Metropolitano",
+    "description": "Bus articulado BRT con carril exclusivo. Recorre el eje norte-sur de Lima.",
+    "categoria": "BRT",
+    "carroceria": "ARTICULADO",
+    "photoUrl": "https://storage.googleapis.com/atu-hackathon-2026.firebasestorage.app/bus_types/metropolitano_brt.jpg"
+  },
+  "linea1": {
+    "id": "linea1",
+    "label": "Metro Línea 1",
+    "description": "Tren eléctrico elevado. Une Villa El Salvador con San Juan de Lurigancho.",
+    "categoria": "METRO",
+    "carroceria": "TREN",
+    "photoUrl": "https://storage.googleapis.com/atu-hackathon-2026.firebasestorage.app/bus_types/metro_linea1.jpg"
+  },
+  "corredor": {
+    "id": "corredor",
+    "label": "Corredor Complementario",
+    "description": "Bus con paraderos fijos y tarifa integrada. Corredores 1-4 en ejes principales.",
+    "categoria": "CORREDOR",
+    "carroceria": "OMNIBUS",
+    "photoUrl": "https://storage.googleapis.com/atu-hackathon-2026.firebasestorage.app/bus_types/corredor_complementario.jpg"
+  }
+}

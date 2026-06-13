@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>ATU Lima — Simulador Buses</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',sans-serif;background:#0d1117;color:#e6edf3;display:flex;height:100vh;overflow:hidden}
+    #map{flex:1}
+
+    /* ── Sidebar ── */
+    #sidebar{width:340px;min-width:340px;background:#161b22;border-left:1px solid #30363d;display:flex;flex-direction:column;overflow:hidden}
+
+    #header{background:linear-gradient(135deg,#1a3a5c,#1f6feb);padding:12px 16px}
+    #header h1{font-size:16px;font-weight:700}
+    #header p{font-size:11px;opacity:.75;margin-top:2px}
+
+    /* tabs */
+    #tabs{display:flex;border-bottom:1px solid #30363d;background:#0d1117}
+    .tab{flex:1;padding:8px 4px;font-size:11px;text-align:center;cursor:pointer;color:#8b949e;border-bottom:2px solid transparent;transition:.2s}
+    .tab.active{color:#58a6ff;border-bottom-color:#1f6feb;background:#161b22}
+
+    /* panels */
+    #panels{flex:1;overflow:hidden;display:flex;flex-direction:column}
+    .panel{display:none;flex:1;overflow-y:auto;padding:10px 14px}
+    .panel.active{display:block}
+
+    /* stats row */
+    #stats{display:flex;gap:5px;padding:8px 14px;border-bottom:1px solid #30363d;flex-shrink:0}
+    .stat{flex:1;background:#21262d;border-radius:7px;padding:7px 5px;text-align:center}
+    .stat .num{font-size:18px;font-weight:700;color:#58a6ff}
+    .stat .lbl{font-size:9px;color:#8b949e;margin-top:1px}
+
+    /* legend */
+    #legend{display:flex;flex-wrap:wrap;gap:6px;padding:8px 14px;border-bottom:1px solid #30363d;flex-shrink:0}
+    .leg{display:flex;align-items:center;gap:5px;font-size:10px;cursor:pointer;padding:3px 6px;border-radius:4px;border:1px solid transparent}
+    .leg.off{opacity:.35}
+    .leg:hover{border-color:#30363d}
+    .leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+
+    /* incidents */
+    .inc-card{background:#21262d;border-radius:7px;padding:8px 10px;margin-bottom:6px;border-left:3px solid #f85149}
+    .inc-card.medium{border-color:#e3b341}.inc-card.low{border-color:#58a6ff}
+    .inc-title{font-weight:600;font-size:12px}
+    .inc-sub{color:#8b949e;font-size:11px;margin-top:2px}
+
+    /* arrivals */
+    #arr-station{font-size:13px;font-weight:600;margin-bottom:8px;color:#e6edf3}
+    .arr-card{background:#21262d;border-radius:8px;padding:9px 12px;margin-bottom:6px;display:flex;align-items:center;gap:12px}
+    .arr-min{font-size:18px;font-weight:700;color:#3fb950;min-width:56px;text-align:right;line-height:1.2}
+    .arr-min.now{color:#ff6b6b;font-size:14px;animation:pulse 1s infinite}
+    .arr-min.soon{color:#f85149}.arr-min.close{color:#e3b341}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+    .arr-badge{font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;background:#21262d;border:1px solid #30363d;color:#e6edf3;margin-bottom:3px;display:inline-block}
+    .arr-dir{font-size:11px;color:#8b949e}
+
+    /* fleet panel */
+    .fleet-route { margin-bottom:14px }
+    .fleet-route-header {
+      display:flex;align-items:center;gap:8px;
+      font-size:12px;font-weight:700;
+      padding:6px 8px;background:#21262d;border-radius:6px;margin-bottom:4px;
+    }
+    .fleet-route-dot { width:10px;height:10px;border-radius:50%;flex-shrink:0 }
+    .fleet-route-total {
+      margin-left:auto;font-size:11px;font-weight:400;
+      background:#161b22;padding:2px 7px;border-radius:10px;color:#58a6ff;
+    }
+    .fleet-svc-row {
+      display:flex;align-items:center;gap:0;
+      padding:4px 6px 4px 22px;border-bottom:1px solid #21262d;font-size:11px;
+    }
+    .fleet-svc-code {
+      font-weight:700;min-width:52px;color:#c9d1d9;
+    }
+    .fleet-svc-label { color:#8b949e;flex:1 }
+    .fleet-svc-count { font-weight:700;color:#3fb950;min-width:28px;text-align:right }
+    .fleet-bar-wrap { width:60px;margin-left:8px;background:#21262d;border-radius:3px;height:6px;overflow:hidden }
+    .fleet-bar { height:6px;border-radius:3px;transition:width .5s }
+
+    /* stations list */
+    .route-block{margin-bottom:12px}
+    .route-header{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;margin-bottom:6px;padding:5px 8px;background:#21262d;border-radius:6px}
+    .route-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+    .st-list{padding-left:8px}
+    .st-row{display:flex;align-items:baseline;gap:6px;padding:3px 0;border-bottom:1px solid #21262d;cursor:pointer}
+    .st-row:hover{background:#21262d;border-radius:4px;padding-left:4px}
+    .st-num{font-size:10px;color:#3d444d;min-width:18px;text-align:right}
+    .st-name{font-size:11px;color:#c9d1d9}
+    .st-dist{font-size:10px;color:#3d444d}
+
+    /* traffic panel */
+    #traffic{padding:8px 14px;border-bottom:1px solid #30363d;flex-shrink:0}
+    #tp-header{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+    .tp-badge{font-size:10px;font-weight:700;padding:2px 9px;border-radius:10px;letter-spacing:.4px;white-space:nowrap}
+    .tp-badge.peak_am,.tp-badge.peak_pm{background:rgba(248,81,73,.14);color:#f85149;border:1px solid rgba(248,81,73,.3)}
+    .tp-badge.shoulder{background:rgba(227,179,65,.14);color:#e3b341;border:1px solid rgba(227,179,65,.3)}
+    .tp-badge.offpeak{background:rgba(63,185,80,.14);color:#3fb950;border:1px solid rgba(63,185,80,.3)}
+    .tp-badge.night{background:rgba(88,166,255,.14);color:#58a6ff;border:1px solid rgba(88,166,255,.3)}
+    #tp-pi-label{font-size:10px;color:#8b949e;margin-left:auto;white-space:nowrap}
+    #tp-bar-row{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+    #tp-track{flex:1;height:5px;background:#21262d;border-radius:3px;overflow:hidden}
+    #tp-fill{height:5px;border-radius:3px;transition:width .6s}
+    .tp-bar-hint{font-size:9px;color:#3d444d;white-space:nowrap}
+    #tp-speeds{display:flex;flex-wrap:wrap;gap:4px}
+    .tp-spd{font-size:10px;padding:2px 7px;border-radius:4px;background:#21262d;color:#8b949e}
+    .tp-spd b{color:#c9d1d9}
+
+    #footer{padding:7px 14px;font-size:10px;color:#3d444d;border-top:1px solid #30363d;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:8px}
+    #fb-btn{display:flex;align-items:center;gap:6px;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:4px 10px;cursor:pointer;font-size:11px;color:#8b949e;transition:.2s;white-space:nowrap}
+    #fb-btn:hover{border-color:#58a6ff;color:#58a6ff}
+    #fb-btn.on{border-color:#f85149;color:#f85149;background:rgba(248,81,73,.08)}
+    #fb-btn .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+    #app-link{font-size:10px;color:#3d444d;text-decoration:none}
+    #app-link:hover{color:#58a6ff}
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<div id="sidebar">
+  <div id="header">
+    <h1>🚌 ATU Lima — Tiempo Real</h1>
+    <p>Metropolitano · Corredores · Alimentadores</p>
+  </div>
+
+  <div id="stats">
+    <div class="stat"><div class="num" id="s-total">0</div><div class="lbl">Buses</div></div>
+    <div class="stat"><div class="num" id="s-moving">0</div><div class="lbl">En ruta</div></div>
+    <div class="stat"><div class="num" id="s-stopped">0</div><div class="lbl">En paradero</div></div>
+    <div class="stat"><div class="num" id="s-inc">0</div><div class="lbl">Incidentes</div></div>
+  </div>
+
+  <div id="traffic">
+    <div id="tp-header">
+      <span id="tp-badge" class="tp-badge">...</span>
+      <span id="tp-pi-label">flujo libre: <b id="tp-pct">--%</b></span>
+    </div>
+    <div id="tp-bar-row">
+      <span class="tp-bar-hint">🔴 congestionado</span>
+      <div id="tp-track"><div id="tp-fill"></div></div>
+      <span class="tp-bar-hint">🟢 libre</span>
+    </div>
+    <div id="tp-speeds"></div>
+  </div>
+
+  <div id="legend"></div>
+
+  <div id="tabs">
+    <div class="tab active" onclick="showTab('arrivals')">⏱ Llegadas</div>
+    <div class="tab" onclick="showTab('fleet')">🚌 Flota</div>
+    <div class="tab" onclick="showTab('stations')">📍 Paradas</div>
+    <div class="tab" onclick="showTab('incidents')">⚠ Avisos</div>
+  </div>
+
+  <div id="panels">
+    <div class="panel active" id="panel-arrivals">
+      <div id="arr-station">← Haz clic en una estación del mapa</div>
+      <div id="arr-list"><p style="font-size:12px;color:#3d444d;font-style:italic">Selecciona una estación para ver tiempos de llegada en tiempo real.</p></div>
+    </div>
+    <div class="panel" id="panel-fleet">
+      <div id="fleet-list"></div>
+    </div>
+    <div class="panel" id="panel-stations">
+      <div id="stations-list"></div>
+    </div>
+    <div class="panel" id="panel-incidents">
+      <div id="inc-list"><p style="font-size:12px;color:#3d444d;font-style:italic">Sin incidentes reportados.</p></div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <span>Hackathon ATU 2026</span>
+    <a id="app-link" href="/app" target="_blank">📱 App</a>
+    <div id="fb-btn" onclick="toggleFirebase()" title="Activar/desactivar sync Firebase">
+      <span class="dot"></span>
+      <span id="fb-label">Firebase OFF</span>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+// ── Map ───────────────────────────────────────────────────────────────────────
+const map = L.map('map').setView([-12.05, -77.03], 12);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+  maxZoom:19, attribution:'© OpenStreetMap © CARTO'
+}).addTo(map);
+
+// ── State ─────────────────────────────────────────────────────────────────────
+let stationMarkers = {};
+let busMarkers     = {};
+let incMarkers     = {};
+let routeLayers    = {};   // polylines
+let hiddenRoutes   = new Set();
+let selected       = null;
+let allRoutes      = [];
+
+// ── Tab control ───────────────────────────────────────────────────────────────
+const TAB_ORDER = ['arrivals','fleet','stations','incidents'];
+function showTab(name) {
+  document.querySelectorAll('.tab').forEach((t,i)  => t.classList.toggle('active', TAB_ORDER[i]===name));
+  document.querySelectorAll('.panel').forEach(p    => p.classList.toggle('active', p.id==='panel-'+name));
+}
+
+// ── Smart time display ────────────────────────────────────────────────────────
+// < 60s  → "45 seg"   (llegando YA)
+// < 120s → "1 min"
+// else   → "X min"
+function fmtTime(seconds) {
+  if (seconds < 60)  return { text: seconds + ' seg', cls: 'now' };
+  if (seconds < 120) return { text: '1 min',          cls: 'soon' };
+  const m = Math.round(seconds / 60);
+  return { text: m + ' min', cls: m <= 5 ? 'close' : '' };
+}
+
+// ── Icons ─────────────────────────────────────────────────────────────────────
+function stationIcon(color, sel) {
+  if (sel) {
+    // Estación seleccionada: señal grande con nombre visible
+    const html = `<div style="display:flex;flex-direction:column;align-items:center;gap:0">
+      <div style="background:${color};color:#fff;font-size:10px;font-weight:900;font-family:sans-serif;
+        padding:3px 7px;border-radius:4px;border:2px solid #fff;white-space:nowrap;
+        box-shadow:0 0 10px ${color},0 2px 6px rgba(0,0,0,0.8)">🚏</div>
+      <div style="width:2px;height:8px;background:#fff;opacity:0.8"></div>
+    </div>`;
+    return L.divIcon({className:'',html,iconSize:[28,28],iconAnchor:[14,28]});
+  }
+  // Estación normal: señal pequeña de parada
+  const html = `<div style="display:flex;flex-direction:column;align-items:center;gap:0">
+    <div style="width:11px;height:11px;border-radius:3px;background:${color};
+      border:1.5px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.7)"></div>
+    <div style="width:1.5px;height:5px;background:#ffffffaa"></div>
+  </div>`;
+  return L.divIcon({className:'',html,iconSize:[11,18],iconAnchor:[5.5,18]});
+}
+function busIcon(color, dir, status) {
+  const bg = status==='at_station' ? '#e3b341' : color;
+  const ar = dir==='N' ? '▲' : '▼';
+  // Small dot with direction arrow — readable at high density
+  return L.divIcon({
+    className:'',
+    html:`<div style="width:10px;height:10px;border-radius:50%;background:${bg};border:1.5px solid rgba(255,255,255,.7);box-shadow:0 1px 4px rgba(0,0,0,.8)" title="${ar}"></div>`,
+    iconSize:[10,10], iconAnchor:[5,5],
+  });
+}
+
+// ── Socket ────────────────────────────────────────────────────────────────────
+const socket = io();
+
+socket.on('init', ({routes, buses, incidents}) => {
+  allRoutes = routes;
+  buildLegend(routes);
+  drawRoutes(routes);
+  buildStationList(routes);
+  buildFleetPanel(routes, buses);   // initial fleet counts
+  drawBuses(buses);
+  drawIncidents(incidents);
+  updateStats(buses, incidents);
+});
+
+socket.on('buses_update', buses => {
+  updateBuses(buses);
+  updateFleetCounts(buses);
+  updateStats(buses, null);
+  if (selected) socket.emit('request_arrivals', selected);
+});
+
+socket.on('incidents_update', incidents => {
+  drawIncidents(incidents);
+  updateStats(null, incidents);
+});
+
+socket.on('arrivals', ({routeId, stationId, data}) => {
+  if (selected && selected.routeId===routeId && selected.stationId===stationId) renderArrivals(data);
+});
+
+// ── Legend ────────────────────────────────────────────────────────────────────
+function buildLegend(routes) {
+  const el = document.getElementById('legend');
+  el.innerHTML = routes.map(r =>
+    `<div class="leg" id="leg-${r.id}" onclick="toggleRoute('${r.id}')">
+      <div class="leg-dot" style="background:${r.color}"></div>${r.shortName}
+    </div>`
+  ).join('');
+}
+
+function toggleRoute(routeId) {
+  const hidden = hiddenRoutes.has(routeId);
+  if (hidden) hiddenRoutes.delete(routeId); else hiddenRoutes.add(routeId);
+  document.getElementById(`leg-${routeId}`).classList.toggle('off', !hidden);
+  // toggle polyline
+  const layer = routeLayers[routeId];
+  if (layer) { if (!hidden) map.removeLayer(layer); else layer.addTo(map); }
+  // toggle station markers
+  Object.values(stationMarkers).forEach(({marker, route}) => {
+    if (route.id !== routeId) return;
+    if (!hidden) map.removeLayer(marker); else marker.addTo(map);
+  });
+  // toggle bus markers
+  Object.values(busMarkers).forEach(({marker, bus}) => {
+    if (bus.routeId !== routeId) return;
+    if (!hidden) map.removeLayer(marker); else marker.addTo(map);
+  });
+}
+
+// ── Draw routes + stations ────────────────────────────────────────────────────
+function drawRoutes(routes) {
+  routes.forEach(route => {
+    const pts = route.stations.map(s => [s.lat, s.lng]);
+    const dash = route.type === 'feeder' ? '6 4' : null;
+    const layer = L.polyline(pts, {color:route.color, weight: route.type==='brt'?5:3, opacity:.85, dashArray:dash}).addTo(map);
+    routeLayers[route.id] = layer;
+
+    route.stations.forEach(st => {
+      const key = `${route.id}_${st.id}`;
+      const m = L.marker([st.lat, st.lng], {icon: stationIcon(route.color, false)})
+        .addTo(map)
+        .bindTooltip(`<b>${st.name}</b><br><span style="color:#aaa">${st.district} · ${route.name}</span>`, {direction:'top',offset:[0,-8]})
+        .on('click', () => selectStation(route, st));
+      stationMarkers[key] = {marker:m, route, station:st};
+    });
+  });
+}
+
+function selectStation(route, st) {
+  if (selected) {
+    const prev = stationMarkers[`${selected.routeId}_${selected.stationId}`];
+    if (prev) prev.marker.setIcon(stationIcon(prev.route.color, false));
+  }
+  selected = {routeId: route.id, stationId: st.id};
+  stationMarkers[`${route.id}_${st.id}`].marker.setIcon(stationIcon(route.color, true));
+  document.getElementById('arr-station').textContent = `📍 ${st.name}  ·  ${route.name}`;
+  document.getElementById('arr-list').innerHTML = '<p style="font-size:12px;color:#8b949e">Calculando...</p>';
+  showTab('arrivals');
+  socket.emit('request_arrivals', selected);
+}
+
+// ── Station list panel ────────────────────────────────────────────────────────
+function buildStationList(routes) {
+  const el = document.getElementById('stations-list');
+  el.innerHTML = routes.map(route => `
+    <div class="route-block">
+      <div class="route-header">
+        <div class="route-dot" style="background:${route.color}"></div>
+        ${route.name}
+        <span style="color:#8b949e;font-weight:400;font-size:10px;margin-left:auto">${route.stations.length} paraderos</span>
+      </div>
+      <div class="st-list">
+        ${route.stations.map(st => `
+          <div class="st-row" onclick="selectStationById('${route.id}',${st.id})">
+            <span class="st-num">${st.id + 1}</span>
+            <span class="st-name">${st.name}</span>
+            <span class="st-dist">${st.district}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function selectStationById(routeId, stationId) {
+  const route   = allRoutes.find(r => r.id === routeId);
+  const station = route?.stations.find(s => s.id === stationId);
+  if (route && station) {
+    map.setView([station.lat, station.lng], 15);
+    selectStation(route, station);
+  }
+}
+
+// ── Buses ─────────────────────────────────────────────────────────────────────
+function drawBuses(buses) {
+  buses.forEach(b => {
+    const m = L.marker([b.lat, b.lng], {icon: busIcon(b.routeColor, b.direction, b.status), zIndexOffset:1000})
+      .addTo(map)
+      .bindTooltip(`<b>${b.id}</b> ${b.serviceLabel}<br>${b.routeName}<br>${b.direction==='N'?'▲ Norte':'▼ Sur'}`, {direction:'top'});
+    busMarkers[b.id] = {marker:m, bus:b};
+  });
+}
+
+function updateBuses(buses) {
+  buses.forEach(b => {
+    if (busMarkers[b.id]) {
+      busMarkers[b.id].marker.setLatLng([b.lat, b.lng]);
+      busMarkers[b.id].marker.setIcon(busIcon(b.routeColor, b.direction, b.status));
+      busMarkers[b.id].bus = b;
+    }
+  });
+}
+
+// ── Incidents ─────────────────────────────────────────────────────────────────
+function drawIncidents(incidents) {
+  Object.values(incMarkers).forEach(m => map.removeLayer(m));
+  incMarkers = {};
+  incidents.forEach(inc => {
+    const m = L.marker([inc.lat, inc.lng], {
+      icon: L.divIcon({className:'',html:`<div style="font-size:20px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.9))">${inc.icon}</div>`,iconSize:[24,24],iconAnchor:[12,12]})
+    }).addTo(map).bindPopup(`<b>${inc.icon} ${inc.label}</b><br>Cerca de: ${inc.nearStation}<br>~${inc.durationMinutes} min`);
+    incMarkers[inc.id] = m;
+  });
+  const el = document.getElementById('inc-list');
+  if (!incidents.length) { el.innerHTML = '<p style="font-size:12px;color:#3d444d;font-style:italic">Sin incidentes reportados.</p>'; return; }
+  el.innerHTML = incidents.map(i =>
+    `<div class="inc-card ${i.severity}"><div class="inc-title">${i.icon} ${i.label}</div><div class="inc-sub">Cerca de ${i.nearStation} · ~${i.durationMinutes} min</div></div>`
+  ).join('');
+}
+
+// ── Fleet panel ───────────────────────────────────────────────────────────────
+const MAX_FLEET = 12; // max buses in a single service (for bar width)
+
+function buildFleetPanel(routes, buses) {
+  const el = document.getElementById('fleet-list');
+  el.innerHTML = routes.map(route => {
+    // Group buses by service code
+    const svcMap = {};
+    route.stations; // just access to confirm route loaded
+    buses.filter(b => b.routeId === route.id).forEach(b => {
+      svcMap[b.serviceCode] = (svcMap[b.serviceCode] || 0) + 1;
+    });
+    const total = Object.values(svcMap).reduce((s,v)=>s+v, 0);
+    const svcRows = Object.entries(svcMap).map(([code, cnt]) => {
+      const label = buses.find(b=>b.serviceCode===code)?.serviceLabel || code;
+      const pct = Math.round((cnt / MAX_FLEET) * 100);
+      return `<div class="fleet-svc-row" id="fsvc-${route.id}-${code}">
+        <span class="fleet-svc-code">${code}</span>
+        <span class="fleet-svc-label">${label.replace(code,'').trim()}</span>
+        <div class="fleet-bar-wrap"><div class="fleet-bar" style="width:${pct}%;background:${route.color}"></div></div>
+        <span class="fleet-svc-count" id="fcnt-${route.id}-${code}">${cnt}</span>
+      </div>`;
+    }).join('');
+    return `<div class="fleet-route">
+      <div class="fleet-route-header">
+        <div class="fleet-route-dot" style="background:${route.color}"></div>
+        ${route.name}
+        <span class="fleet-route-total" id="ftot-${route.id}">${total} buses</span>
+      </div>
+      ${svcRows}
+    </div>`;
+  }).join('');
+}
+
+function updateFleetCounts(buses) {
+  // Update counts live without full re-render
+  const svcMap = {};
+  const routeTotals = {};
+  buses.forEach(b => {
+    const key = `${b.routeId}-${b.serviceCode}`;
+    svcMap[key] = (svcMap[key] || 0) + 1;
+    routeTotals[b.routeId] = (routeTotals[b.routeId] || 0) + 1;
+  });
+  Object.entries(svcMap).forEach(([key, cnt]) => {
+    const el = document.getElementById(`fcnt-${key}`);
+    if (el) el.textContent = cnt;
+    const bar = document.querySelector(`#fsvc-${key} .fleet-bar`);
+    if (bar) bar.style.width = Math.round((cnt/MAX_FLEET)*100)+'%';
+  });
+  Object.entries(routeTotals).forEach(([routeId, cnt]) => {
+    const el = document.getElementById(`ftot-${routeId}`);
+    if (el) el.textContent = cnt + ' buses';
+  });
+}
+
+// ── Arrivals ──────────────────────────────────────────────────────────────────
+function renderArrivals(arrivals) {
+  const el = document.getElementById('arr-list');
+  if (!arrivals?.length) { el.innerHTML = '<p style="font-size:12px;color:#8b949e">Sin llegadas próximas.</p>'; return; }
+  el.innerHTML = arrivals.map(a => {
+    const {text, cls} = fmtTime(a.seconds);
+    return `<div class="arr-card">
+      <div class="arr-min ${cls}">${text}</div>
+      <div>
+        <div><span class="arr-badge">${a.serviceCode}</span> ${a.serviceLabel}</div>
+        <div class="arr-dir">→ ${a.direction}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Stats ─────────────────────────────────────────────────────────────────────
+function updateStats(buses, incidents) {
+  if (buses) {
+    document.getElementById('s-total').textContent   = buses.length;
+    document.getElementById('s-moving').textContent  = buses.filter(b=>b.status==='moving').length;
+    document.getElementById('s-stopped').textContent = buses.filter(b=>b.status==='at_station').length;
+  }
+  if (incidents !== null && incidents !== undefined)
+    document.getElementById('s-inc').textContent = incidents.length;
+}
+
+// ── Firebase toggle ────────────────────────────────────────────────────────────
+
+async function toggleFirebase() {
+  try {
+    const res = await fetch('/api/firebase/toggle', { method: 'POST' });
+    const data = await res.json();
+    if (!data.ok) { alert(data.msg); return; }
+    updateFirebaseBtn(data.enabled);
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+function updateFirebaseBtn(enabled) {
+  const btn   = document.getElementById('fb-btn');
+  const label = document.getElementById('fb-label');
+  if (enabled) {
+    btn.classList.add('on');
+    label.textContent = 'Firebase ON';
+  } else {
+    btn.classList.remove('on');
+    label.textContent = 'Firebase OFF';
+  }
+}
+
+// Consultar estado inicial al cargar
+fetch('/api/firebase/status').then(r => r.json())
+  .then(d => updateFirebaseBtn(d.enabled))
+  .catch(() => {});
+
+// ── Traffic panel ─────────────────────────────────────────────────────────────
+const PERIOD_INFO = {
+  peak_am:  { label:'PUNTA AM',  range:'06–09h', color:'#f85149' },
+  peak_pm:  { label:'PUNTA PM',  range:'17–20h', color:'#f85149' },
+  shoulder: { label:'HOMBRO',    range:'09–11 / 14–17h', color:'#e3b341' },
+  offpeak:  { label:'VALLE',     range:'11–14h', color:'#3fb950' },
+  night:    { label:'NOCTURNO',  range:'20–06h', color:'#58a6ff' },
+};
+const TYPE_LABEL = { brt:'BRT', metro:'Metro', diametral:'Diametral', radial:'Radial', periferica:'Periférica' };
+
+async function loadTraffic() {
+  try {
+    const d = await fetch('/api/traffic').then(r => r.json());
+    const pi = PERIOD_INFO[d.period] || { label: d.period, range: '', color: '#8b949e' };
+
+    const badge = document.getElementById('tp-badge');
+    badge.textContent = `${pi.label} · ${pi.range}`;
+    badge.className = `tp-badge ${d.period}`;
+
+    const pct = Math.round(d.pi * 100);
+    document.getElementById('tp-fill').style.width = pct + '%';
+    document.getElementById('tp-fill').style.background = pi.color;
+    document.getElementById('tp-pct').textContent = pct + '%';
+    document.getElementById('tp-pct').style.color = pi.color;
+
+    const show = ['brt', 'metro', 'diametral', 'radial', 'periferica'];
+    document.getElementById('tp-speeds').innerHTML = d.speeds
+      .filter(s => show.includes(s.type))
+      .map(s => `<div class="tp-spd">${TYPE_LABEL[s.type]} <b>~${s.expectedKmh} km/h</b></div>`)
+      .join('');
+  } catch(e) {}
+}
+
+loadTraffic();
+setInterval(loadTraffic, 30000);
+</script>
+</body>
+</html>
