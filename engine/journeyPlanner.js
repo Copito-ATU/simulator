@@ -9,14 +9,25 @@ const MAX_TRANSFER_KM = 0.6;
 const MAX_TRANSFER_BRT= 1.0;
 
 const SPEED_BY_TYPE = {
-  brt:        42,
-  metro:      48,
-  diametral:  18,
-  radial:     15,
-  periferica: 12,
-  circular:   16,
+  brt:        38,   // Metropolitano: ~38 km/h promedio real (vía expresa dedicada)
+  metro:      45,   // Línea 1: ~45 km/h (tren, sin semáforos)
+  diametral:  16,   // Buses diametrales: ~16 km/h en tráfico Lima
+  radial:     13,
+  periferica: 10,
+  circular:   13,
 };
-const SCORE_BONUS = { brt: 6, metro: 5 };
+// Tiempo de parada por tipo (min/parada). BRT/metro: andenes exclusivos, rápido.
+const DWELL_BY_TYPE = {
+  brt:        0.4,  // ~24 seg en andén BRT
+  metro:      0.35, // ~21 seg (torniquetes, puertas amplias)
+  diametral:  1.5,
+  radial:     1.8,
+  periferica: 2.0,
+  circular:   1.6,
+};
+// Bonus de score (min): refleja confort, puntualidad y ventaja de vía exclusiva.
+// 15 min = el pasajero prefiere BRT aunque llegue 15 min después en papel.
+const SCORE_BONUS = { brt: 15, metro: 12 };
 
 // ── Utilidades ────────────────────────────────────────────────────────────────
 function haversine(lat1, lng1, lat2, lng2) {
@@ -36,8 +47,9 @@ function estimateRideMin(routeId, fromIdx, toIdx) {
   let km = 0;
   for (let i = s; i < e; i++)
     km += haversine(sts[i].lat, sts[i].lng, sts[i+1].lat, sts[i+1].lng);
-  const spd = SPEED_BY_TYPE[route.type] || BUS_KMH;
-  return (km / spd) * 60 + Math.abs(toIdx - fromIdx) * DWELL_PER_STOP;
+  const spd   = SPEED_BY_TYPE[route.type] || BUS_KMH;
+  const dwell = DWELL_BY_TYPE[route.type] || DWELL_PER_STOP;
+  return (km / spd) * 60 + Math.abs(toIdx - fromIdx) * dwell;
 }
 
 // ── Precalcular transbordos entre rutas (al cargar) ──────────────────────────
@@ -149,8 +161,14 @@ function planJourney(fromLat, fromLng, toLat, toLng, sim) {
     }
   }
 
-  const TOP_O = origins.slice(0, 6);
-  const TOP_D = dests.slice(0, 6);
+  // BRT/Metro siempre incluidos; completar con los buses regulares más cercanos
+  function buildTop(candidates, maxReg) {
+    const brt = candidates.filter(r => r.routeType === 'brt' || r.routeType === 'metro');
+    const reg = candidates.filter(r => r.routeType !== 'brt' && r.routeType !== 'metro').slice(0, maxReg);
+    return [...brt, ...reg];
+  }
+  const TOP_O = buildTop(origins, 6);
+  const TOP_D = buildTop(dests, 6);
 
   // ── Opción A: Ruta directa ──────────────────────────────────────────────
   for (const o of TOP_O) {
@@ -306,8 +324,13 @@ function planJourneyAlternatives(fromLat, fromLng, toLat, toLng, sim) {
     candidates.push({ legs, totalMinutes: Math.round(totalMin), _scored: totalMin - bonus, transfers: numTransfers });
   }
 
-  const TOP_O = origins.slice(0, 8);
-  const TOP_D = dests.slice(0, 8);
+  function buildTop(candidates, maxReg) {
+    const brt = candidates.filter(r => r.routeType === 'brt' || r.routeType === 'metro');
+    const reg = candidates.filter(r => r.routeType !== 'brt' && r.routeType !== 'metro').slice(0, maxReg);
+    return [...brt, ...reg];
+  }
+  const TOP_O = buildTop(origins, 8);
+  const TOP_D = buildTop(dests, 8);
 
   // Opción A: ruta directa
   for (const o of TOP_O) {
