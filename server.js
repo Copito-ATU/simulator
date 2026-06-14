@@ -85,7 +85,7 @@ app.post('/api/firebase/toggle', (req, res) => {
 app.get('/api/firebase/status', (req, res) =>
   res.json({ ready: fbReady, enabled: firebase.isEnabled() }));
 
-// Velocidad del simulador — multiplica velocidad de movimiento y divide tiempos de espera
+// ── Simulator control endpoints ───────────────────────────────────────────────
 app.get('/api/sim/speed', (req, res) =>
   res.json({ multiplier: sim.getSpeedMultiplier() }));
 
@@ -94,6 +94,170 @@ app.post('/api/sim/speed', (req, res) => {
   if (!isFinite(m) || m <= 0) return res.status(400).json({ error: 'multiplier must be a positive number' });
   sim.setSpeedMultiplier(m);
   res.json({ ok: true, multiplier: sim.getSpeedMultiplier() });
+});
+
+app.get('/api/sim/buses/count', (req, res) => {
+  const counts = sim.getBusCountByRoute();
+  const routes = sim.getRoutes().map(r => ({ id: r.id, name: r.name, color: r.color, type: r.type, count: counts[r.id] || 0 }));
+  res.json({ total: sim.getBusesPublic().length, routes });
+});
+
+app.post('/api/sim/buses/add', (req, res) => {
+  const { routeId, count = 1 } = req.body;
+  const ok = sim.addBuses(routeId, Math.min(50, Math.max(1, parseInt(count) || 1)));
+  res.json({ ok, counts: sim.getBusCountByRoute() });
+});
+
+app.post('/api/sim/buses/remove', (req, res) => {
+  const { routeId, count = 1 } = req.body;
+  const removed = sim.removeBuses(routeId, Math.min(50, Math.max(1, parseInt(count) || 1)));
+  res.json({ ok: removed > 0, removed, counts: sim.getBusCountByRoute() });
+});
+
+// ── Dashboard ─────────────────────────────────────────────────────────────────
+app.get('/dashboard', (req, res) => {
+  res.send(`<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ATU Simulator Dashboard</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',sans-serif;background:#0d1117;color:#e6edf3;min-height:100vh;padding:24px}
+  h1{font-size:20px;font-weight:700;color:#58a6ff;margin-bottom:4px}
+  .sub{font-size:12px;color:#8b949e;margin-bottom:24px}
+  .card{background:#161b22;border:1px solid #21262d;border-radius:12px;padding:20px;margin-bottom:20px}
+  .card h2{font-size:13px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px}
+  .speed-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .speed-btn{padding:8px 20px;border-radius:20px;border:1px solid #30363d;background:#21262d;color:#c9d1d9;font-weight:700;font-size:14px;cursor:pointer;transition:.15s}
+  .speed-btn.active,.speed-btn:hover{background:#1f6feb;border-color:#1f6feb;color:#fff}
+  .custom-speed{display:flex;align-items:center;gap:8px}
+  .custom-speed input{width:70px;padding:7px 10px;border-radius:8px;border:1px solid #30363d;background:#0d1117;color:#e6edf3;font-size:14px;text-align:center}
+  .custom-speed button{padding:7px 14px;border-radius:8px;background:#238636;border:none;color:#fff;cursor:pointer;font-weight:700}
+  .stat-pill{display:inline-flex;align-items:center;gap:6px;background:#21262d;border-radius:20px;padding:6px 14px;font-size:13px;color:#8b949e}
+  .stat-pill b{color:#e6edf3}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{text-align:left;padding:8px 12px;color:#8b949e;font-weight:600;border-bottom:1px solid #21262d;font-size:11px;text-transform:uppercase}
+  td{padding:8px 12px;border-bottom:1px solid #161b22}
+  tr:hover td{background:#1c2128}
+  .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:6px}
+  .type-badge{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:700;background:#21262d;color:#8b949e}
+  .type-badge.brt{background:#1c3a5e;color:#79c0ff}
+  .type-badge.metro{background:#1c3a5e;color:#a5d6ff}
+  .btn-sm{padding:4px 10px;border-radius:6px;border:none;font-weight:700;font-size:12px;cursor:pointer;transition:.12s}
+  .btn-add{background:#238636;color:#fff}.btn-add:hover{background:#2ea043}
+  .btn-rem{background:#6e2f2f;color:#ffa198}.btn-rem:hover{background:#8b3636}
+  .count-badge{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:24px;border-radius:6px;background:#21262d;font-weight:700;font-size:13px;color:#e6edf3;margin:0 6px}
+  #totalBuses{font-size:22px;font-weight:700;color:#58a6ff}
+  .refresh{font-size:11px;color:#3d444d;float:right;margin-top:2px}
+</style>
+</head>
+<body>
+<h1>🚇 ATU Simulator — Dashboard</h1>
+<div class="sub">Control en tiempo real · <span id="ts"></span></div>
+
+<div class="card">
+  <h2>Estado global</h2>
+  <div style="display:flex;gap:16px;flex-wrap:wrap">
+    <div class="stat-pill">Buses activos: <b id="totalBuses">…</b></div>
+    <div class="stat-pill">Velocidad sim: <b id="curSpeed">…</b>×</div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Velocidad del simulador</h2>
+  <div class="speed-row" id="speedBtns">
+    <button class="speed-btn" data-v="0.5">0.5×</button>
+    <button class="speed-btn" data-v="1">1× <span style="font-size:10px;font-weight:400;color:#8b949e">(real)</span></button>
+    <button class="speed-btn" data-v="2">2×</button>
+    <button class="speed-btn" data-v="5">5×</button>
+    <button class="speed-btn" data-v="10">10×</button>
+    <div class="custom-speed">
+      <input type="number" id="customV" placeholder="Ej: 3" min="0.25" max="20" step="0.25">
+      <button onclick="setCustomSpeed()">Aplicar</button>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Buses por ruta <span class="refresh" id="lastUpdate"></span></h2>
+  <table>
+    <thead><tr><th>Ruta</th><th>Tipo</th><th>Buses</th><th>Acción</th></tr></thead>
+    <tbody id="routeTable"></tbody>
+  </table>
+</div>
+
+<script>
+const BASE = '';
+let curSpeed = 1;
+
+async function api(path, body) {
+  const opts = body ? { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body) } : {};
+  const r = await fetch(BASE + path, opts);
+  return r.json();
+}
+
+async function setSpeed(v) {
+  curSpeed = v;
+  await api('/api/sim/speed', { multiplier: v });
+  document.querySelectorAll('.speed-btn').forEach(b => b.classList.toggle('active', +b.dataset.v === v));
+  document.getElementById('curSpeed').textContent = v;
+}
+
+function setCustomSpeed() {
+  const v = parseFloat(document.getElementById('customV').value);
+  if (v > 0 && v <= 20) setSpeed(v);
+}
+
+document.getElementById('speedBtns').addEventListener('click', e => {
+  const v = parseFloat(e.target.closest('[data-v]')?.dataset.v);
+  if (!isNaN(v)) setSpeed(v);
+});
+
+async function refresh() {
+  const [busData, speedData] = await Promise.all([
+    api('/api/sim/buses/count'),
+    api('/api/sim/speed'),
+  ]);
+  curSpeed = speedData.multiplier;
+  document.getElementById('totalBuses').textContent = busData.total;
+  document.getElementById('curSpeed').textContent   = speedData.multiplier;
+  document.querySelectorAll('.speed-btn').forEach(b => b.classList.toggle('active', +b.dataset.v === curSpeed));
+
+  const tbody = document.getElementById('routeTable');
+  tbody.innerHTML = busData.routes.map(r => \`
+    <tr>
+      <td><span class="dot" style="background:\${r.color || '#555'}"></span>\${r.name}</td>
+      <td><span class="type-badge \${r.type}">\${r.type.toUpperCase()}</span></td>
+      <td><span class="count-badge" id="cnt-\${r.id}">\${r.count}</span></td>
+      <td>
+        <button class="btn-sm btn-rem" onclick="changeBuses('\${r.id}',-1)">−1</button>
+        <button class="btn-sm btn-rem" onclick="changeBuses('\${r.id}',-5)" style="margin-left:4px">−5</button>
+        <button class="btn-sm btn-add" onclick="changeBuses('\${r.id}',1)"  style="margin-left:8px">+1</button>
+        <button class="btn-sm btn-add" onclick="changeBuses('\${r.id}',5)"  style="margin-left:4px">+5</button>
+        <button class="btn-sm btn-add" onclick="changeBuses('\${r.id}',10)" style="margin-left:4px">+10</button>
+      </td>
+    </tr>
+  \`).join('');
+
+  document.getElementById('lastUpdate').textContent = 'Act. ' + new Date().toLocaleTimeString('es-PE');
+  document.getElementById('ts').textContent = new Date().toLocaleTimeString('es-PE');
+}
+
+async function changeBuses(routeId, delta) {
+  const endpoint = delta > 0 ? '/api/sim/buses/add' : '/api/sim/buses/remove';
+  const data = await api(endpoint, { routeId, count: Math.abs(delta) });
+  const el = document.getElementById('cnt-' + routeId);
+  if (el && data.counts) el.textContent = data.counts[routeId] || 0;
+  document.getElementById('totalBuses').textContent = Object.values(data.counts || {}).reduce((a,b)=>a+b,0);
+}
+
+refresh();
+setInterval(refresh, 5000);
+</script>
+</body>
+</html>`);
 });
 
 // Página QR para escanear con el celular

@@ -1,10 +1,22 @@
 const ROUTES = require('../data/routes.json');
 
-const WALK_KMH       = 4.8;
-const BUS_KMH        = 25;
-const DWELL_PER_STOP = 1.5;   // min por parada
-const MAX_WALK_KM    = 1.5;   // max distancia a pie al bus
-const MAX_TRANSFER_KM= 0.6;   // max distancia a pie entre transbordos
+const WALK_KMH        = 4.8;
+const BUS_KMH         = 18;
+const DWELL_PER_STOP  = 1.5;
+const MAX_WALK_KM     = 1.5;
+const MAX_WALK_BRT    = 2.5;
+const MAX_TRANSFER_KM = 0.6;
+const MAX_TRANSFER_BRT= 1.0;
+
+const SPEED_BY_TYPE = {
+  brt:        42,
+  metro:      48,
+  diametral:  18,
+  radial:     15,
+  periferica: 12,
+  circular:   16,
+};
+const SCORE_BONUS = { brt: 6, metro: 5 };
 
 // ── Utilidades ────────────────────────────────────────────────────────────────
 function haversine(lat1, lng1, lat2, lng2) {
@@ -24,7 +36,8 @@ function estimateRideMin(routeId, fromIdx, toIdx) {
   let km = 0;
   for (let i = s; i < e; i++)
     km += haversine(sts[i].lat, sts[i].lng, sts[i+1].lat, sts[i+1].lng);
-  return (km / BUS_KMH) * 60 + Math.abs(toIdx - fromIdx) * DWELL_PER_STOP;
+  const spd = SPEED_BY_TYPE[route.type] || BUS_KMH;
+  return (km / spd) * 60 + Math.abs(toIdx - fromIdx) * DWELL_PER_STOP;
 }
 
 // ── Precalcular transbordos entre rutas (al cargar) ──────────────────────────
@@ -37,11 +50,13 @@ function buildTransfers() {
   for (let i = 0; i < ROUTES.length; i++) {
     for (let j = i + 1; j < ROUTES.length; j++) {
       const rA = ROUTES[i], rB = ROUTES[j];
+      const isBrt = (r) => r.type === 'brt' || r.type === 'metro';
+      const maxTr = (isBrt(rA) || isBrt(rB)) ? MAX_TRANSFER_BRT : MAX_TRANSFER_KM;
       let bestDist = Infinity, bestPair = null;
       for (const stA of rA.stations) {
         for (const stB of rB.stations) {
           const d = haversine(stA.lat, stA.lng, stB.lat, stB.lng);
-          if (d < MAX_TRANSFER_KM && d < bestDist) {
+          if (d < maxTr && d < bestDist) {
             bestDist = d;
             bestPair = { rA: rA.id, stA: stA.id, rB: rB.id, stB: stB.id, walkKm: d };
           }
@@ -57,12 +72,14 @@ function buildTransfers() {
 // ── Estaciones cercanas al punto dado ─────────────────────────────────────────
 function nearestPerRoute(lat, lng, maxKm = MAX_WALK_KM) {
   return ROUTES.flatMap(route => {
+    const isBrt = route.type === 'brt' || route.type === 'metro';
+    const limit  = isBrt ? Math.max(maxKm, MAX_WALK_BRT) : maxKm;
     let best = null, bestD = Infinity;
     route.stations.forEach(st => {
       const d = haversine(lat, lng, st.lat, st.lng);
       if (d < bestD) { bestD = d; best = st; }
     });
-    if (bestD > maxKm || !best) return [];
+    if (bestD > limit || !best) return [];
     return [{ routeId: route.id, routeName: route.name, routeColor: route.color, routeType: route.type, station: best, walkKm: bestD }];
   }).sort((a, b) => a.walkKm - b.walkKm);
 }
@@ -101,8 +118,12 @@ function planJourney(fromLat, fromLng, toLat, toLng, sim) {
   let best = null, bestTotal = Infinity;
 
   function tryJourney(legs, totalMin, numTransfers) {
-    if (totalMin < bestTotal) {
-      bestTotal = totalMin;
+    const bonus = legs.filter(l => l.type === 'bus').reduce((acc, l) => {
+      const r = getRoute(l.routeId); return acc + (SCORE_BONUS[r?.type] || 0);
+    }, 0);
+    const scored = totalMin - bonus;
+    if (scored < bestTotal) {
+      bestTotal = scored;
       best = { legs, totalMinutes: Math.round(totalMin), transfers: numTransfers };
     }
   }
@@ -258,7 +279,10 @@ function planJourneyAlternatives(fromLat, fromLng, toLat, toLng, sim) {
   const candidates = [];
 
   function tryJourney(legs, totalMin, numTransfers) {
-    candidates.push({ legs, totalMinutes: Math.round(totalMin), transfers: numTransfers });
+    const bonus = legs.filter(l => l.type === 'bus').reduce((acc, l) => {
+      const r = getRoute(l.routeId); return acc + (SCORE_BONUS[r?.type] || 0);
+    }, 0);
+    candidates.push({ legs, totalMinutes: Math.round(totalMin), _scored: totalMin - bonus, transfers: numTransfers });
   }
 
   const TOP_O = origins.slice(0, 8);
@@ -326,7 +350,7 @@ function planJourneyAlternatives(fromLat, fromLng, toLat, toLng, sim) {
     return { error: `No se encontró ruta entre esos puntos. Intenta con direcciones dentro de Lima Metropolitana.` };
   }
 
-  candidates.sort((a, b) => a.totalMinutes - b.totalMinutes);
+  candidates.sort((a, b) => a._scored - b._scored);
   return { alternatives: pickDiverse(candidates, 3) };
 }
 

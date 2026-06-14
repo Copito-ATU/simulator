@@ -156,6 +156,49 @@ class BusSimulator {
   setSpeedMultiplier(m) { this.speedMultiplier = Math.max(0.25, Math.min(20, m)); }
   getSpeedMultiplier()  { return this.speedMultiplier; }
 
+  getBusCountByRoute() {
+    const counts = {};
+    this.buses.forEach(b => { counts[b.routeId] = (counts[b.routeId] || 0) + 1; });
+    return counts;
+  }
+
+  addBuses(routeId, count = 1) {
+    const route = _route(routeId);
+    if (!route) return false;
+    const N   = route.stations.length;
+    const svc = route.services?.[0] || { code: route.id, label: route.name };
+    for (let i = 0; i < count; i++) {
+      const segIdx = Math.floor(Math.random() * (N - 1));
+      const bus = {
+        id:             `B${String(_nextId++).padStart(3,'0')}`,
+        routeId:        route.id,
+        routeName:      route.name,
+        routeColor:     route.color,
+        routeType:      route.type,
+        serviceCode:    svc.code,
+        serviceLabel:   svc.label,
+        segIdx:         Math.max(0, Math.min(segIdx, N - 2)),
+        progress:       Math.random(),
+        direction:      Math.random() < 0.5 ? 'N' : 'S',
+        dwellRemaining: 0,
+        status:         'moving',
+        _speedKmS:      getSpeedKmS(route.type),
+        lat: 0, lng: 0,
+      };
+      _calcPos(bus);
+      this.buses.push(bus);
+    }
+    return true;
+  }
+
+  removeBuses(routeId, count = 1) {
+    let removed = 0;
+    for (let i = this.buses.length - 1; i >= 0 && removed < count; i--) {
+      if (this.buses[i].routeId === routeId) { this.buses.splice(i, 1); removed++; }
+    }
+    return removed;
+  }
+
   tick() {
     const mult = this.speedMultiplier;
     this.buses.forEach(bus => {
