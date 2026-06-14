@@ -625,25 +625,61 @@ async function loadControl() {
 document.getElementById('ctrl-speed-btns').addEventListener('click', async e => {
   const btn = e.target.closest('[data-v]');
   if (!btn) return;
-  const v = parseFloat(btn.dataset.v);
-  await ctrlSetSpeed(v);
+  await ctrlSetSpeed(parseFloat(btn.dataset.v));
 });
 
 async function ctrlApplySpeed() {
-  const v = parseFloat(document.getElementById('ctrl-custom-v').value);
-  if (v > 0 && v <= 20) await ctrlSetSpeed(v);
+  const input = document.getElementById('ctrl-custom-v');
+  const v = parseFloat(input.value);
+  if (isNaN(v) || v <= 0 || v > 20) {
+    ctrlShowStatus('⚠ Ingresa un valor entre 0.25 y 20', '#e3b341');
+    return;
+  }
+  await ctrlSetSpeed(v);
 }
 
 async function ctrlSetSpeed(v) {
-  await fetch('/api/sim/speed', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ multiplier: v }),
-  });
-  document.getElementById('ctrl-speed-lbl').textContent = v + '×';
-  document.querySelectorAll('.ctrl-spd-btn').forEach(b => {
-    b.classList.toggle('active', parseFloat(b.dataset.v) === v);
-  });
+  const btn = document.getElementById('ctrl-apply-btn');
+  btn.disabled = true;
+  btn.textContent = '...';
+  try {
+    const res = await fetch('/api/sim/speed', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ multiplier: v }),
+    });
+    const data = await res.json();
+    const applied = data.multiplier || v;
+    // Actualizar botones preset
+    document.querySelectorAll('.ctrl-spd-btn').forEach(b => {
+      b.classList.toggle('active', parseFloat(b.dataset.v) === applied);
+    });
+    // Actualizar input y label
+    document.getElementById('ctrl-custom-v').value = applied;
+    document.getElementById('ctrl-speed-lbl').textContent = applied + '×';
+    ctrlShowStatus('✓ Velocidad ' + applied + '× aplicada', '#3fb950');
+  } catch (err) {
+    ctrlShowStatus('✗ Error: ' + err.message, '#f85149');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Aplicar';
+  }
+}
+
+function ctrlShowStatus(msg, color) {
+  let el = document.getElementById('ctrl-status');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'ctrl-status';
+    el.style.cssText = 'margin-top:8px;padding:6px 12px;border-radius:7px;font-size:12px;font-weight:700;transition:.3s';
+    document.getElementById('ctrl-custom-v').closest('div').parentNode.appendChild(el);
+  }
+  el.style.background = color + '22';
+  el.style.color = color;
+  el.style.border = '1px solid ' + color + '55';
+  el.textContent = msg;
+  clearTimeout(el._t);
+  el._t = setTimeout(() => { el.textContent = ''; el.style.border = 'none'; }, 3000);
 }
 
 async function ctrlBus(routeId, delta) {
