@@ -18,8 +18,9 @@
     #header p{font-size:11px;opacity:.75;margin-top:2px}
 
     /* tabs */
-    #tabs{display:flex;border-bottom:1px solid #30363d;background:#0d1117}
-    .tab{flex:1;padding:8px 4px;font-size:11px;text-align:center;cursor:pointer;color:#8b949e;border-bottom:2px solid transparent;transition:.2s}
+    #tabs{display:flex;border-bottom:1px solid #30363d;background:#0d1117;overflow-x:auto;flex-shrink:0;scrollbar-width:none}
+    #tabs::-webkit-scrollbar{display:none}
+    .tab{flex:0 0 auto;min-width:64px;padding:9px 8px;font-size:11px;text-align:center;cursor:pointer;color:#8b949e;border-bottom:2px solid transparent;transition:.2s;white-space:nowrap}
     .tab.active{color:#58a6ff;border-bottom-color:#1f6feb;background:#161b22}
 
     /* panels */
@@ -238,8 +239,12 @@ let allRoutes      = [];
 // ── Tab control ───────────────────────────────────────────────────────────────
 const TAB_ORDER = ['arrivals','fleet','stations','incidents','control'];
 function showTab(name) {
-  document.querySelectorAll('.tab').forEach((t,i)  => t.classList.toggle('active', TAB_ORDER[i]===name));
-  document.querySelectorAll('.panel').forEach(p    => p.classList.toggle('active', p.id==='panel-'+name));
+  document.querySelectorAll('.tab').forEach((t,i) => {
+    const active = TAB_ORDER[i] === name;
+    t.classList.toggle('active', active);
+    if (active) t.scrollIntoView({ block:'nearest', inline:'center', behavior:'smooth' });
+  });
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id==='panel-'+name));
 }
 
 // ── Smart time display ────────────────────────────────────────────────────────
@@ -314,14 +319,59 @@ socket.on('arrivals', ({routeId, stationId, data}) => {
   if (selected && selected.routeId===routeId && selected.stationId===stationId) renderArrivals(data);
 });
 
-// ── Legend ────────────────────────────────────────────────────────────────────
+// ── Legend (type-based, not per-route) ────────────────────────────────────────
+const TYPE_COLORS = {
+  brt:       '#f0a500', metro:     '#f59e0b',
+  diametral: '#42a5f5', radial:    '#ab47bc',
+  periferica:'#26a69a', circular:  '#ffa726',
+};
+const TYPE_NAMES = {
+  brt:'Metropolitano', metro:'Línea 1',
+  diametral:'Diametral', radial:'Radial',
+  periferica:'Periférica', circular:'Circular',
+};
 function buildLegend(routes) {
   const el = document.getElementById('legend');
-  el.innerHTML = routes.map(r =>
-    `<div class="leg" id="leg-${r.id}" onclick="toggleRoute('${r.id}')">
-      <div class="leg-dot" style="background:${r.color}"></div>${r.shortName}
+  const seen = new Set();
+  const items = [];
+  routes.forEach(r => {
+    if (!seen.has(r.type)) {
+      seen.add(r.type);
+      const cnt = routes.filter(x => x.type === r.type).length;
+      items.push({ type: r.type, color: TYPE_COLORS[r.type] || r.color, label: TYPE_NAMES[r.type] || r.type, cnt });
+    }
+  });
+  el.innerHTML = items.map(it =>
+    `<div class="leg" id="leg-type-${it.type}" onclick="toggleType('${it.type}')">
+      <div class="leg-dot" style="background:${it.color}"></div>${it.label}
+      <span style="font-size:9px;opacity:.5;margin-left:2px">${it.cnt}</span>
     </div>`
   ).join('');
+}
+
+function toggleType(type) {
+  const isHidden = document.getElementById(`leg-type-${type}`)?.classList.contains('off');
+  document.getElementById(`leg-type-${type}`)?.classList.toggle('off', !isHidden);
+  Object.entries(routeLayers).forEach(([routeId, layer]) => {
+    const route = allRoutes.find(r => r.id === routeId);
+    if (!route || route.type !== type) return;
+    if (isHidden) { layer.addTo(map); hiddenRoutes.delete(routeId); }
+    else          { map.removeLayer(layer); hiddenRoutes.add(routeId); }
+  });
+  Object.values(stationMarkers).forEach(({marker, route}) => {
+    if (route.type !== type) return;
+    if (isHidden) marker.addTo(map); else map.removeLayer(marker);
+  });
+  Object.values(busMarkers).forEach(({marker, bus}) => {
+    const route = allRoutes.find(r => r.id === bus.routeId);
+    if (!route || route.type !== type) return;
+    if (isHidden) marker.addTo(map); else map.removeLayer(marker);
+  });
+}
+
+function toggleRoute(routeId) {
+  const route = allRoutes.find(r => r.id === routeId);
+  if (route) toggleType(route.type);
 }
 
 function toggleRoute(routeId) {
@@ -344,18 +394,25 @@ function toggleRoute(routeId) {
 }
 
 // ── Draw routes + stations ────────────────────────────────────────────────────
+// Station markers only for named-stop routes (METRO, LINEA1); others = polyline only
 function drawRoutes(routes) {
   routes.forEach(route => {
     const pts = route.stations.map(s => [s.lat, s.lng]);
-    const dash = route.type === 'feeder' ? '6 4' : null;
-    const layer = L.polyline(pts, {color:route.color, weight: route.type==='brt'?5:3, opacity:.85, dashArray:dash}).addTo(map);
+    const isBrt   = route.type === 'brt' || route.type === 'metro';
+    const weight  = isBrt ? 5 : 1.5;
+    const opacity = isBrt ? 0.9 : 0.5;
+    const dash    = route.type === 'metro' ? '10 5' : null;
+    const layer   = L.polyline(pts, {color:route.color, weight, opacity, dashArray:dash}).addTo(map);
     routeLayers[route.id] = layer;
+
+    const hasRealNames = route.stations.length > 0 && !route.stations[0].name.startsWith('Paradero');
+    if (!hasRealNames) return;
 
     route.stations.forEach(st => {
       const key = `${route.id}_${st.id}`;
       const m = L.marker([st.lat, st.lng], {icon: stationIcon(route.color, false)})
         .addTo(map)
-        .bindTooltip(`<b>${st.name}</b><br><span style="color:#aaa">${st.district} · ${route.name}</span>`, {direction:'top',offset:[0,-8]})
+        .bindTooltip(`<b>${st.name}</b><br><span style="color:#aaa">${st.district||''} · ${route.name}</span>`, {direction:'top',offset:[0,-8]})
         .on('click', () => selectStation(route, st));
       stationMarkers[key] = {marker:m, route, station:st};
     });
@@ -375,22 +432,28 @@ function selectStation(route, st) {
   socket.emit('request_arrivals', selected);
 }
 
-// ── Station list panel ────────────────────────────────────────────────────────
+// ── Station list panel (only named-station routes) ────────────────────────────
 function buildStationList(routes) {
   const el = document.getElementById('stations-list');
-  el.innerHTML = routes.map(route => `
+  // Only show routes with real station names (not generic "Paradero N")
+  const named = routes.filter(r => r.stations.length > 0 && !r.stations[0].name.startsWith('Paradero'));
+  if (!named.length) {
+    el.innerHTML = '<p style="font-size:12px;color:#3d444d;font-style:italic">Haz clic en una parada del mapa para ver llegadas.</p>';
+    return;
+  }
+  el.innerHTML = named.map(route => `
     <div class="route-block">
       <div class="route-header">
         <div class="route-dot" style="background:${route.color}"></div>
         ${route.name}
-        <span style="color:#8b949e;font-weight:400;font-size:10px;margin-left:auto">${route.stations.length} paraderos</span>
+        <span style="color:#8b949e;font-weight:400;font-size:10px;margin-left:auto">${route.stations.length} paradas</span>
       </div>
       <div class="st-list">
         ${route.stations.map(st => `
           <div class="st-row" onclick="selectStationById('${route.id}',${st.id})">
             <span class="st-num">${st.id + 1}</span>
             <span class="st-name">${st.name}</span>
-            <span class="st-dist">${st.district}</span>
+            <span class="st-dist">${st.district||''}</span>
           </div>
         `).join('')}
       </div>
@@ -449,7 +512,11 @@ const MAX_FLEET = 12; // max buses in a single service (for bar width)
 
 function buildFleetPanel(routes, buses) {
   const el = document.getElementById('fleet-list');
-  el.innerHTML = routes.map(route => {
+  // Sort by bus count desc, limit to top 40 to avoid browser freeze
+  const busCountPerRoute = {};
+  buses.forEach(b => { busCountPerRoute[b.routeId] = (busCountPerRoute[b.routeId] || 0) + 1; });
+  const top40 = [...routes].sort((a, b) => (busCountPerRoute[b.id]||0) - (busCountPerRoute[a.id]||0)).slice(0, 40);
+  el.innerHTML = top40.map(route => {
     // Group buses by service code
     const svcMap = {};
     route.stations; // just access to confirm route loaded
@@ -608,9 +675,10 @@ async function loadControl() {
     b.classList.toggle('active', parseFloat(b.dataset.v) === spd);
   });
 
-  // Tabla de buses
+  // Tabla de buses — top 40 por cantidad de buses
   const table = document.getElementById('ctrl-bus-table');
-  table.innerHTML = busData.routes.map(r => `
+  const sortedRoutes = [...busData.routes].sort((a, b) => b.count - a.count).slice(0, 40);
+  table.innerHTML = sortedRoutes.map(r => `
     <div class="ctrl-route-row">
       <span style="width:9px;height:9px;border-radius:50%;background:${r.color||'#555'};flex-shrink:0;display:inline-block"></span>
       <span class="ctrl-route-name" title="${r.name}">${r.name}</span>
