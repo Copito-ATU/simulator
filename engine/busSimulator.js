@@ -259,7 +259,7 @@ class BusSimulator {
 
   getRoutes() {
     return ROUTES.map(({ id, name, shortName, color, type, axis, stations }) =>
-      ({ id, name, shortName, color, type, axis, stations }));
+      ({ id, name, shortName: shortName ?? null, color, type, axis: axis ?? null, stations }));
   }
 
   getBusesPublic() {
