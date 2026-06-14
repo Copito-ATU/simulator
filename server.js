@@ -85,6 +85,17 @@ app.post('/api/firebase/toggle', (req, res) => {
 app.get('/api/firebase/status', (req, res) =>
   res.json({ ready: fbReady, enabled: firebase.isEnabled() }));
 
+// Velocidad del simulador — multiplica velocidad de movimiento y divide tiempos de espera
+app.get('/api/sim/speed', (req, res) =>
+  res.json({ multiplier: sim.getSpeedMultiplier() }));
+
+app.post('/api/sim/speed', (req, res) => {
+  const m = parseFloat(req.body.multiplier);
+  if (!isFinite(m) || m <= 0) return res.status(400).json({ error: 'multiplier must be a positive number' });
+  sim.setSpeedMultiplier(m);
+  res.json({ ok: true, multiplier: sim.getSpeedMultiplier() });
+});
+
 // Página QR para escanear con el celular
 app.get('/qr', async (req, res) => {
   const host = req.hostname === 'localhost' ? '192.168.0.102' : req.hostname;

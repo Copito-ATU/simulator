@@ -148,14 +148,21 @@ function _calcPos(bus) {
 
 // ── Simulator ─────────────────────────────────────────────────────────────────
 class BusSimulator {
-  constructor() { this.buses = makeBuses(); }
+  constructor() {
+    this.buses = makeBuses();
+    this.speedMultiplier = 1.0;
+  }
+
+  setSpeedMultiplier(m) { this.speedMultiplier = Math.max(0.25, Math.min(20, m)); }
+  getSpeedMultiplier()  { return this.speedMultiplier; }
 
   tick() {
+    const mult = this.speedMultiplier;
     this.buses.forEach(bus => {
       if (bus.dwellRemaining > 0) {
-        bus.dwellRemaining--;
+        bus.dwellRemaining = Math.max(0, bus.dwellRemaining - mult);
         bus.status = 'at_station';
-        return;
+        if (bus.dwellRemaining > 0) return;
       }
 
       const route = _route(bus.routeId);
@@ -163,7 +170,7 @@ class BusSimulator {
       const dist  = route._dists[bus.segIdx] || 0.5;
 
       bus.status = 'moving';
-      bus.progress += bus._speedKmS / dist;
+      bus.progress += (bus._speedKmS * mult) / dist;
 
       if (bus.progress >= 1) {
         bus.progress = 0;
@@ -176,9 +183,9 @@ class BusSimulator {
           if (bus.segIdx < 0)      { bus.direction = 'N'; bus.segIdx = 0; }
         }
 
-        // Resample speed and dwell at each stop — captures time-of-day variation
+        // Resample speed and dwell; dwell divided by multiplier so it scales with speed
         bus._speedKmS      = getSpeedKmS(route.type);
-        bus.dwellRemaining = getDwellSecs(route.type);
+        bus.dwellRemaining = Math.ceil(getDwellSecs(route.type) / mult);
         bus.status         = 'at_station';
       }
 
