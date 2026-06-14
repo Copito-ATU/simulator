@@ -108,6 +108,16 @@
     .tp-spd{font-size:10px;padding:2px 7px;border-radius:4px;background:#21262d;color:#8b949e}
     .tp-spd b{color:#c9d1d9}
 
+    /* ── Control panel ── */
+    .ctrl-spd-btn{padding:5px 12px;border-radius:16px;border:1px solid #30363d;background:#21262d;color:#c9d1d9;font-weight:700;font-size:12px;cursor:pointer;transition:.15s}
+    .ctrl-spd-btn.active,.ctrl-spd-btn:hover{background:#1f6feb;border-color:#1f6feb;color:#fff}
+    .ctrl-route-row{display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid #21262d}
+    .ctrl-route-name{flex:1;font-size:11px;color:#c9d1d9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .ctrl-count{display:inline-flex;align-items:center;justify-content:center;min-width:28px;height:20px;border-radius:5px;background:#21262d;font-weight:700;font-size:12px;color:#58a6ff;margin:0 4px}
+    .cb-btn{padding:2px 8px;border-radius:5px;border:none;font-weight:700;font-size:11px;cursor:pointer}
+    .cb-add{background:#238636;color:#fff}.cb-add:hover{background:#2ea043}
+    .cb-rem{background:#6e2f2f;color:#ffa198}.cb-rem:hover{background:#8b3636}
+
     #footer{padding:7px 14px;font-size:10px;color:#3d444d;border-top:1px solid #30363d;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:8px}
     #fb-btn{display:flex;align-items:center;gap:6px;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:4px 10px;cursor:pointer;font-size:11px;color:#8b949e;transition:.2s;white-space:nowrap}
     #fb-btn:hover{border-color:#58a6ff;color:#58a6ff}
@@ -152,6 +162,7 @@
     <div class="tab" onclick="showTab('fleet')">🚌 Flota</div>
     <div class="tab" onclick="showTab('stations')">📍 Paradas</div>
     <div class="tab" onclick="showTab('incidents')">⚠ Avisos</div>
+    <div class="tab" onclick="showTab('control');loadControl()">⚙ Control</div>
   </div>
 
   <div id="panels">
@@ -167,6 +178,32 @@
     </div>
     <div class="panel" id="panel-incidents">
       <div id="inc-list"><p style="font-size:12px;color:#3d444d;font-style:italic">Sin incidentes reportados.</p></div>
+    </div>
+    <div class="panel" id="panel-control">
+      <!-- Velocidad -->
+      <div style="margin-bottom:16px">
+        <div style="font-size:11px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px">Velocidad del simulador</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px" id="ctrl-speed-btns">
+          <button class="ctrl-spd-btn" data-v="0.5">0.5×</button>
+          <button class="ctrl-spd-btn" data-v="1">1× <span style="font-size:9px;opacity:.6">real</span></button>
+          <button class="ctrl-spd-btn" data-v="2">2×</button>
+          <button class="ctrl-spd-btn" data-v="5">5×</button>
+          <button class="ctrl-spd-btn" data-v="10">10×</button>
+        </div>
+        <div style="display:flex;gap:6px;align-items:center">
+          <input id="ctrl-custom-v" type="number" min="0.25" max="20" step="0.25" placeholder="Ej: 3"
+            style="width:72px;padding:5px 8px;border-radius:7px;border:1px solid #30363d;background:#0d1117;color:#e6edf3;font-size:13px;text-align:center">
+          <button id="ctrl-apply-btn" onclick="ctrlApplySpeed()"
+            style="padding:5px 14px;border-radius:7px;background:#238636;border:none;color:#fff;font-weight:700;font-size:12px;cursor:pointer">Aplicar</button>
+          <span id="ctrl-speed-lbl" style="font-size:12px;color:#58a6ff;font-weight:700"></span>
+        </div>
+      </div>
+
+      <!-- Buses por ruta -->
+      <div>
+        <div style="font-size:11px;font-weight:700;color:#8b949e;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Buses por ruta</div>
+        <div id="ctrl-bus-table"></div>
+      </div>
     </div>
   </div>
 
@@ -552,6 +589,76 @@ async function loadTraffic() {
 
 loadTraffic();
 setInterval(loadTraffic, 30000);
+
+// ── Panel de Control ──────────────────────────────────────────────────────────
+let _ctrlLoaded = false;
+
+async function loadControl() {
+  const [busData, speedData] = await Promise.all([
+    fetch('/api/sim/buses/count').then(r => r.json()),
+    fetch('/api/sim/speed').then(r => r.json()),
+  ]);
+  _ctrlLoaded = true;
+
+  // Velocidad actual
+  const spd = speedData.multiplier || 1;
+  document.getElementById('ctrl-speed-lbl').textContent = spd + '×';
+  document.getElementById('ctrl-custom-v').value = spd;
+  document.querySelectorAll('.ctrl-spd-btn').forEach(b => {
+    b.classList.toggle('active', parseFloat(b.dataset.v) === spd);
+  });
+
+  // Tabla de buses
+  const table = document.getElementById('ctrl-bus-table');
+  table.innerHTML = busData.routes.map(r => `
+    <div class="ctrl-route-row">
+      <span style="width:9px;height:9px;border-radius:50%;background:${r.color||'#555'};flex-shrink:0;display:inline-block"></span>
+      <span class="ctrl-route-name" title="${r.name}">${r.name}</span>
+      <button class="cb-btn cb-rem" onclick="ctrlBus('${r.id}',-1)">−</button>
+      <span class="ctrl-count" id="cc-${r.id}">${r.count}</span>
+      <button class="cb-btn cb-add" onclick="ctrlBus('${r.id}',1)">+</button>
+      <button class="cb-btn cb-add" onclick="ctrlBus('${r.id}',5)" style="margin-left:2px">+5</button>
+    </div>
+  `).join('');
+}
+
+document.getElementById('ctrl-speed-btns').addEventListener('click', async e => {
+  const btn = e.target.closest('[data-v]');
+  if (!btn) return;
+  const v = parseFloat(btn.dataset.v);
+  await ctrlSetSpeed(v);
+});
+
+async function ctrlApplySpeed() {
+  const v = parseFloat(document.getElementById('ctrl-custom-v').value);
+  if (v > 0 && v <= 20) await ctrlSetSpeed(v);
+}
+
+async function ctrlSetSpeed(v) {
+  await fetch('/api/sim/speed', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ multiplier: v }),
+  });
+  document.getElementById('ctrl-speed-lbl').textContent = v + '×';
+  document.querySelectorAll('.ctrl-spd-btn').forEach(b => {
+    b.classList.toggle('active', parseFloat(b.dataset.v) === v);
+  });
+}
+
+async function ctrlBus(routeId, delta) {
+  const ep = delta > 0 ? '/api/sim/buses/add' : '/api/sim/buses/remove';
+  const data = await fetch(ep, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ routeId, count: Math.abs(delta) }),
+  }).then(r => r.json());
+  const el = document.getElementById('cc-' + routeId);
+  if (el && data.counts) el.textContent = data.counts[routeId] || 0;
+  // Actualizar stat total
+  const total = Object.values(data.counts || {}).reduce((a, b) => a + b, 0);
+  document.getElementById('s-total').textContent = total;
+}
 </script>
 </body>
 </html>
