@@ -270,7 +270,7 @@ function planJourney(fromLat, fromLng, toLat, toLng, sim) {
 // ── Planificador con múltiples alternativas (para chatbot / picker) ───────────
 function busTypeId(route) {
   if (!route) return 'omnibus';
-  if (route.id === 'METRO')        return 'metropolitano';
+  if (route.id?.startsWith('METRO_') || route.id === 'METRO') return 'metropolitano';
   if (route.id === 'LINEA1')       return 'linea1';
   if (route.id?.startsWith('C'))   return 'corredor';
   const c = (route.carroceria || '').toUpperCase();
@@ -286,7 +286,13 @@ function getPrimaryKey(journey) {
 function labelAlternative(alt, isFirst) {
   if (isFirst) return 'Más rápida';
   const busLegs = alt.legs.filter(l => l.type === 'bus');
-  if (busLegs.some(l => l.routeId === 'METRO'))  return 'Con Metropolitano';
+  const metroLeg = busLegs.find(l => l.routeId?.includes('EXP') || l.routeId?.includes('SX'))
+                || busLegs.find(l => l.routeId?.startsWith('METRO_') || l.routeId === 'METRO');
+  if (metroLeg) {
+    const r = ROUTES.find(r => r.id === metroLeg.routeId);
+    if (r) return r.name.replace('Metropolitano ', 'Metro ');
+    return 'Con Metropolitano';
+  }
   if (busLegs.some(l => l.routeId === 'LINEA1')) return 'Con Línea 1';
   if (busLegs.some(l => l.routeId?.startsWith('C'))) return 'Corredor exclusivo';
   if (alt.transfers === 0)                        return 'Sin transbordo';
